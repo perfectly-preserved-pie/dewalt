@@ -192,7 +192,7 @@ def boolean_column(field: str, header_name: str, **kwargs) -> dict:
     return column
 
 
-MASTER_COLUMN_DEFS = [
+IDENTITY_COLUMN_DEFS = [
     text_column(
         "sku",
         "SKU",
@@ -210,6 +210,9 @@ MASTER_COLUMN_DEFS = [
         wrapText=True,
         autoHeight=True,
     ),
+]
+
+SPEC_COLUMN_DEFS = [
     categorical_column("power_source", "Power", minWidth=130),
     categorical_column("series_display", "Series", minWidth=170),
     categorical_column("voltage_system", "Voltage", minWidth=130),
@@ -251,6 +254,9 @@ MASTER_COLUMN_DEFS = [
         "params.value == null ? '-' : `${params.value.toLocaleString()} W`",
         minWidth=135,
     ),
+]
+
+FEATURE_COLUMN_DEFS = [
     boolean_column("brushless", "Brushless", minWidth=120),
     boolean_column("variable_speed", "Variable Speed", minWidth=145),
     boolean_column("anti_rotation_system", "Anti-Rotation", minWidth=140),
@@ -262,6 +268,20 @@ MASTER_COLUMN_DEFS = [
         "Wireless Tool Control",
         minWidth=185,
     ),
+]
+
+MASTER_COLUMN_DEFS = [
+    *IDENTITY_COLUMN_DEFS,
+    {
+        "headerName": "Specs",
+        "marryChildren": True,
+        "children": SPEC_COLUMN_DEFS,
+    },
+    {
+        "headerName": "Features",
+        "marryChildren": True,
+        "children": FEATURE_COLUMN_DEFS,
+    },
 ]
 
 COMPARE_BASE_COLUMNS = [
