@@ -25,6 +25,9 @@ AG_GRID_THEME = {
     )
 }
 
+TEXT_FILTER = "agTextColumnFilter"
+NUMBER_FILTER = "agNumberColumnFilter"
+
 COMPARE_FIELDS = [
     ("sku", "SKU"),
     ("title", "Model"),
@@ -144,50 +147,99 @@ CORDLESS_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["power_source"] == "
 CORDED_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["power_source"] != "Cordless")
 BRUSHLESS_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["brushless"])
 
+def text_column(field: str, header_name: str, **kwargs) -> dict:
+    column = {"field": field, "headerName": header_name, "filter": TEXT_FILTER}
+    column.update(kwargs)
+    return column
+
+
+def number_column(field: str, header_name: str, formatter: str | None = None, **kwargs) -> dict:
+    column = {
+        "field": field,
+        "headerName": header_name,
+        "filter": NUMBER_FILTER,
+        "type": "numericColumn",
+    }
+    if formatter:
+        column["valueFormatter"] = {"function": formatter}
+    column.update(kwargs)
+    return column
+
+
 MASTER_COLUMN_DEFS = [
-    {
-        "field": "sku",
-        "headerName": "SKU",
-        "checkboxSelection": True,
-        "headerCheckboxSelection": True,
-        "pinned": "left",
-        "minWidth": 120,
-    },
-    {
-        "field": "title",
-        "headerName": "Model",
-        "flex": 2.4,
-        "minWidth": 340,
-        "tooltipField": "title",
-        "wrapText": True,
-        "autoHeight": True,
-    },
-    {"field": "power_source", "headerName": "Power", "minWidth": 130},
-    {"field": "series_display", "headerName": "Series", "minWidth": 170},
-    {"field": "voltage_system", "headerName": "Voltage", "minWidth": 130},
-    {"field": "nominal_voltage_display", "headerName": "Nominal", "minWidth": 120},
-    {"field": "wheel_size_display", "headerName": "Wheel Size", "minWidth": 140},
-    {"field": "switch_type", "headerName": "Switch", "minWidth": 150},
-    {"field": "rpm_display", "headerName": "RPM", "minWidth": 110},
-    {"field": "amp_rating_display", "headerName": "Amp", "minWidth": 110},
-    {"field": "horsepower_display", "headerName": "HP", "minWidth": 110},
-    {"field": "max_watts_out_display", "headerName": "MWO", "minWidth": 120},
-    {"field": "power_input_display", "headerName": "Power Input", "minWidth": 135},
-    {"field": "brushless_display", "headerName": "Brushless", "minWidth": 120},
-    {"field": "variable_speed_display", "headerName": "Variable Speed", "minWidth": 145},
-    {"field": "kit_display", "headerName": "Kit", "minWidth": 95},
-    {"field": "tool_only_display", "headerName": "Tool Only", "minWidth": 110},
-    {"field": "battery_included_display", "headerName": "Battery", "minWidth": 110},
-    {"field": "charger_included_display", "headerName": "Charger", "minWidth": 115},
-    {"field": "anti_rotation_display", "headerName": "Anti-Rotation", "minWidth": 140},
-    {"field": "e_clutch_display", "headerName": "E-CLUTCH", "minWidth": 120},
-    {"field": "kickback_brake_display", "headerName": "Kickback Brake", "minWidth": 145},
-    {"field": "tool_connect_display", "headerName": "Tool Connect", "minWidth": 135},
-    {
-        "field": "wireless_tool_control_display",
-        "headerName": "Wireless Tool Control",
-        "minWidth": 185,
-    },
+    text_column(
+        "sku",
+        "SKU",
+        checkboxSelection=True,
+        headerCheckboxSelection=True,
+        pinned="left",
+        minWidth=120,
+    ),
+    text_column(
+        "title",
+        "Model",
+        flex=2.4,
+        minWidth=340,
+        tooltipField="title",
+        wrapText=True,
+        autoHeight=True,
+    ),
+    text_column("power_source", "Power", minWidth=130),
+    text_column("series_display", "Series", minWidth=170),
+    text_column("voltage_system", "Voltage", minWidth=130),
+    number_column(
+        "nominal_voltage_v",
+        "Nominal",
+        "params.value == null ? '-' : `${params.value} V`",
+        minWidth=120,
+    ),
+    text_column("wheel_size_display", "Wheel Size", minWidth=140),
+    text_column("switch_type", "Switch", minWidth=150),
+    number_column(
+        "rpm_max",
+        "RPM",
+        "params.value == null ? '-' : params.value.toLocaleString()",
+        minWidth=110,
+    ),
+    number_column(
+        "amp_rating",
+        "Amp",
+        "params.value == null ? '-' : `${params.value} A`",
+        minWidth=110,
+    ),
+    number_column(
+        "horsepower_hp",
+        "HP",
+        "params.value == null ? '-' : `${params.value} HP`",
+        minWidth=110,
+    ),
+    number_column(
+        "max_watts_out",
+        "MWO",
+        "params.value == null ? '-' : `${params.value.toLocaleString()} W`",
+        minWidth=120,
+    ),
+    number_column(
+        "power_input_watts",
+        "Power Input",
+        "params.value == null ? '-' : `${params.value.toLocaleString()} W`",
+        minWidth=135,
+    ),
+    text_column("brushless_display", "Brushless", minWidth=120),
+    text_column("variable_speed_display", "Variable Speed", minWidth=145),
+    text_column("kit_display", "Kit", minWidth=95),
+    text_column("tool_only_display", "Tool Only", minWidth=110),
+    text_column("battery_included_display", "Battery", minWidth=110),
+    text_column("charger_included_display", "Charger", minWidth=115),
+    text_column("anti_rotation_display", "Anti-Rotation", minWidth=140),
+    text_column("e_clutch_display", "E-CLUTCH", minWidth=120),
+    text_column("kickback_brake_display", "Kickback Brake", minWidth=145),
+    text_column("tool_connect_display", "Tool Connect", minWidth=135),
+    text_column(
+        "wireless_tool_control_display",
+        "Wireless Tool Control",
+        minWidth=185,
+    ),
 ]
 
 COMPARE_BASE_COLUMNS = [
@@ -206,7 +258,6 @@ MASTER_GRID = dag.AgGrid(
     rowData=ANGLE_GRINDER_ROWS,
     columnDefs=MASTER_COLUMN_DEFS,
     defaultColDef={
-        "filter": True,
         "sortable": True,
         "resizable": True,
         "floatingFilter": True,
