@@ -1,0 +1,483 @@
+from __future__ import annotations
+
+from dash import Dash, Input, Output, dcc, html
+import dash_ag_grid as dag
+import dash_bootstrap_components as dbc
+
+from dewalt.data import load_angle_grinders, load_snapshot
+
+
+SNAPSHOT = load_snapshot()
+RAW_ROWS = load_angle_grinders()
+MAX_COMPARE = 4
+
+AG_GRID_THEME = {
+    "function": (
+        "themeQuartz.withParams({"
+        "accentColor: '#f0c534', "
+        "backgroundColor: '#14181d', "
+        "browserColorScheme: 'dark', "
+        "foregroundColor: '#f5f6f8', "
+        "headerBackgroundColor: '#0f1317', "
+        "headerFontWeight: 700, "
+        "oddRowBackgroundColor: 'rgba(255,255,255,0.03)'"
+        "})"
+    )
+}
+
+COMPARE_FIELDS = [
+    ("sku", "SKU"),
+    ("title", "Model"),
+    ("series", "Series"),
+    ("power_source", "Power Source"),
+    ("voltage_system", "Voltage System"),
+    ("nominal_voltage_v", "Nominal Voltage"),
+    ("amp_rating", "Amp Rating"),
+    ("horsepower_hp", "Horsepower"),
+    ("max_watts_out", "Max Watts Out"),
+    ("power_input_watts", "Power Input"),
+    ("wheel_size_display", "Wheel Size"),
+    ("switch_type", "Switch Type"),
+    ("rpm_max", "Max RPM"),
+    ("brushless", "Brushless"),
+    ("variable_speed", "Variable Speed"),
+    ("kit", "Kit"),
+    ("tool_only", "Tool Only"),
+    ("battery_included", "Battery Included"),
+    ("charger_included", "Charger Included"),
+    ("anti_rotation_system", "Anti-Rotation"),
+    ("e_clutch", "E-CLUTCH"),
+    ("kickback_brake", "Kickback Brake"),
+    ("wireless_tool_control", "Wireless Tool Control"),
+    ("tool_connect_ready", "Tool Connect Ready"),
+    ("power_loss_reset", "Power Loss Reset"),
+    ("no_volt_switch", "No-Volt Switch"),
+    ("lanyard_ready", "Lanyard Ready"),
+    ("description", "Overview"),
+    ("features", "Primary Features"),
+    ("additional_features", "Additional Features"),
+    ("includes", "Includes"),
+    ("applications", "Applications"),
+    ("disclaimers", "Disclaimers"),
+]
+
+
+def format_bool(value: bool | None) -> str:
+    if value is None:
+        return "-"
+    return "Yes" if value else "No"
+
+
+def format_numeric(value: float | int | None, suffix: str = "") -> str:
+    if value is None:
+        return "-"
+    if isinstance(value, float) and value.is_integer():
+        value = int(value)
+    return f"{value}{suffix}"
+
+
+def format_wheel_size(min_value: float | None, max_value: float | None) -> str:
+    if min_value is None:
+        return "-"
+    if max_value is None or min_value == max_value:
+        return f"{format_numeric(min_value)} in."
+    return f"{format_numeric(min_value)} - {format_numeric(max_value)} in."
+
+
+def format_lines(values: list[str] | None) -> str:
+    if not values:
+        return "-"
+    return "\n".join(values)
+
+
+def build_display_rows(rows: list[dict]) -> list[dict]:
+    display_rows = []
+    for row in rows:
+        prepared_row = dict(row)
+        prepared_row["series_display"] = ", ".join(row.get("series", [])) or "-"
+        prepared_row["wheel_size_display"] = format_wheel_size(
+            row.get("wheel_min_in"), row.get("wheel_max_in")
+        )
+        prepared_row["nominal_voltage_display"] = (
+            f"{row['nominal_voltage_v']} V" if row.get("nominal_voltage_v") else "-"
+        )
+        prepared_row["amp_rating_display"] = (
+            f"{row['amp_rating']} A" if row.get("amp_rating") else "-"
+        )
+        prepared_row["horsepower_display"] = (
+            f"{row['horsepower_hp']} HP" if row.get("horsepower_hp") else "-"
+        )
+        prepared_row["max_watts_out_display"] = (
+            f"{row['max_watts_out']} W" if row.get("max_watts_out") else "-"
+        )
+        prepared_row["power_input_display"] = (
+            f"{row['power_input_watts']} W" if row.get("power_input_watts") else "-"
+        )
+        prepared_row["rpm_display"] = f"{row['rpm_max']:,}" if row.get("rpm_max") else "-"
+        prepared_row["brushless_display"] = format_bool(row.get("brushless"))
+        prepared_row["variable_speed_display"] = format_bool(row.get("variable_speed"))
+        prepared_row["kit_display"] = format_bool(row.get("kit"))
+        prepared_row["tool_only_display"] = format_bool(row.get("tool_only"))
+        prepared_row["battery_included_display"] = format_bool(row.get("battery_included"))
+        prepared_row["charger_included_display"] = format_bool(row.get("charger_included"))
+        prepared_row["anti_rotation_display"] = format_bool(row.get("anti_rotation_system"))
+        prepared_row["e_clutch_display"] = format_bool(row.get("e_clutch"))
+        prepared_row["kickback_brake_display"] = format_bool(row.get("kickback_brake"))
+        prepared_row["tool_connect_display"] = format_bool(row.get("tool_connect_ready"))
+        prepared_row["wireless_tool_control_display"] = format_bool(
+            row.get("wireless_tool_control")
+        )
+        prepared_row["features_display"] = format_lines(row.get("features"))
+        prepared_row["additional_features_display"] = format_lines(
+            row.get("additional_features")
+        )
+        prepared_row["includes_display"] = format_lines(row.get("includes"))
+        prepared_row["applications_display"] = format_lines(row.get("applications"))
+        prepared_row["disclaimers_display"] = format_lines(row.get("disclaimers"))
+        display_rows.append(prepared_row)
+    return display_rows
+
+
+ANGLE_GRINDER_ROWS = build_display_rows(RAW_ROWS)
+
+CORDLESS_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["power_source"] == "Cordless")
+CORDED_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["power_source"] != "Cordless")
+BRUSHLESS_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["brushless"])
+
+MASTER_COLUMN_DEFS = [
+    {
+        "field": "sku",
+        "headerName": "SKU",
+        "checkboxSelection": True,
+        "headerCheckboxSelection": True,
+        "pinned": "left",
+        "minWidth": 120,
+    },
+    {
+        "field": "title",
+        "headerName": "Model",
+        "flex": 2.4,
+        "minWidth": 340,
+        "tooltipField": "title",
+        "wrapText": True,
+        "autoHeight": True,
+    },
+    {"field": "power_source", "headerName": "Power", "minWidth": 130},
+    {"field": "series_display", "headerName": "Series", "minWidth": 170},
+    {"field": "voltage_system", "headerName": "Voltage", "minWidth": 130},
+    {"field": "nominal_voltage_display", "headerName": "Nominal", "minWidth": 120},
+    {"field": "wheel_size_display", "headerName": "Wheel Size", "minWidth": 140},
+    {"field": "switch_type", "headerName": "Switch", "minWidth": 150},
+    {"field": "rpm_display", "headerName": "RPM", "minWidth": 110},
+    {"field": "amp_rating_display", "headerName": "Amp", "minWidth": 110},
+    {"field": "horsepower_display", "headerName": "HP", "minWidth": 110},
+    {"field": "max_watts_out_display", "headerName": "MWO", "minWidth": 120},
+    {"field": "power_input_display", "headerName": "Power Input", "minWidth": 135},
+    {"field": "brushless_display", "headerName": "Brushless", "minWidth": 120},
+    {"field": "variable_speed_display", "headerName": "Variable Speed", "minWidth": 145},
+    {"field": "kit_display", "headerName": "Kit", "minWidth": 95},
+    {"field": "tool_only_display", "headerName": "Tool Only", "minWidth": 110},
+    {"field": "battery_included_display", "headerName": "Battery", "minWidth": 110},
+    {"field": "charger_included_display", "headerName": "Charger", "minWidth": 115},
+    {"field": "anti_rotation_display", "headerName": "Anti-Rotation", "minWidth": 140},
+    {"field": "e_clutch_display", "headerName": "E-CLUTCH", "minWidth": 120},
+    {"field": "kickback_brake_display", "headerName": "Kickback Brake", "minWidth": 145},
+    {"field": "tool_connect_display", "headerName": "Tool Connect", "minWidth": 135},
+    {
+        "field": "wireless_tool_control_display",
+        "headerName": "Wireless Tool Control",
+        "minWidth": 185,
+    },
+]
+
+COMPARE_BASE_COLUMNS = [
+    {
+        "field": "field_label",
+        "headerName": "Specification",
+        "pinned": "left",
+        "minWidth": 230,
+        "wrapText": True,
+        "autoHeight": True,
+    }
+]
+
+MASTER_GRID = dag.AgGrid(
+    id="angle-grinders-grid",
+    rowData=ANGLE_GRINDER_ROWS,
+    columnDefs=MASTER_COLUMN_DEFS,
+    defaultColDef={
+        "filter": True,
+        "sortable": True,
+        "resizable": True,
+        "floatingFilter": True,
+    },
+    columnSize="sizeToFit",
+    style={"width": "100%", "height": "620px"},
+    dashGridOptions={
+        "animateRows": False,
+        "pagination": True,
+        "paginationPageSize": 12,
+        "rowSelection": "multiple",
+        "theme": AG_GRID_THEME,
+    },
+    className="grid-shell",
+)
+
+COMPARE_GRID = dag.AgGrid(
+    id="compare-grid",
+    rowData=[],
+    columnDefs=COMPARE_BASE_COLUMNS,
+    defaultColDef={
+        "sortable": False,
+        "resizable": True,
+        "wrapText": True,
+        "autoHeight": True,
+    },
+    style={"width": "100%", "height": "620px"},
+    dashGridOptions={
+        "animateRows": False,
+        "theme": AG_GRID_THEME,
+    },
+    className="grid-shell compare-grid",
+)
+
+
+def build_compare_columns(selected_rows: list[dict]) -> list[dict]:
+    columns = list(COMPARE_BASE_COLUMNS)
+    for index, row in enumerate(selected_rows, start=1):
+        columns.append(
+            {
+                "field": f"model_{index}",
+                "headerName": row["sku"],
+                "minWidth": 280,
+                "tooltipField": f"model_{index}",
+            }
+        )
+    return columns
+
+
+def compare_display_value(row: dict, field_name: str) -> str:
+    value = row.get(field_name)
+    if field_name in {"series", "features", "additional_features", "includes", "applications", "disclaimers"}:
+        return format_lines(value)
+    if field_name == "nominal_voltage_v":
+        return f"{value} V" if value else "-"
+    if field_name == "amp_rating":
+        return f"{value} A" if value else "-"
+    if field_name == "horsepower_hp":
+        return f"{value} HP" if value else "-"
+    if field_name == "max_watts_out":
+        return f"{value} W" if value else "-"
+    if field_name == "power_input_watts":
+        return f"{value} W" if value else "-"
+    if field_name == "wheel_size_display":
+        return row.get("wheel_size_display", "-")
+    if field_name == "rpm_max":
+        return f"{value:,}" if value else "-"
+    if isinstance(value, bool):
+        return format_bool(value)
+    if value in (None, "", []):
+        return "-"
+    return str(value)
+
+
+def build_compare_rows(selected_rows: list[dict]) -> list[dict]:
+    rows = []
+    for field_name, label in COMPARE_FIELDS:
+        compare_row = {"field_label": label}
+        for index, product_row in enumerate(selected_rows, start=1):
+            compare_row[f"model_{index}"] = compare_display_value(product_row, field_name)
+        rows.append(compare_row)
+    return rows
+
+
+app = Dash(
+    __name__,
+    title="DEWALT Compare",
+    external_stylesheets=[dbc.themes.BOOTSTRAP],
+)
+
+app.layout = dbc.Container(
+    [
+        html.Div(
+            [
+                html.Div(
+                    [
+                        html.P("DEWALT TOOL INDEX", className="eyebrow"),
+                        html.H1("Angle Grinder Compare", className="hero-title"),
+                        html.P(
+                            (
+                                "A Dash AG Grid catalog for DEWALT angle grinders. "
+                                "Filter the master table, select models, and compare specs "
+                                "and feature sets side by side."
+                            ),
+                            className="hero-copy",
+                        ),
+                    ],
+                    className="hero-copy-block",
+                ),
+                html.Div(
+                    [
+                        html.Div(
+                            [
+                                html.Span("Snapshot", className="stat-label"),
+                                html.Strong(
+                                    SNAPSHOT["scraped_at"].replace("T", " ").replace("+00:00", " UTC"),
+                                    className="stat-value stat-value-small",
+                                ),
+                            ],
+                            className="stat-card stat-card-wide",
+                        ),
+                        html.Div(
+                            [
+                                html.Span("Grinders", className="stat-label"),
+                                html.Strong(str(SNAPSHOT["product_count"]), className="stat-value"),
+                            ],
+                            className="stat-card",
+                        ),
+                        html.Div(
+                            [
+                                html.Span("Cordless", className="stat-label"),
+                                html.Strong(str(CORDLESS_COUNT), className="stat-value"),
+                            ],
+                            className="stat-card",
+                        ),
+                        html.Div(
+                            [
+                                html.Span("Corded", className="stat-label"),
+                                html.Strong(str(CORDED_COUNT), className="stat-value"),
+                            ],
+                            className="stat-card",
+                        ),
+                        html.Div(
+                            [
+                                html.Span("Brushless", className="stat-label"),
+                                html.Strong(str(BRUSHLESS_COUNT), className="stat-value"),
+                            ],
+                            className="stat-card",
+                        ),
+                    ],
+                    className="stats-grid",
+                ),
+            ],
+            className="hero-panel",
+        ),
+        dcc.Tabs(
+            id="tool-tabs",
+            value="angle-grinders",
+            className="tool-tabs",
+            children=[
+                dcc.Tab(
+                    label="Angle Grinders",
+                    value="angle-grinders",
+                    className="tool-tab",
+                    selected_className="tool-tab tool-tab-selected",
+                    children=[
+                        html.Div(
+                            [
+                                html.Div(
+                                    [
+                                        html.Div(
+                                            "Select up to 4 grinders in the master table to compare.",
+                                            className="panel-note",
+                                        ),
+                                        html.Div(id="selection-summary", className="selection-summary"),
+                                    ],
+                                    className="panel-header",
+                                ),
+                                MASTER_GRID,
+                                html.Div(
+                                    [
+                                        html.Div(
+                                            [
+                                                html.H2("Comparison", className="section-title"),
+                                                html.Div(id="compare-note", className="compare-note"),
+                                            ],
+                                            className="compare-header",
+                                        ),
+                                        COMPARE_GRID,
+                                    ],
+                                    className="compare-shell",
+                                ),
+                            ],
+                            className="tab-panel",
+                        )
+                    ],
+                ),
+                dcc.Tab(
+                    label="Coming Soon",
+                    value="placeholder",
+                    className="tool-tab",
+                    selected_className="tool-tab tool-tab-selected",
+                    children=[
+                        html.Div(
+                            [
+                                html.Div(
+                                    [
+                                        html.H2("Reserved For The Next DEWALT Table", className="section-title"),
+                                        html.P(
+                                            (
+                                                "This tab is a placeholder for the next product family. "
+                                                "The same master-table and comparison pattern can be reused "
+                                                "for saws, drills, or nailers once you choose the next scrape target."
+                                            ),
+                                            className="placeholder-copy",
+                                        ),
+                                    ],
+                                    className="placeholder-card",
+                                )
+                            ],
+                            className="tab-panel",
+                        )
+                    ],
+                ),
+            ],
+        ),
+    ],
+    fluid=True,
+    className="app-shell",
+)
+
+
+@app.callback(
+    Output("selection-summary", "children"),
+    Input("angle-grinders-grid", "virtualRowData"),
+    Input("angle-grinders-grid", "selectedRows"),
+)
+def update_selection_summary(
+    visible_rows: list[dict] | None, selected_rows: list[dict] | None
+) -> list[html.Span]:
+    visible_count = len(visible_rows) if visible_rows is not None else len(ANGLE_GRINDER_ROWS)
+    selected_count = len(selected_rows or [])
+    return [
+        html.Span(f"{visible_count} visible", className="summary-pill"),
+        html.Span(f"{selected_count} selected", className="summary-pill"),
+        html.Span(f"{MAX_COMPARE} max compare", className="summary-pill summary-pill-accent"),
+    ]
+
+
+@app.callback(
+    Output("compare-note", "children"),
+    Output("compare-grid", "rowData"),
+    Output("compare-grid", "columnDefs"),
+    Input("angle-grinders-grid", "selectedRows"),
+)
+def update_compare_grid(selected_rows: list[dict] | None) -> tuple[str, list[dict], list[dict]]:
+    rows = selected_rows or []
+    if not rows:
+        return (
+            "No grinders selected yet. Use the checkboxes in the master table to build a comparison.",
+            [],
+            COMPARE_BASE_COLUMNS,
+        )
+
+    note = f"Comparing {min(len(rows), MAX_COMPARE)} grinder(s)."
+    if len(rows) > MAX_COMPARE:
+        note += f" Showing the first {MAX_COMPARE} selected rows."
+
+    compare_rows = rows[:MAX_COMPARE]
+    return note, build_compare_rows(compare_rows), build_compare_columns(compare_rows)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
