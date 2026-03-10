@@ -153,6 +153,22 @@ a {
     background: rgba(18, 23, 29, 0.92);
 }
 
+.family-overview {
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.family-copy {
+    margin: 0;
+    color: var(--dw-muted);
+    line-height: 1.6;
+}
+
+.family-stats {
+    margin-bottom: 1.2rem;
+}
+
 .panel-header,
 .compare-header {
     display: flex;

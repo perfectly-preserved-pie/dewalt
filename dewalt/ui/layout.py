@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from typing import Any
+from dataclasses import dataclass
+from typing import Any, Sequence
 
 import dash_bootstrap_components as dbc
 from dash import dcc, html
@@ -8,6 +9,23 @@ from dash import dcc, html
 from dewalt.tool_families.base import StatCard
 
 from .context import DashboardContext
+
+
+@dataclass(frozen=True)
+class DashboardSection:
+    """Component bundle for one tool-family tab.
+
+    Attributes:
+        context: Shared dashboard context for the tool family.
+        master_grid: Dash AG Grid instance for the family master table.
+        compare_grid: Dash AG Grid instance for the family comparison table.
+        modal: Dash Bootstrap modal instance for the family detail popup.
+    """
+
+    context: DashboardContext
+    master_grid: Any
+    compare_grid: Any
+    modal: Any
 
 
 def build_stat_card(card: StatCard) -> html.Div:
@@ -28,24 +46,114 @@ def build_stat_card(card: StatCard) -> html.Div:
     )
 
 
-def build_layout(
-    context: DashboardContext,
-    master_grid: Any,
-    compare_grid: Any,
-    modal: Any,
-) -> dbc.Container:
+def format_family_list(labels: list[str]) -> str:
+    """Format tool-family labels into natural-language copy.
+
+    Args:
+        labels: Ordered list of family labels.
+
+    Returns:
+        A human-readable string joining the family labels.
+    """
+    if not labels:
+        return "DEWALT tools"
+    if len(labels) == 1:
+        return labels[0]
+    if len(labels) == 2:
+        return f"{labels[0]} and {labels[1]}"
+    return f"{', '.join(labels[:-1])}, and {labels[-1]}"
+
+
+def build_family_tab(section: DashboardSection) -> dcc.Tab:
+    """Build the complete tab content for one tool family.
+
+    Args:
+        section: Tool-family component bundle to render.
+
+    Returns:
+        A populated Dash tab for the given family.
+    """
+    context = section.context
+    family_stats = [build_stat_card(card) for card in context.stat_cards]
+
+    return dcc.Tab(
+        label=context.family.tab_label,
+        value=context.family.slug,
+        className="tool-tab",
+        selected_className="tool-tab tool-tab-selected",
+        children=[
+            html.Div(
+                [
+                    html.Div(
+                        [
+                            html.H2(context.family.hero_title, className="section-title"),
+                            html.P(context.family.hero_copy, className="family-copy"),
+                        ],
+                        className="family-overview",
+                    ),
+                    html.Div(family_stats, className="stats-grid family-stats"),
+                    html.Div(
+                        [
+                            html.Div(
+                                [
+                                    html.Div(
+                                        context.family.selection_note,
+                                        className="panel-note",
+                                    ),
+                                    html.Div(
+                                        id=context.family.ids.selection_summary,
+                                        className="selection-summary",
+                                    ),
+                                ],
+                                className="panel-header",
+                            ),
+                            section.master_grid,
+                            section.modal,
+                            html.Div(
+                                [
+                                    html.Div(
+                                        [
+                                            html.H2(
+                                                context.family.compare_title,
+                                                className="section-title",
+                                            ),
+                                            html.Div(
+                                                id=context.family.ids.compare_note,
+                                                className="compare-note",
+                                            ),
+                                        ],
+                                        className="compare-header",
+                                    ),
+                                    section.compare_grid,
+                                ],
+                                className="compare-shell",
+                            ),
+                        ],
+                        className="family-panel",
+                    ),
+                ],
+                className="tab-panel",
+            )
+        ],
+    )
+
+
+def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
     """Assemble the top-level dashboard layout.
 
     Args:
-        context: Shared dashboard context with family metadata and prepared rows.
-        master_grid: The master family AG Grid component.
-        compare_grid: The transposed comparison AG Grid component.
-        modal: The family detail modal component.
+        sections: Ordered component bundles for each tool-family tab.
 
     Returns:
         A Bootstrap container representing the full app layout.
     """
-    snapshot_time = context.snapshot["scraped_at"].replace("T", " ").replace("+00:00", " UTC")
+    if not sections:
+        raise ValueError("At least one dashboard section is required.")
+
+    latest_snapshot = max(section.context.snapshot["scraped_at"] for section in sections)
+    snapshot_time = latest_snapshot.replace("T", " ").replace("+00:00", " UTC")
+    family_labels = [section.context.family.tab_label for section in sections]
+    total_models = sum(len(section.context.display_rows) for section in sections)
 
     stats = [
         build_stat_card(
@@ -56,7 +164,8 @@ def build_layout(
                 value_class_name="stat-value stat-value-small",
             )
         ),
-        *[build_stat_card(card) for card in context.stat_cards],
+        build_stat_card(StatCard("Families", str(len(sections)))),
+        build_stat_card(StatCard("Models", str(total_models))),
     ]
 
     return dbc.Container(
@@ -66,8 +175,15 @@ def build_layout(
                     html.Div(
                         [
                             html.P("DEWALT TOOL INDEX", className="eyebrow"),
-                            html.H1(context.family.hero_title, className="hero-title"),
-                            html.P(context.family.hero_copy, className="hero-copy"),
+                            html.H1("DEWALT Compare", className="hero-title"),
+                            html.P(
+                                (
+                                    f"Dash AG Grid catalogs for {format_family_list(family_labels)}. "
+                                    "Each tab includes a master table, a row-detail modal, and a "
+                                    "side-by-side comparison view."
+                                ),
+                                className="hero-copy",
+                            ),
                         ],
                         className="hero-copy-block",
                     ),
@@ -77,87 +193,9 @@ def build_layout(
             ),
             dcc.Tabs(
                 id="tool-tabs",
-                value=context.family.slug,
+                value=sections[0].context.family.slug,
                 className="tool-tabs",
-                children=[
-                    dcc.Tab(
-                        label=context.family.tab_label,
-                        value=context.family.slug,
-                        className="tool-tab",
-                        selected_className="tool-tab tool-tab-selected",
-                        children=[
-                            html.Div(
-                                [
-                                    html.Div(
-                                        [
-                                            html.Div(
-                                                context.family.selection_note,
-                                                className="panel-note",
-                                            ),
-                                            html.Div(
-                                                id=context.family.ids.selection_summary,
-                                                className="selection-summary",
-                                            ),
-                                        ],
-                                        className="panel-header",
-                                    ),
-                                    master_grid,
-                                    modal,
-                                    html.Div(
-                                        [
-                                            html.Div(
-                                                [
-                                                    html.H2(
-                                                        context.family.compare_title,
-                                                        className="section-title",
-                                                    ),
-                                                    html.Div(
-                                                        id=context.family.ids.compare_note,
-                                                        className="compare-note",
-                                                    ),
-                                                ],
-                                                className="compare-header",
-                                            ),
-                                            compare_grid,
-                                        ],
-                                        className="compare-shell",
-                                    ),
-                                ],
-                                className="tab-panel",
-                            )
-                        ],
-                    ),
-                    dcc.Tab(
-                        label="Coming Soon",
-                        value="placeholder",
-                        className="tool-tab",
-                        selected_className="tool-tab tool-tab-selected",
-                        children=[
-                            html.Div(
-                                [
-                                    html.Div(
-                                        [
-                                            html.H2(
-                                                "Reserved For The Next DEWALT Table",
-                                                className="section-title",
-                                            ),
-                                            html.P(
-                                                (
-                                                    "This tab is a placeholder for the next product family. "
-                                                    "The same master-table and comparison pattern can be reused "
-                                                    "for saws, drills, or nailers once you choose the next scrape target."
-                                                ),
-                                                className="placeholder-copy",
-                                            ),
-                                        ],
-                                        className="placeholder-card",
-                                    )
-                                ],
-                                className="tab-panel",
-                            )
-                        ],
-                    ),
-                ],
+                children=[build_family_tab(section) for section in sections],
             ),
         ],
         fluid=True,

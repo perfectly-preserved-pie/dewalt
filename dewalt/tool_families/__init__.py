@@ -1,10 +1,12 @@
 """Tool family definitions for the DEWALT dashboard."""
 
 from .angle_grinders import ANGLE_GRINDER_FAMILY
+from .drill_drivers import DRILL_DRIVER_FAMILY
 from .base import ColumnDef, StatCard, ToolFamilyDefinition, ToolFamilyIds, RowData
 
 __all__ = [
     "ANGLE_GRINDER_FAMILY",
+    "DRILL_DRIVER_FAMILY",
     "ColumnDef",
     "RowData",
     "StatCard",

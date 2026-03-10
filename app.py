@@ -3,8 +3,9 @@ from __future__ import annotations
 from dash import Dash
 import dash_bootstrap_components as dbc
 
-from dewalt.tool_families import ANGLE_GRINDER_FAMILY
+from dewalt.tool_families import ANGLE_GRINDER_FAMILY, DRILL_DRIVER_FAMILY
 from dewalt.ui import (
+    DashboardSection,
     build_compare_base_columns,
     build_compare_grid,
     build_layout,
@@ -15,24 +16,22 @@ from dewalt.ui import (
 )
 
 
-FAMILY = ANGLE_GRINDER_FAMILY
-DASHBOARD = load_dashboard_context(FAMILY)
-SNAPSHOT = DASHBOARD.snapshot
-RAW_ROWS = DASHBOARD.raw_rows
-DISPLAY_ROWS = DASHBOARD.display_rows
-ANGLE_GRINDER_ROWS = DASHBOARD.display_rows
-GRID_ROW_FIELDS = DASHBOARD.grid_row_fields
-MAX_COMPARE = DASHBOARD.max_compare
-
-CORDLESS_COUNT = sum(1 for row in DISPLAY_ROWS if row["power_source"] == "Cordless")
-CORDED_COUNT = sum(1 for row in DISPLAY_ROWS if row["power_source"] != "Cordless")
-BRUSHLESS_COUNT = sum(1 for row in DISPLAY_ROWS if row["brushless"])
-
-MASTER_COLUMN_DEFS = FAMILY.build_master_column_defs()
+FAMILIES = (ANGLE_GRINDER_FAMILY, DRILL_DRIVER_FAMILY)
 COMPARE_BASE_COLUMNS = build_compare_base_columns()
-MASTER_GRID = build_master_grid(DISPLAY_ROWS, MASTER_COLUMN_DEFS, FAMILY.ids)
-COMPARE_GRID = build_compare_grid(FAMILY.ids, COMPARE_BASE_COLUMNS)
-MODAL = build_modal(FAMILY.ids)
+DASHBOARDS = [load_dashboard_context(family) for family in FAMILIES]
+SECTIONS = [
+    DashboardSection(
+        context=dashboard,
+        master_grid=build_master_grid(
+            dashboard.display_rows,
+            dashboard.family.build_master_column_defs(),
+            dashboard.family.ids,
+        ),
+        compare_grid=build_compare_grid(dashboard.family.ids, COMPARE_BASE_COLUMNS),
+        modal=build_modal(dashboard.family.ids),
+    )
+    for dashboard in DASHBOARDS
+]
 
 app = Dash(
     __name__,
@@ -40,8 +39,10 @@ app = Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
 
-app.layout = build_layout(DASHBOARD, MASTER_GRID, COMPARE_GRID, MODAL)
-register_callbacks(app, DASHBOARD)
+app.layout = build_layout(SECTIONS)
+
+for dashboard in DASHBOARDS:
+    register_callbacks(app, dashboard)
 
 
 if __name__ == "__main__":

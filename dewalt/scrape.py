@@ -7,7 +7,9 @@ import json
 from pathlib import Path
 import re
 from typing import Any
-from urllib.request import Request, urlopen
+
+import requests
+from requests.adapters import HTTPAdapter
 
 
 CATALOG_URL = "https://www.dewalt.com/products/power-tools/grinders-polishers/angle-grinders"
@@ -18,6 +20,10 @@ REQUEST_HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
     )
 }
+SESSION = requests.Session()
+SESSION.headers.update(REQUEST_HEADERS)
+SESSION.mount("http://", HTTPAdapter(max_retries=3))
+SESSION.mount("https://", HTTPAdapter(max_retries=3))
 
 PAGE_PATTERN = re.compile(r'href="\?page=(\d+)"')
 PRODUCT_URL_PATTERN = re.compile(r"https://www\.dewalt\.com/product/[^\"?]+")
@@ -33,9 +39,18 @@ NOMINAL_VOLTAGE_PATTERN = re.compile(r"nominal voltage is\s*(\d{2,3})", re.I)
 
 
 def fetch_url(url: str, timeout: int = 30) -> str:
-    request = Request(url, headers=REQUEST_HEADERS)
-    with urlopen(request, timeout=timeout) as response:
-        return response.read().decode("utf-8", errors="ignore")
+    """Fetch a DEWALT page with ``requests``.
+
+    Args:
+        url: Fully qualified page URL to request.
+        timeout: Maximum request time in seconds.
+
+    Returns:
+        The decoded HTML body as a string.
+    """
+    response = SESSION.get(url, timeout=timeout)
+    response.raise_for_status()
+    return response.text
 
 
 def normalize_text(raw_text: str) -> str:
