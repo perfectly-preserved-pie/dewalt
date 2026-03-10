@@ -29,6 +29,7 @@ AG_GRID_THEME = {
 TEXT_FILTER = "agTextColumnFilter"
 NUMBER_FILTER = "agNumberColumnFilter"
 SET_FILTER = "agSetColumnFilter"
+MULTI_FILTER = "agMultiColumnFilter"
 BOOLEAN_FILTER = SET_FILTER
 
 COMPARE_FIELDS = [
@@ -155,11 +156,27 @@ def number_column(field: str, header_name: str, formatter: str | None = None, **
     column = {
         "field": field,
         "headerName": header_name,
-        "filter": NUMBER_FILTER,
+        "filter": MULTI_FILTER,
         "type": "numericColumn",
+        "filterParams": {
+            "filters": [
+                {
+                    "filter": SET_FILTER,
+                    "title": "Values",
+                },
+                {
+                    "filter": NUMBER_FILTER,
+                    "title": "Range",
+                },
+            ]
+        },
     }
     if formatter:
-        column["valueFormatter"] = {"function": formatter}
+        formatter_config = {"function": formatter}
+        column["valueFormatter"] = formatter_config
+        column["filterParams"]["filters"][0]["filterParams"] = {
+            "valueFormatter": formatter_config
+        }
     column.update(kwargs)
     return column
 
