@@ -2,6 +2,9 @@
 
 Dash app for browsing and comparing DEWALT tools with Dash AG Grid.
 
+## AI Disclosure
+This app was generated entirely with GPT-5.4.
+
 ## Run
 
 ```bash
