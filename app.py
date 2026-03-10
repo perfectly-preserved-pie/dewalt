@@ -28,7 +28,8 @@ AG_GRID_THEME = {
 
 TEXT_FILTER = "agTextColumnFilter"
 NUMBER_FILTER = "agNumberColumnFilter"
-BOOLEAN_FILTER = "agSetColumnFilter"
+SET_FILTER = "agSetColumnFilter"
+BOOLEAN_FILTER = SET_FILTER
 
 COMPARE_FIELDS = [
     ("sku", "SKU"),
@@ -147,6 +148,12 @@ def text_column(field: str, header_name: str, **kwargs) -> dict:
     return column
 
 
+def categorical_column(field: str, header_name: str, **kwargs) -> dict:
+    column = {"field": field, "headerName": header_name, "filter": SET_FILTER}
+    column.update(kwargs)
+    return column
+
+
 def number_column(field: str, header_name: str, formatter: str | None = None, **kwargs) -> dict:
     column = {
         "field": field,
@@ -203,17 +210,17 @@ MASTER_COLUMN_DEFS = [
         wrapText=True,
         autoHeight=True,
     ),
-    text_column("power_source", "Power", minWidth=130),
-    text_column("series_display", "Series", minWidth=170),
-    text_column("voltage_system", "Voltage", minWidth=130),
+    categorical_column("power_source", "Power", minWidth=130),
+    categorical_column("series_display", "Series", minWidth=170),
+    categorical_column("voltage_system", "Voltage", minWidth=130),
     number_column(
         "nominal_voltage_v",
         "Nominal",
         "params.value == null ? '-' : `${params.value} V`",
         minWidth=120,
     ),
-    text_column("wheel_size_display", "Wheel Size", minWidth=140),
-    text_column("switch_type", "Switch", minWidth=150),
+    categorical_column("wheel_size_display", "Wheel Size", minWidth=140),
+    categorical_column("switch_type", "Switch", minWidth=150),
     number_column(
         "rpm_max",
         "RPM",
@@ -287,6 +294,7 @@ MASTER_GRID = dag.AgGrid(
         "theme": AG_GRID_THEME,
     },
     className="grid-shell",
+    enableEnterpriseModules=True,
 )
 
 COMPARE_GRID = dag.AgGrid(
