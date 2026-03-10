@@ -3,13 +3,11 @@ from __future__ import annotations
 from dash import Dash
 import dash_bootstrap_components as dbc
 
+from dewalt.tool_families import ANGLE_GRINDER_FAMILY
 from dewalt.ui import (
     build_compare_base_columns,
-    build_compare_columns,
     build_compare_grid,
-    build_compare_rows,
     build_layout,
-    build_master_column_defs,
     build_master_grid,
     build_modal,
     load_dashboard_context,
@@ -17,21 +15,24 @@ from dewalt.ui import (
 )
 
 
-DASHBOARD = load_dashboard_context()
+FAMILY = ANGLE_GRINDER_FAMILY
+DASHBOARD = load_dashboard_context(FAMILY)
 SNAPSHOT = DASHBOARD.snapshot
 RAW_ROWS = DASHBOARD.raw_rows
-ANGLE_GRINDER_ROWS = DASHBOARD.angle_grinder_rows
+DISPLAY_ROWS = DASHBOARD.display_rows
+ANGLE_GRINDER_ROWS = DASHBOARD.display_rows
 GRID_ROW_FIELDS = DASHBOARD.grid_row_fields
 MAX_COMPARE = DASHBOARD.max_compare
-CORDLESS_COUNT = DASHBOARD.cordless_count
-CORDED_COUNT = DASHBOARD.corded_count
-BRUSHLESS_COUNT = DASHBOARD.brushless_count
 
-MASTER_COLUMN_DEFS = build_master_column_defs()
+CORDLESS_COUNT = sum(1 for row in DISPLAY_ROWS if row["power_source"] == "Cordless")
+CORDED_COUNT = sum(1 for row in DISPLAY_ROWS if row["power_source"] != "Cordless")
+BRUSHLESS_COUNT = sum(1 for row in DISPLAY_ROWS if row["brushless"])
+
+MASTER_COLUMN_DEFS = FAMILY.build_master_column_defs()
 COMPARE_BASE_COLUMNS = build_compare_base_columns()
-MASTER_GRID = build_master_grid(ANGLE_GRINDER_ROWS, MASTER_COLUMN_DEFS)
-COMPARE_GRID = build_compare_grid(COMPARE_BASE_COLUMNS)
-MODAL = build_modal()
+MASTER_GRID = build_master_grid(DISPLAY_ROWS, MASTER_COLUMN_DEFS, FAMILY.ids)
+COMPARE_GRID = build_compare_grid(FAMILY.ids, COMPARE_BASE_COLUMNS)
+MODAL = build_modal(FAMILY.ids)
 
 app = Dash(
     __name__,

@@ -15,15 +15,17 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
 
     Args:
         app: Dash application instance to attach callbacks to.
-        context: Shared dashboard context with prepared rows and limits.
+        context: Shared dashboard context with prepared rows and family metadata.
 
     Returns:
         None. The function registers callbacks as a side effect.
     """
+    ids = context.family.ids
+
     @app.callback(
-        Output("selection-summary", "children"),
-        Input("angle-grinders-grid", "virtualRowData"),
-        Input("angle-grinders-grid", "selectedRows"),
+        Output(ids.selection_summary, "children"),
+        Input(ids.grid, "virtualRowData"),
+        Input(ids.grid, "selectedRows"),
     )
     def update_selection_summary(
         visible_rows: list[dict[str, Any]] | None,
@@ -41,7 +43,7 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
         visible_count = (
             len(visible_rows)
             if visible_rows is not None
-            else len(context.angle_grinder_rows)
+            else len(context.display_rows)
         )
         selected_count = len(selected_rows or [])
         return [
@@ -54,10 +56,10 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
         ]
 
     @app.callback(
-        Output("compare-note", "children"),
-        Output("compare-grid", "rowData"),
-        Output("compare-grid", "columnDefs"),
-        Input("angle-grinders-grid", "selectedRows"),
+        Output(ids.compare_note, "children"),
+        Output(ids.compare_grid, "rowData"),
+        Output(ids.compare_grid, "columnDefs"),
+        Input(ids.grid, "selectedRows"),
     )
     def update_compare_grid(
         selected_rows: list[dict[str, Any]] | None,
@@ -73,39 +75,39 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
         rows = selected_rows or []
         if not rows:
             return (
-                "No grinders selected yet. Use the checkboxes in the master table to build a comparison.",
+                context.family.no_selection_note,
                 [],
                 build_compare_base_columns(),
             )
 
-        note = f"Comparing {min(len(rows), context.max_compare)} grinder(s)."
+        note = f"Comparing {min(len(rows), context.max_compare)} model(s)."
         if len(rows) > context.max_compare:
             note += f" Showing the first {context.max_compare} selected rows."
 
         compare_rows = rows[: context.max_compare]
         return (
             note,
-            build_compare_rows(compare_rows),
+            build_compare_rows(compare_rows, context.family),
             build_compare_columns(compare_rows),
         )
 
     @app.callback(
-        Output("grinder-modal", "is_open"),
-        Output("grinder-modal-header", "children"),
-        Output("grinder-modal-content", "children"),
-        Input("angle-grinders-grid", "cellClicked"),
-        Input("grinder-modal-close", "n_clicks"),
-        State("grinder-modal", "is_open"),
-        State("angle-grinders-grid", "virtualRowData"),
+        Output(ids.modal, "is_open"),
+        Output(ids.modal_header, "children"),
+        Output(ids.modal_content, "children"),
+        Input(ids.grid, "cellClicked"),
+        Input(ids.modal_close, "n_clicks"),
+        State(ids.modal, "is_open"),
+        State(ids.grid, "virtualRowData"),
         prevent_initial_call=True,
     )
-    def open_grinder_modal(
+    def open_family_modal(
         cell_clicked_data: dict[str, Any] | None,
         close_clicks: int | None,
         is_open: bool,
         virtual_row_data: list[dict[str, Any]] | None,
     ) -> tuple[bool, Any, Any]:
-        """Open or close the grinder detail modal from grid interactions.
+        """Open or close the family detail modal from grid interactions.
 
         Args:
             cell_clicked_data: Event payload from the master-grid cell click.
@@ -121,10 +123,10 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
             raise PreventUpdate
 
         trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
-        if trigger_id == "grinder-modal-close":
+        if trigger_id == ids.modal_close:
             return False, no_update, no_update
 
-        if trigger_id != "angle-grinders-grid" or not cell_clicked_data:
+        if trigger_id != ids.grid or not cell_clicked_data:
             raise PreventUpdate
 
         if cell_clicked_data.get("colId") not in context.grid_row_fields:
@@ -143,4 +145,8 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
         if not selected_row:
             raise PreventUpdate
 
-        return True, build_modal_header(selected_row), build_modal_content(selected_row)
+        return (
+            True,
+            build_modal_header(selected_row),
+            build_modal_content(selected_row, context.family),
+        )

@@ -8,7 +8,6 @@ from .grids import (
     build_compare_columns,
     build_compare_grid,
     build_compare_rows,
-    build_master_column_defs,
     build_master_grid,
 )
 from .layout import build_layout
@@ -22,7 +21,6 @@ __all__ = [
     "build_compare_grid",
     "build_compare_rows",
     "build_layout",
-    "build_master_column_defs",
     "build_master_grid",
     "build_modal",
     "build_modal_content",

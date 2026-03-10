@@ -5,68 +5,40 @@ from typing import Any
 import dash_bootstrap_components as dbc
 from dash import html
 
-from .formatting import compare_display_value, format_bool
-from .config import COMPARE_BOOLEAN_FIELDS
+from dewalt.tool_families.base import RowData, ToolFamilyDefinition, ToolFamilyIds
 
 
-RowData = dict[str, Any]
-
-
-DETAIL_FIELDS: list[tuple[str, str]] = [
-    ("Series", "series_display"),
-    ("Power Source", "power_source"),
-    ("Voltage System", "voltage_system"),
-    ("Wheel Size", "wheel_size_display"),
-    ("Switch Type", "switch_type"),
-    ("Max RPM", "rpm_max"),
-    ("Amp Rating", "amp_rating"),
-    ("Horsepower", "horsepower_hp"),
-    ("Max Watts Out", "max_watts_out"),
-    ("Power Input", "power_input_watts"),
-    ("Brushless", "brushless"),
-    ("Variable Speed", "variable_speed"),
-    ("Anti-Rotation", "anti_rotation_system"),
-    ("E-CLUTCH", "e_clutch"),
-    ("Kickback Brake", "kickback_brake"),
-    ("Tool Connect Ready", "tool_connect_ready"),
-    ("Wireless Tool Control", "wireless_tool_control"),
-    ("Power Loss Reset", "power_loss_reset"),
-    ("No-Volt Switch", "no_volt_switch"),
-    ("Lanyard Ready", "lanyard_ready"),
-]
-
-
-def resolve_detail_value(row: RowData, field_name: str) -> str:
-    """Resolve a modal detail value for a named field.
+def resolve_detail_value(
+    row: RowData,
+    field_name: str,
+    family: ToolFamilyDefinition,
+) -> str:
+    """Resolve a modal detail value for a named family field.
 
     Args:
-        row: Grinder row used to populate the modal.
+        row: Family row used to populate the modal.
         field_name: Internal field name to resolve.
+        family: Tool family definition that owns formatting behavior.
 
     Returns:
         A formatted detail value string for the modal table.
     """
-    if field_name == "switch_type":
-        return row.get(field_name) or "-"
-    if field_name in {"rpm_max", "amp_rating", "horsepower_hp", "max_watts_out", "power_input_watts"}:
-        return compare_display_value(row, field_name)
-    if field_name in COMPARE_BOOLEAN_FIELDS:
-        return format_bool(row.get(field_name))
-    return row.get(field_name, "-")
+    return family.compare_display_value(row, field_name)
 
 
-def build_detail_table(row: RowData) -> dbc.Table:
-    """Build the modal's specification table for one grinder.
+def build_detail_table(row: RowData, family: ToolFamilyDefinition) -> dbc.Table:
+    """Build the modal's specification table for one selected model.
 
     Args:
-        row: Grinder row used to populate the modal.
+        row: Family row used to populate the modal.
+        family: Tool family definition that owns detail-field metadata.
 
     Returns:
         A Bootstrap table component containing labeled specification rows.
     """
     body_rows = []
-    for label, field_name in DETAIL_FIELDS:
-        value = resolve_detail_value(row, field_name)
+    for label, field_name in family.detail_fields:
+        value = resolve_detail_value(row, field_name, family)
         if value in (None, "", "-", []):
             continue
         body_rows.append(
@@ -102,18 +74,19 @@ def build_detail_block(title: str, values: list[str] | None) -> html.Div | None:
     )
 
 
-def build_modal_content(row: RowData) -> list[Any]:
-    """Build the full modal body content for one grinder.
+def build_modal_content(row: RowData, family: ToolFamilyDefinition) -> list[Any]:
+    """Build the full modal body content for one selected model.
 
     Args:
-        row: Grinder row used to populate the modal.
+        row: Family row used to populate the modal.
+        family: Tool family definition that owns detail formatting.
 
     Returns:
         An ordered list of Dash components for the modal body.
     """
     content = [
         html.P(row.get("description", "-"), className="modal-overview"),
-        build_detail_table(row),
+        build_detail_table(row, family),
     ]
 
     for title, field_name in (
@@ -131,10 +104,10 @@ def build_modal_content(row: RowData) -> list[Any]:
 
 
 def build_modal_header(row: RowData) -> html.Div:
-    """Build the modal header for one grinder.
+    """Build the modal header for one selected model.
 
     Args:
-        row: Grinder row used to populate the modal header.
+        row: Family row used to populate the modal header.
 
     Returns:
         A ``Div`` containing the SKU and model title.
@@ -147,24 +120,24 @@ def build_modal_header(row: RowData) -> html.Div:
     )
 
 
-def build_modal() -> dbc.Modal:
-    """Create the reusable grinder detail modal component.
+def build_modal(ids: ToolFamilyIds) -> dbc.Modal:
+    """Create the reusable detail modal component for a tool family.
 
     Args:
-        None.
+        ids: Tool-family-specific component ids.
 
     Returns:
         A configured Bootstrap modal component.
     """
     return dbc.Modal(
         [
-            dbc.ModalHeader(id="grinder-modal-header"),
-            dbc.ModalBody(id="grinder-modal-content"),
+            dbc.ModalHeader(id=ids.modal_header),
+            dbc.ModalBody(id=ids.modal_content),
             dbc.ModalFooter(
-                dbc.Button("Close", id="grinder-modal-close", color="secondary", n_clicks=0)
+                dbc.Button("Close", id=ids.modal_close, color="secondary", n_clicks=0)
             ),
         ],
-        id="grinder-modal",
+        id=ids.modal,
         is_open=False,
         size="xl",
         scrollable=True,

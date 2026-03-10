@@ -5,7 +5,27 @@ from typing import Any
 import dash_bootstrap_components as dbc
 from dash import dcc, html
 
+from dewalt.tool_families.base import StatCard
+
 from .context import DashboardContext
+
+
+def build_stat_card(card: StatCard) -> html.Div:
+    """Build one hero statistic card.
+
+    Args:
+        card: Stat-card metadata to render.
+
+    Returns:
+        A ``Div`` containing the stat label and value.
+    """
+    return html.Div(
+        [
+            html.Span(card.label, className="stat-label"),
+            html.Strong(card.value, className=card.value_class_name),
+        ],
+        className=card.card_class_name,
+    )
 
 
 def build_layout(
@@ -17,15 +37,27 @@ def build_layout(
     """Assemble the top-level dashboard layout.
 
     Args:
-        context: Shared dashboard context with snapshot metadata and counts.
-        master_grid: The master grinder AG Grid component.
+        context: Shared dashboard context with family metadata and prepared rows.
+        master_grid: The master family AG Grid component.
         compare_grid: The transposed comparison AG Grid component.
-        modal: The grinder detail modal component.
+        modal: The family detail modal component.
 
     Returns:
         A Bootstrap container representing the full app layout.
     """
     snapshot_time = context.snapshot["scraped_at"].replace("T", " ").replace("+00:00", " UTC")
+
+    stats = [
+        build_stat_card(
+            StatCard(
+                "Snapshot",
+                snapshot_time,
+                card_class_name="stat-card stat-card-wide",
+                value_class_name="stat-value stat-value-small",
+            )
+        ),
+        *[build_stat_card(card) for card in context.stat_cards],
+    ]
 
     return dbc.Container(
         [
@@ -34,79 +66,23 @@ def build_layout(
                     html.Div(
                         [
                             html.P("DEWALT TOOL INDEX", className="eyebrow"),
-                            html.H1("Angle Grinder Compare", className="hero-title"),
-                            html.P(
-                                (
-                                    "A Dash AG Grid catalog for DEWALT bare-tool angle grinders. "
-                                    "Corded grinders are included, and cordless grinders are limited "
-                                    "to bare-tool SKUs. Filter the master table, select models, and compare specs "
-                                    "and feature sets side by side."
-                                ),
-                                className="hero-copy",
-                            ),
+                            html.H1(context.family.hero_title, className="hero-title"),
+                            html.P(context.family.hero_copy, className="hero-copy"),
                         ],
                         className="hero-copy-block",
                     ),
-                    html.Div(
-                        [
-                            html.Div(
-                                [
-                                    html.Span("Snapshot", className="stat-label"),
-                                    html.Strong(
-                                        snapshot_time,
-                                        className="stat-value stat-value-small",
-                                    ),
-                                ],
-                                className="stat-card stat-card-wide",
-                            ),
-                            html.Div(
-                                [
-                                    html.Span("Grinders", className="stat-label"),
-                                    html.Strong(
-                                        str(context.snapshot["product_count"]),
-                                        className="stat-value",
-                                    ),
-                                ],
-                                className="stat-card",
-                            ),
-                            html.Div(
-                                [
-                                    html.Span("Cordless", className="stat-label"),
-                                    html.Strong(str(context.cordless_count), className="stat-value"),
-                                ],
-                                className="stat-card",
-                            ),
-                            html.Div(
-                                [
-                                    html.Span("Corded", className="stat-label"),
-                                    html.Strong(str(context.corded_count), className="stat-value"),
-                                ],
-                                className="stat-card",
-                            ),
-                            html.Div(
-                                [
-                                    html.Span("Brushless", className="stat-label"),
-                                    html.Strong(
-                                        str(context.brushless_count),
-                                        className="stat-value",
-                                    ),
-                                ],
-                                className="stat-card",
-                            ),
-                        ],
-                        className="stats-grid",
-                    ),
+                    html.Div(stats, className="stats-grid"),
                 ],
                 className="hero-panel",
             ),
             dcc.Tabs(
                 id="tool-tabs",
-                value="angle-grinders",
+                value=context.family.slug,
                 className="tool-tabs",
                 children=[
                     dcc.Tab(
-                        label="Angle Grinders",
-                        value="angle-grinders",
+                        label=context.family.tab_label,
+                        value=context.family.slug,
                         className="tool-tab",
                         selected_className="tool-tab tool-tab-selected",
                         children=[
@@ -115,14 +91,11 @@ def build_layout(
                                     html.Div(
                                         [
                                             html.Div(
-                                                (
-                                                    "Select up to 4 grinders to compare. "
-                                                    "Clicking a row opens a detail popup."
-                                                ),
+                                                context.family.selection_note,
                                                 className="panel-note",
                                             ),
                                             html.Div(
-                                                id="selection-summary",
+                                                id=context.family.ids.selection_summary,
                                                 className="selection-summary",
                                             ),
                                         ],
@@ -135,11 +108,11 @@ def build_layout(
                                             html.Div(
                                                 [
                                                     html.H2(
-                                                        "Comparison",
+                                                        context.family.compare_title,
                                                         className="section-title",
                                                     ),
                                                     html.Div(
-                                                        id="compare-note",
+                                                        id=context.family.ids.compare_note,
                                                         className="compare-note",
                                                     ),
                                                 ],

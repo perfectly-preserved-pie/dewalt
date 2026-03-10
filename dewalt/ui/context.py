@@ -3,34 +3,34 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-from dewalt.data import load_angle_grinders, load_snapshot
+from dewalt.tool_families.base import RowData, StatCard, ToolFamilyDefinition
 
 from .config import MAX_COMPARE
-from .formatting import build_display_rows
 
 
 @dataclass(frozen=True)
 class DashboardContext:
     """Precomputed dashboard state shared across layout and callbacks."""
 
+    family: ToolFamilyDefinition
     snapshot: dict[str, Any]
-    raw_rows: list[dict[str, Any]]
-    angle_grinder_rows: list[dict[str, Any]]
+    raw_rows: list[RowData]
+    display_rows: list[RowData]
     grid_row_fields: frozenset[str]
-    cordless_count: int
-    corded_count: int
-    brushless_count: int
+    stat_cards: tuple[StatCard, ...]
     max_compare: int = MAX_COMPARE
 
 
 def load_dashboard_context(
+    family: ToolFamilyDefinition,
     snapshot: dict[str, Any] | None = None,
-    raw_rows: list[dict[str, Any]] | None = None,
+    raw_rows: list[RowData] | None = None,
     max_compare: int = MAX_COMPARE,
 ) -> DashboardContext:
     """Build the shared dashboard context from snapshot data.
 
     Args:
+        family: Tool family definition that supplies formatting and layout metadata.
         snapshot: Optional snapshot payload to reuse instead of loading from disk.
         raw_rows: Optional raw grinder rows to reuse instead of loading from disk.
         max_compare: Maximum number of selected rows shown in the comparison grid.
@@ -38,17 +38,16 @@ def load_dashboard_context(
     Returns:
         A populated :class:`DashboardContext` instance for the current dashboard state.
     """
-    snapshot_data = snapshot or load_snapshot()
-    source_rows = raw_rows or load_angle_grinders()
-    angle_grinder_rows = build_display_rows(source_rows)
+    snapshot_data = snapshot or family.load_snapshot()
+    source_rows = raw_rows or family.load_rows()
+    display_rows = family.build_display_rows(source_rows)
 
     return DashboardContext(
+        family=family,
         snapshot=snapshot_data,
         raw_rows=source_rows,
-        angle_grinder_rows=angle_grinder_rows,
-        grid_row_fields=frozenset(angle_grinder_rows[0].keys()) if angle_grinder_rows else frozenset(),
-        cordless_count=sum(1 for row in angle_grinder_rows if row["power_source"] == "Cordless"),
-        corded_count=sum(1 for row in angle_grinder_rows if row["power_source"] != "Cordless"),
-        brushless_count=sum(1 for row in angle_grinder_rows if row["brushless"]),
+        display_rows=display_rows,
+        grid_row_fields=frozenset(display_rows[0].keys()) if display_rows else frozenset(),
+        stat_cards=family.build_stat_cards(display_rows),
         max_compare=max_compare,
     )
