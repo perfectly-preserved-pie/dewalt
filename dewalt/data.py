@@ -11,6 +11,9 @@ ANGLE_GRINDER_DATA_PATH = (
 DRILL_DRIVER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_drill_drivers.json"
 )
+HAMMER_DRILL_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_hammer_drills.json"
+)
 
 
 def normalize_power_source(value: str | None) -> str | None:
@@ -93,6 +96,36 @@ def load_drill_drivers(path: Path = DRILL_DRIVER_DATA_PATH) -> list[dict[str, An
         A list of drill-driver row dictionaries with normalized power source labels.
     """
     snapshot = load_drill_driver_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_hammer_drill_snapshot(path: Path = HAMMER_DRILL_DATA_PATH) -> dict[str, Any]:
+    """Load the saved hammer-drill snapshot from disk.
+
+    Args:
+        path: Filesystem path to the hammer-drill snapshot JSON file.
+
+    Returns:
+        The parsed hammer-drill snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_hammer_drills(path: Path = HAMMER_DRILL_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized hammer-drill rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of hammer-drill row dictionaries with normalized power source labels.
+    """
+    snapshot = load_hammer_drill_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)
