@@ -1,0 +1,105 @@
+from __future__ import annotations
+
+from typing import Any
+
+
+LINE_LIST_FIELDS = {
+    "series",
+    "features",
+    "additional_features",
+    "includes",
+    "applications",
+    "disclaimers",
+}
+
+
+def format_bool(value: bool | None) -> str:
+    if value is None:
+        return "-"
+    return "Yes" if value else "No"
+
+
+def format_numeric(value: float | int | None, suffix: str = "") -> str:
+    if value is None:
+        return "-"
+    if isinstance(value, float) and value.is_integer():
+        value = int(value)
+    return f"{value}{suffix}"
+
+
+def format_wheel_size(min_value: float | None, max_value: float | None) -> str:
+    if min_value is None:
+        return "-"
+    if max_value is None or min_value == max_value:
+        return f"{format_numeric(min_value)} in."
+    return f"{format_numeric(min_value)} - {format_numeric(max_value)} in."
+
+
+def format_lines(values: list[str] | None) -> str:
+    if not values:
+        return "-"
+    return "\n".join(values)
+
+
+def build_display_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    display_rows = []
+    for row in rows:
+        prepared_row = dict(row)
+        prepared_row["series_display"] = ", ".join(row.get("series", [])) or "-"
+        prepared_row["wheel_size_display"] = format_wheel_size(
+            row.get("wheel_min_in"), row.get("wheel_max_in")
+        )
+        prepared_row["amp_rating_display"] = (
+            f"{row['amp_rating']} A" if row.get("amp_rating") else "-"
+        )
+        prepared_row["horsepower_display"] = (
+            f"{row['horsepower_hp']} HP" if row.get("horsepower_hp") else "-"
+        )
+        prepared_row["max_watts_out_display"] = (
+            f"{row['max_watts_out']} W" if row.get("max_watts_out") else "-"
+        )
+        prepared_row["power_input_display"] = (
+            f"{row['power_input_watts']} W" if row.get("power_input_watts") else "-"
+        )
+        prepared_row["rpm_display"] = f"{row['rpm_max']:,}" if row.get("rpm_max") else "-"
+        prepared_row["brushless_display"] = format_bool(row.get("brushless"))
+        prepared_row["variable_speed_display"] = format_bool(row.get("variable_speed"))
+        prepared_row["anti_rotation_display"] = format_bool(row.get("anti_rotation_system"))
+        prepared_row["e_clutch_display"] = format_bool(row.get("e_clutch"))
+        prepared_row["kickback_brake_display"] = format_bool(row.get("kickback_brake"))
+        prepared_row["tool_connect_display"] = format_bool(row.get("tool_connect_ready"))
+        prepared_row["wireless_tool_control_display"] = format_bool(
+            row.get("wireless_tool_control")
+        )
+        prepared_row["features_display"] = format_lines(row.get("features"))
+        prepared_row["additional_features_display"] = format_lines(
+            row.get("additional_features")
+        )
+        prepared_row["includes_display"] = format_lines(row.get("includes"))
+        prepared_row["applications_display"] = format_lines(row.get("applications"))
+        prepared_row["disclaimers_display"] = format_lines(row.get("disclaimers"))
+        display_rows.append(prepared_row)
+    return display_rows
+
+
+def compare_display_value(row: dict[str, Any], field_name: str) -> str:
+    value = row.get(field_name)
+    if field_name in LINE_LIST_FIELDS:
+        return format_lines(value)
+    if field_name == "amp_rating":
+        return f"{value} A" if value else "-"
+    if field_name == "horsepower_hp":
+        return f"{value} HP" if value else "-"
+    if field_name == "max_watts_out":
+        return f"{value} W" if value else "-"
+    if field_name == "power_input_watts":
+        return f"{value} W" if value else "-"
+    if field_name == "wheel_size_display":
+        return row.get("wheel_size_display", "-")
+    if field_name == "rpm_max":
+        return f"{value:,}" if value else "-"
+    if isinstance(value, bool):
+        return format_bool(value)
+    if value in (None, "", []):
+        return "-"
+    return str(value)
