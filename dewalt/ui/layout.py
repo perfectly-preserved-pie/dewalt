@@ -14,6 +14,17 @@ def build_layout(
     compare_grid: Any,
     modal: Any,
 ) -> dbc.Container:
+    """Assemble the top-level dashboard layout.
+
+    Args:
+        context: Shared dashboard context with snapshot metadata and counts.
+        master_grid: The master grinder AG Grid component.
+        compare_grid: The transposed comparison AG Grid component.
+        modal: The grinder detail modal component.
+
+    Returns:
+        A Bootstrap container representing the full app layout.
+    """
     snapshot_time = context.snapshot["scraped_at"].replace("T", " ").replace("+00:00", " UTC")
 
     return dbc.Container(

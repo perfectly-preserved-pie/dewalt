@@ -16,22 +16,59 @@ from .config import (
 )
 from .formatting import compare_display_value
 
+ColumnDef = dict[str, Any]
+RowData = dict[str, Any]
 
-def text_column(field: str, header_name: str, **kwargs) -> dict[str, Any]:
+
+def text_column(field: str, header_name: str, **kwargs: Any) -> ColumnDef:
+    """Build a text-filtered AG Grid column definition.
+
+    Args:
+        field: Data field name for the column.
+        header_name: Visible header label.
+        **kwargs: Additional AG Grid column properties to merge in.
+
+    Returns:
+        An AG Grid column definition configured with a text filter.
+    """
     column = {"field": field, "headerName": header_name, "filter": TEXT_FILTER}
     column.update(kwargs)
     return column
 
 
-def categorical_column(field: str, header_name: str, **kwargs) -> dict[str, Any]:
+def categorical_column(field: str, header_name: str, **kwargs: Any) -> ColumnDef:
+    """Build a set-filtered AG Grid column definition.
+
+    Args:
+        field: Data field name for the column.
+        header_name: Visible header label.
+        **kwargs: Additional AG Grid column properties to merge in.
+
+    Returns:
+        An AG Grid column definition configured with a set filter.
+    """
     column = {"field": field, "headerName": header_name, "filter": SET_FILTER}
     column.update(kwargs)
     return column
 
 
 def number_column(
-    field: str, header_name: str, formatter: str | None = None, **kwargs
-) -> dict[str, Any]:
+    field: str,
+    header_name: str,
+    formatter: str | None = None,
+    **kwargs: Any,
+) -> ColumnDef:
+    """Build a numeric AG Grid column with both value-list and range filters.
+
+    Args:
+        field: Data field name for the column.
+        header_name: Visible header label.
+        formatter: Optional JavaScript formatter function string.
+        **kwargs: Additional AG Grid column properties to merge in.
+
+    Returns:
+        An AG Grid column definition configured for numeric values.
+    """
     column = {
         "field": field,
         "headerName": header_name,
@@ -60,7 +97,17 @@ def number_column(
     return column
 
 
-def boolean_column(field: str, header_name: str, **kwargs) -> dict[str, Any]:
+def boolean_column(field: str, header_name: str, **kwargs: Any) -> ColumnDef:
+    """Build a boolean AG Grid column definition.
+
+    Args:
+        field: Data field name for the column.
+        header_name: Visible header label.
+        **kwargs: Additional AG Grid column properties to merge in.
+
+    Returns:
+        An AG Grid column definition configured for boolean data.
+    """
     column = {
         "field": field,
         "headerName": header_name,
@@ -85,7 +132,15 @@ def boolean_column(field: str, header_name: str, **kwargs) -> dict[str, Any]:
     return column
 
 
-def build_master_column_defs() -> list[dict[str, Any]]:
+def build_master_column_defs() -> list[ColumnDef]:
+    """Build the grouped column definitions for the master grinder grid.
+
+    Args:
+        None.
+
+    Returns:
+        A list of AG Grid column definitions for the master grid.
+    """
     identity_column_defs = [
         text_column(
             "sku",
@@ -171,7 +226,15 @@ def build_master_column_defs() -> list[dict[str, Any]]:
     ]
 
 
-def build_compare_base_columns() -> list[dict[str, Any]]:
+def build_compare_base_columns() -> list[ColumnDef]:
+    """Build the fixed leading column for the comparison grid.
+
+    Args:
+        None.
+
+    Returns:
+        A list containing the pinned specification-label column definition.
+    """
     return [
         {
             "field": "field_label",
@@ -185,8 +248,18 @@ def build_compare_base_columns() -> list[dict[str, Any]]:
 
 
 def build_master_grid(
-    rows: list[dict[str, Any]], column_defs: list[dict[str, Any]] | None = None
+    rows: list[RowData],
+    column_defs: list[ColumnDef] | None = None,
 ) -> dag.AgGrid:
+    """Create the master AG Grid for angle grinders.
+
+    Args:
+        rows: Prepared row data for the master grid.
+        column_defs: Optional prebuilt master column definitions.
+
+    Returns:
+        A configured Dash AG Grid component for the master grinder table.
+    """
     return dag.AgGrid(
         id="angle-grinders-grid",
         rowData=rows,
@@ -228,7 +301,15 @@ def build_master_grid(
     )
 
 
-def build_compare_grid(column_defs: list[dict[str, Any]] | None = None) -> dag.AgGrid:
+def build_compare_grid(column_defs: list[ColumnDef] | None = None) -> dag.AgGrid:
+    """Create the transposed comparison AG Grid.
+
+    Args:
+        column_defs: Optional prebuilt column definitions for the comparison grid.
+
+    Returns:
+        A configured Dash AG Grid component for model comparison rows.
+    """
     return dag.AgGrid(
         id="compare-grid",
         rowData=[],
@@ -249,8 +330,18 @@ def build_compare_grid(column_defs: list[dict[str, Any]] | None = None) -> dag.A
 
 
 def build_compare_columns(
-    selected_rows: list[dict[str, Any]], base_columns: list[dict[str, Any]] | None = None
-) -> list[dict[str, Any]]:
+    selected_rows: list[RowData],
+    base_columns: list[ColumnDef] | None = None,
+) -> list[ColumnDef]:
+    """Build dynamic comparison-grid columns for the selected grinders.
+
+    Args:
+        selected_rows: Grinder rows chosen for comparison.
+        base_columns: Optional base comparison columns to reuse.
+
+    Returns:
+        A complete list of comparison-grid column definitions.
+    """
     columns = [dict(column) for column in (base_columns or build_compare_base_columns())]
     for index, row in enumerate(selected_rows, start=1):
         columns.append(
@@ -284,7 +375,15 @@ def build_compare_columns(
     return columns
 
 
-def build_compare_rows(selected_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def build_compare_rows(selected_rows: list[RowData]) -> list[RowData]:
+    """Transpose selected grinder rows into comparison-grid rows.
+
+    Args:
+        selected_rows: Grinder rows chosen for comparison.
+
+    Returns:
+        A list of row dictionaries keyed by specification label and model columns.
+    """
     rows = []
     for field_name, label in COMPARE_FIELDS:
         value_type = "boolean" if field_name in COMPARE_BOOLEAN_FIELDS else "text"

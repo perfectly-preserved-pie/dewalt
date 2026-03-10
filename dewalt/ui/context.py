@@ -11,6 +11,8 @@ from .formatting import build_display_rows
 
 @dataclass(frozen=True)
 class DashboardContext:
+    """Precomputed dashboard state shared across layout and callbacks."""
+
     snapshot: dict[str, Any]
     raw_rows: list[dict[str, Any]]
     angle_grinder_rows: list[dict[str, Any]]
@@ -26,6 +28,16 @@ def load_dashboard_context(
     raw_rows: list[dict[str, Any]] | None = None,
     max_compare: int = MAX_COMPARE,
 ) -> DashboardContext:
+    """Build the shared dashboard context from snapshot data.
+
+    Args:
+        snapshot: Optional snapshot payload to reuse instead of loading from disk.
+        raw_rows: Optional raw grinder rows to reuse instead of loading from disk.
+        max_compare: Maximum number of selected rows shown in the comparison grid.
+
+    Returns:
+        A populated :class:`DashboardContext` instance for the current dashboard state.
+    """
     snapshot_data = snapshot or load_snapshot()
     source_rows = raw_rows or load_angle_grinders()
     angle_grinder_rows = build_display_rows(source_rows)

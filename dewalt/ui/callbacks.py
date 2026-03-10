@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from dash import Dash, Input, Output, State, callback_context, html, no_update
 from dash.exceptions import PreventUpdate
 
@@ -9,14 +11,33 @@ from .modal import build_modal_content, build_modal_header
 
 
 def register_callbacks(app: Dash, context: DashboardContext) -> None:
+    """Register all dashboard callbacks on the Dash application.
+
+    Args:
+        app: Dash application instance to attach callbacks to.
+        context: Shared dashboard context with prepared rows and limits.
+
+    Returns:
+        None. The function registers callbacks as a side effect.
+    """
     @app.callback(
         Output("selection-summary", "children"),
         Input("angle-grinders-grid", "virtualRowData"),
         Input("angle-grinders-grid", "selectedRows"),
     )
     def update_selection_summary(
-        visible_rows: list[dict] | None, selected_rows: list[dict] | None
+        visible_rows: list[dict[str, Any]] | None,
+        selected_rows: list[dict[str, Any]] | None,
     ) -> list[html.Span]:
+        """Update the selection summary pills above the master grid.
+
+        Args:
+            visible_rows: Rows currently visible after filtering in the master grid.
+            selected_rows: Rows currently selected in the master grid.
+
+        Returns:
+            A list of ``Span`` components summarizing visibility and selection state.
+        """
         visible_count = (
             len(visible_rows)
             if visible_rows is not None
@@ -39,8 +60,16 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
         Input("angle-grinders-grid", "selectedRows"),
     )
     def update_compare_grid(
-        selected_rows: list[dict] | None,
-    ) -> tuple[str, list[dict], list[dict]]:
+        selected_rows: list[dict[str, Any]] | None,
+    ) -> tuple[str, list[dict[str, Any]], list[dict[str, Any]]]:
+        """Update the comparison grid based on the current master-grid selection.
+
+        Args:
+            selected_rows: Rows currently selected in the master grid.
+
+        Returns:
+            A tuple containing the comparison note, row data, and column definitions.
+        """
         rows = selected_rows or []
         if not rows:
             return (
@@ -71,11 +100,22 @@ def register_callbacks(app: Dash, context: DashboardContext) -> None:
         prevent_initial_call=True,
     )
     def open_grinder_modal(
-        cell_clicked_data: dict | None,
+        cell_clicked_data: dict[str, Any] | None,
         close_clicks: int | None,
         is_open: bool,
-        virtual_row_data: list[dict] | None,
-    ) -> tuple[bool, object, object]:
+        virtual_row_data: list[dict[str, Any]] | None,
+    ) -> tuple[bool, Any, Any]:
+        """Open or close the grinder detail modal from grid interactions.
+
+        Args:
+            cell_clicked_data: Event payload from the master-grid cell click.
+            close_clicks: Click count for the modal close button.
+            is_open: Current open state of the modal.
+            virtual_row_data: Filtered row set currently shown by the master grid.
+
+        Returns:
+            A tuple of modal open state, header content, and modal body content.
+        """
         ctx = callback_context
         if not ctx.triggered:
             raise PreventUpdate

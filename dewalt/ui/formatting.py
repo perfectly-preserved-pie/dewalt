@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
+RowData = dict[str, Any]
+
 
 LINE_LIST_FIELDS = {
     "series",
@@ -14,12 +16,29 @@ LINE_LIST_FIELDS = {
 
 
 def format_bool(value: bool | None) -> str:
+    """Convert a boolean value to the dashboard's text representation.
+
+    Args:
+        value: Raw boolean value or ``None``.
+
+    Returns:
+        ``"Yes"``, ``"No"``, or ``"-"`` when no value is available.
+    """
     if value is None:
         return "-"
     return "Yes" if value else "No"
 
 
 def format_numeric(value: float | int | None, suffix: str = "") -> str:
+    """Format a numeric value for display.
+
+    Args:
+        value: Numeric value or ``None``.
+        suffix: Optional suffix appended directly to the formatted value.
+
+    Returns:
+        A string representation of the value, or ``"-"`` when no value is available.
+    """
     if value is None:
         return "-"
     if isinstance(value, float) and value.is_integer():
@@ -28,6 +47,15 @@ def format_numeric(value: float | int | None, suffix: str = "") -> str:
 
 
 def format_wheel_size(min_value: float | None, max_value: float | None) -> str:
+    """Format a grinder wheel size or wheel size range.
+
+    Args:
+        min_value: Minimum supported wheel size in inches.
+        max_value: Maximum supported wheel size in inches.
+
+    Returns:
+        A formatted wheel size string, or ``"-"`` when no wheel size exists.
+    """
     if min_value is None:
         return "-"
     if max_value is None or min_value == max_value:
@@ -36,12 +64,28 @@ def format_wheel_size(min_value: float | None, max_value: float | None) -> str:
 
 
 def format_lines(values: list[str] | None) -> str:
+    """Join a list of strings into a newline-delimited block.
+
+    Args:
+        values: Ordered list of strings, or ``None``.
+
+    Returns:
+        A newline-delimited string, or ``"-"`` when no values are present.
+    """
     if not values:
         return "-"
     return "\n".join(values)
 
 
-def build_display_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def build_display_rows(rows: list[RowData]) -> list[RowData]:
+    """Prepare grinder rows with UI-friendly display fields.
+
+    Args:
+        rows: Raw grinder row dictionaries loaded from the snapshot.
+
+    Returns:
+        A new list of row dictionaries augmented with display-oriented fields.
+    """
     display_rows = []
     for row in rows:
         prepared_row = dict(row)
@@ -82,7 +126,16 @@ def build_display_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return display_rows
 
 
-def compare_display_value(row: dict[str, Any], field_name: str) -> str:
+def compare_display_value(row: RowData, field_name: str) -> str:
+    """Format a row value for the transposed comparison grid.
+
+    Args:
+        row: Grinder row dictionary.
+        field_name: Field name to resolve from the row.
+
+    Returns:
+        A string representation suitable for the comparison grid.
+    """
     value = row.get(field_name)
     if field_name in LINE_LIST_FIELDS:
         return format_lines(value)

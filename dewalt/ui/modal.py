@@ -6,36 +6,67 @@ import dash_bootstrap_components as dbc
 from dash import html
 
 from .formatting import compare_display_value, format_bool
+from .config import COMPARE_BOOLEAN_FIELDS
 
 
-DETAIL_FIELDS = [
-    ("Series", lambda row: row.get("series_display", "-")),
-    ("Power Source", lambda row: row.get("power_source", "-")),
-    ("Voltage System", lambda row: row.get("voltage_system", "-")),
-    ("Wheel Size", lambda row: row.get("wheel_size_display", "-")),
-    ("Switch Type", lambda row: row.get("switch_type") or "-"),
-    ("Max RPM", lambda row: compare_display_value(row, "rpm_max")),
-    ("Amp Rating", lambda row: compare_display_value(row, "amp_rating")),
-    ("Horsepower", lambda row: compare_display_value(row, "horsepower_hp")),
-    ("Max Watts Out", lambda row: compare_display_value(row, "max_watts_out")),
-    ("Power Input", lambda row: compare_display_value(row, "power_input_watts")),
-    ("Brushless", lambda row: format_bool(row.get("brushless"))),
-    ("Variable Speed", lambda row: format_bool(row.get("variable_speed"))),
-    ("Anti-Rotation", lambda row: format_bool(row.get("anti_rotation_system"))),
-    ("E-CLUTCH", lambda row: format_bool(row.get("e_clutch"))),
-    ("Kickback Brake", lambda row: format_bool(row.get("kickback_brake"))),
-    ("Tool Connect Ready", lambda row: format_bool(row.get("tool_connect_ready"))),
-    ("Wireless Tool Control", lambda row: format_bool(row.get("wireless_tool_control"))),
-    ("Power Loss Reset", lambda row: format_bool(row.get("power_loss_reset"))),
-    ("No-Volt Switch", lambda row: format_bool(row.get("no_volt_switch"))),
-    ("Lanyard Ready", lambda row: format_bool(row.get("lanyard_ready"))),
+RowData = dict[str, Any]
+
+
+DETAIL_FIELDS: list[tuple[str, str]] = [
+    ("Series", "series_display"),
+    ("Power Source", "power_source"),
+    ("Voltage System", "voltage_system"),
+    ("Wheel Size", "wheel_size_display"),
+    ("Switch Type", "switch_type"),
+    ("Max RPM", "rpm_max"),
+    ("Amp Rating", "amp_rating"),
+    ("Horsepower", "horsepower_hp"),
+    ("Max Watts Out", "max_watts_out"),
+    ("Power Input", "power_input_watts"),
+    ("Brushless", "brushless"),
+    ("Variable Speed", "variable_speed"),
+    ("Anti-Rotation", "anti_rotation_system"),
+    ("E-CLUTCH", "e_clutch"),
+    ("Kickback Brake", "kickback_brake"),
+    ("Tool Connect Ready", "tool_connect_ready"),
+    ("Wireless Tool Control", "wireless_tool_control"),
+    ("Power Loss Reset", "power_loss_reset"),
+    ("No-Volt Switch", "no_volt_switch"),
+    ("Lanyard Ready", "lanyard_ready"),
 ]
 
 
-def build_detail_table(row: dict[str, Any]) -> dbc.Table:
+def resolve_detail_value(row: RowData, field_name: str) -> str:
+    """Resolve a modal detail value for a named field.
+
+    Args:
+        row: Grinder row used to populate the modal.
+        field_name: Internal field name to resolve.
+
+    Returns:
+        A formatted detail value string for the modal table.
+    """
+    if field_name == "switch_type":
+        return row.get(field_name) or "-"
+    if field_name in {"rpm_max", "amp_rating", "horsepower_hp", "max_watts_out", "power_input_watts"}:
+        return compare_display_value(row, field_name)
+    if field_name in COMPARE_BOOLEAN_FIELDS:
+        return format_bool(row.get(field_name))
+    return row.get(field_name, "-")
+
+
+def build_detail_table(row: RowData) -> dbc.Table:
+    """Build the modal's specification table for one grinder.
+
+    Args:
+        row: Grinder row used to populate the modal.
+
+    Returns:
+        A Bootstrap table component containing labeled specification rows.
+    """
     body_rows = []
-    for label, resolver in DETAIL_FIELDS:
-        value = resolver(row)
+    for label, field_name in DETAIL_FIELDS:
+        value = resolve_detail_value(row, field_name)
         if value in (None, "", "-", []):
             continue
         body_rows.append(
@@ -51,6 +82,15 @@ def build_detail_table(row: dict[str, Any]) -> dbc.Table:
 
 
 def build_detail_block(title: str, values: list[str] | None) -> html.Div | None:
+    """Build a titled modal section for a list of bullet values.
+
+    Args:
+        title: Section heading shown above the bullet list.
+        values: Optional list of string values to render.
+
+    Returns:
+        A section ``Div`` when values exist, otherwise ``None``.
+    """
     if not values:
         return None
     return html.Div(
@@ -62,7 +102,15 @@ def build_detail_block(title: str, values: list[str] | None) -> html.Div | None:
     )
 
 
-def build_modal_content(row: dict[str, Any]) -> list[Any]:
+def build_modal_content(row: RowData) -> list[Any]:
+    """Build the full modal body content for one grinder.
+
+    Args:
+        row: Grinder row used to populate the modal.
+
+    Returns:
+        An ordered list of Dash components for the modal body.
+    """
     content = [
         html.P(row.get("description", "-"), className="modal-overview"),
         build_detail_table(row),
@@ -82,7 +130,15 @@ def build_modal_content(row: dict[str, Any]) -> list[Any]:
     return content
 
 
-def build_modal_header(row: dict[str, Any]) -> html.Div:
+def build_modal_header(row: RowData) -> html.Div:
+    """Build the modal header for one grinder.
+
+    Args:
+        row: Grinder row used to populate the modal header.
+
+    Returns:
+        A ``Div`` containing the SKU and model title.
+    """
     return html.Div(
         [
             html.Div(row.get("sku", "Unknown SKU"), className="modal-sku"),
@@ -92,6 +148,14 @@ def build_modal_header(row: dict[str, Any]) -> html.Div:
 
 
 def build_modal() -> dbc.Modal:
+    """Create the reusable grinder detail modal component.
+
+    Args:
+        None.
+
+    Returns:
+        A configured Bootstrap modal component.
+    """
     return dbc.Modal(
         [
             dbc.ModalHeader(id="grinder-modal-header"),
