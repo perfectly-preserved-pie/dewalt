@@ -37,7 +37,6 @@ COMPARE_FIELDS = [
     ("series", "Series"),
     ("power_source", "Power Source"),
     ("voltage_system", "Voltage System"),
-    ("nominal_voltage_v", "Nominal Voltage"),
     ("amp_rating", "Amp Rating"),
     ("horsepower_hp", "Horsepower"),
     ("max_watts_out", "Max Watts Out"),
@@ -99,9 +98,6 @@ def build_display_rows(rows: list[dict]) -> list[dict]:
         prepared_row["series_display"] = ", ".join(row.get("series", [])) or "-"
         prepared_row["wheel_size_display"] = format_wheel_size(
             row.get("wheel_min_in"), row.get("wheel_max_in")
-        )
-        prepared_row["nominal_voltage_display"] = (
-            f"{row['nominal_voltage_v']} V" if row.get("nominal_voltage_v") else "-"
         )
         prepared_row["amp_rating_display"] = (
             f"{row['amp_rating']} A" if row.get("amp_rating") else "-"
@@ -216,12 +212,6 @@ SPEC_COLUMN_DEFS = [
     categorical_column("power_source", "Power", minWidth=130),
     categorical_column("series_display", "Series", minWidth=170),
     categorical_column("voltage_system", "Voltage", minWidth=130),
-    number_column(
-        "nominal_voltage_v",
-        "Nominal",
-        "params.value == null ? '-' : `${params.value} V`",
-        minWidth=120,
-    ),
     categorical_column("wheel_size_display", "Wheel Size", minWidth=140),
     categorical_column("switch_type", "Switch", minWidth=150),
     number_column(
@@ -354,8 +344,6 @@ def compare_display_value(row: dict, field_name: str) -> str:
     value = row.get(field_name)
     if field_name in {"series", "features", "additional_features", "includes", "applications", "disclaimers"}:
         return format_lines(value)
-    if field_name == "nominal_voltage_v":
-        return f"{value} V" if value else "-"
     if field_name == "amp_rating":
         return f"{value} A" if value else "-"
     if field_name == "horsepower_hp":
@@ -389,7 +377,6 @@ DETAIL_FIELDS = [
     ("Series", lambda row: row.get("series_display", "-")),
     ("Power Source", lambda row: row.get("power_source", "-")),
     ("Voltage System", lambda row: row.get("voltage_system", "-")),
-    ("Nominal Voltage", lambda row: compare_display_value(row, "nominal_voltage_v")),
     ("Wheel Size", lambda row: row.get("wheel_size_display", "-")),
     ("Switch Type", lambda row: row.get("switch_type") or "-"),
     ("Max RPM", lambda row: compare_display_value(row, "rpm_max")),
