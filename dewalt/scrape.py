@@ -216,8 +216,6 @@ def parse_series(title: str) -> list[str]:
 
 def parse_power_source(all_text: str, max_voltage_v: int | None) -> str:
     lowered = all_text.lower()
-    if "ac/dc power" in lowered:
-        return "AC/DC Corded"
     if max_voltage_v or "cordless" in lowered or "battery" in lowered:
         return "Cordless"
     return "Corded"
