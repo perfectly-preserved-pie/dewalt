@@ -223,6 +223,17 @@ def parse_power_source(all_text: str, max_voltage_v: int | None) -> str:
     return "Corded"
 
 
+def sku_looks_like_bare_tool(sku: str) -> bool:
+    return "B" in sku.upper()
+
+
+def is_bare_tool(row: dict[str, Any]) -> bool:
+    if row["power_source"] != "Cordless":
+        return False
+    title_lower = row["title"].lower()
+    return "tool only" in title_lower or sku_looks_like_bare_tool(row["sku"])
+
+
 def parse_canonical_url(soup: BeautifulSoup) -> str:
     canonical = soup.find("link", rel="canonical")
     if canonical and canonical.get("href"):
@@ -278,6 +289,10 @@ def parse_product_page(url: str, html_text: str) -> dict[str, Any] | None:
     nominal_voltage_v = parse_nominal_voltage_v(disclaimers, max_voltage_v)
     wheel_min_in, wheel_max_in = parse_wheel_range(title)
     sku = url.rstrip("/").split("/product/")[-1].split("/", 1)[0].upper()
+    power_source = parse_power_source(all_text, max_voltage_v)
+    tool_only = power_source == "Cordless" and (
+        "tool only" in title.lower() or sku_looks_like_bare_tool(sku)
+    )
 
     return {
         "sku": sku,
@@ -285,7 +300,7 @@ def parse_product_page(url: str, html_text: str) -> dict[str, Any] | None:
         "url": url,
         "category": "Angle Grinder",
         "series": parse_series(title),
-        "power_source": parse_power_source(all_text, max_voltage_v),
+        "power_source": power_source,
         "voltage_system": f"{max_voltage_v}V MAX" if max_voltage_v else None,
         "max_voltage_v": max_voltage_v,
         "nominal_voltage_v": nominal_voltage_v,
@@ -300,7 +315,7 @@ def parse_product_page(url: str, html_text: str) -> dict[str, Any] | None:
         "brushless": "brushless" in lowered,
         "variable_speed": "variable speed" in lowered,
         "kit": " kit" in title.lower() or title.lower().endswith("kit"),
-        "tool_only": "tool only" in lowered or "sold separately" in lowered,
+        "tool_only": tool_only,
         "battery_included": any("battery" in item.lower() for item in includes),
         "charger_included": any("charger" in item.lower() for item in includes),
         "anti_rotation_system": "anti-rotation" in lowered,
@@ -348,7 +363,7 @@ def build_snapshot_from_live_catalog() -> dict[str, Any]:
     for product_url in product_urls:
         html_text = fetch_url(product_url)
         parsed_row = parse_product_page(product_url, html_text)
-        if parsed_row:
+        if parsed_row and is_bare_tool(parsed_row):
             rows.append(parsed_row)
 
     rows.sort(key=lambda row: row["sku"])
@@ -372,7 +387,7 @@ def build_snapshot_from_directory(source_dir: Path) -> dict[str, Any]:
         if not canonical_url:
             continue
         parsed_row = parse_product_page(canonical_url, html_text)
-        if parsed_row:
+        if parsed_row and is_bare_tool(parsed_row):
             rows.append(parsed_row)
 
     rows.sort(key=lambda row: row["sku"])

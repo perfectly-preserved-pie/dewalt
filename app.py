@@ -45,10 +45,6 @@ COMPARE_FIELDS = [
     ("rpm_max", "Max RPM"),
     ("brushless", "Brushless"),
     ("variable_speed", "Variable Speed"),
-    ("kit", "Kit"),
-    ("tool_only", "Tool Only"),
-    ("battery_included", "Battery Included"),
-    ("charger_included", "Charger Included"),
     ("anti_rotation_system", "Anti-Rotation"),
     ("e_clutch", "E-CLUTCH"),
     ("kickback_brake", "Kickback Brake"),
@@ -120,10 +116,6 @@ def build_display_rows(rows: list[dict]) -> list[dict]:
         prepared_row["rpm_display"] = f"{row['rpm_max']:,}" if row.get("rpm_max") else "-"
         prepared_row["brushless_display"] = format_bool(row.get("brushless"))
         prepared_row["variable_speed_display"] = format_bool(row.get("variable_speed"))
-        prepared_row["kit_display"] = format_bool(row.get("kit"))
-        prepared_row["tool_only_display"] = format_bool(row.get("tool_only"))
-        prepared_row["battery_included_display"] = format_bool(row.get("battery_included"))
-        prepared_row["charger_included_display"] = format_bool(row.get("charger_included"))
         prepared_row["anti_rotation_display"] = format_bool(row.get("anti_rotation_system"))
         prepared_row["e_clutch_display"] = format_bool(row.get("e_clutch"))
         prepared_row["kickback_brake_display"] = format_bool(row.get("kickback_brake"))
@@ -253,10 +245,6 @@ MASTER_COLUMN_DEFS = [
     ),
     boolean_column("brushless", "Brushless", minWidth=120),
     boolean_column("variable_speed", "Variable Speed", minWidth=145),
-    boolean_column("kit", "Kit", minWidth=95),
-    boolean_column("tool_only", "Tool Only", minWidth=110),
-    boolean_column("battery_included", "Battery", minWidth=110),
-    boolean_column("charger_included", "Charger", minWidth=115),
     boolean_column("anti_rotation_system", "Anti-Rotation", minWidth=140),
     boolean_column("e_clutch", "E-CLUTCH", minWidth=120),
     boolean_column("kickback_brake", "Kickback Brake", minWidth=145),
@@ -384,7 +372,7 @@ app.layout = dbc.Container(
                         html.H1("Angle Grinder Compare", className="hero-title"),
                         html.P(
                             (
-                                "A Dash AG Grid catalog for DEWALT angle grinders. "
+                                "A Dash AG Grid catalog for DEWALT bare-tool angle grinders. "
                                 "Filter the master table, select models, and compare specs "
                                 "and feature sets side by side."
                             ),
@@ -455,7 +443,7 @@ app.layout = dbc.Container(
                                 html.Div(
                                     [
                                         html.Div(
-                                            "Select up to 4 grinders in the master table to compare.",
+                                            "Select up to 4 bare-tool grinders in the master table to compare.",
                                             className="panel-note",
                                         ),
                                         html.Div(id="selection-summary", className="selection-summary"),
