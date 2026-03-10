@@ -1,6 +1,6 @@
-# DEWALT Angle Grinder Compare
+# DEWALT Tool Table and Comparison
 
-Dash app for browsing and comparing DEWALT angle grinders with Dash AG Grid.
+Dash app for browsing and comparing DEWALT tools with Dash AG Grid.
 
 ## Run
 
