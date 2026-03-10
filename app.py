@@ -133,6 +133,7 @@ def build_display_rows(rows: list[dict]) -> list[dict]:
 
 
 ANGLE_GRINDER_ROWS = build_display_rows(RAW_ROWS)
+GRID_ROW_FIELDS = set(ANGLE_GRINDER_ROWS[0].keys()) if ANGLE_GRINDER_ROWS else set()
 
 CORDLESS_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["power_source"] == "Cordless")
 CORDED_COUNT = sum(1 for row in ANGLE_GRINDER_ROWS if row["power_source"] != "Cordless")
@@ -192,8 +193,6 @@ IDENTITY_COLUMN_DEFS = [
     text_column(
         "sku",
         "SKU",
-        checkboxSelection=True,
-        headerCheckboxSelection=True,
         pinned="left",
         minWidth=120,
     ),
@@ -289,6 +288,9 @@ MASTER_GRID = dag.AgGrid(
     id="angle-grinders-grid",
     rowData=ANGLE_GRINDER_ROWS,
     columnDefs=MASTER_COLUMN_DEFS,
+    getRowId="params.data.sku",
+    persisted_props=[],
+    persistence=False,
     defaultColDef={
         "sortable": True,
         "resizable": True,
@@ -300,7 +302,22 @@ MASTER_GRID = dag.AgGrid(
         "animateRows": False,
         "pagination": True,
         "paginationPageSize": 12,
-        "rowSelection": "multiple",
+        "paginationPageSizeSelector": [12, 24, 48],
+        "rowSelection": {
+            "mode": "multiRow",
+            "checkboxes": True,
+            "headerCheckbox": True,
+            "enableClickSelection": True,
+        },
+        "selectionColumnDef": {
+            "pinned": "left",
+            "minWidth": 56,
+            "width": 56,
+            "maxWidth": 56,
+            "resizable": False,
+            "sortable": False,
+            "filter": False,
+        },
         "theme": AG_GRID_THEME,
     },
     className="grid-shell",
@@ -677,6 +694,9 @@ def open_grinder_modal(
         return False, no_update, no_update
 
     if trigger_id != "angle-grinders-grid" or not cell_clicked_data:
+        raise PreventUpdate
+
+    if cell_clicked_data.get("colId") not in GRID_ROW_FIELDS:
         raise PreventUpdate
 
     selected_row = cell_clicked_data.get("data")
