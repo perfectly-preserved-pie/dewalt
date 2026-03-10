@@ -63,6 +63,19 @@ COMPARE_FIELDS = [
     ("disclaimers", "Disclaimers"),
 ]
 
+COMPARE_BOOLEAN_FIELDS = {
+    "brushless",
+    "variable_speed",
+    "anti_rotation_system",
+    "e_clutch",
+    "kickback_brake",
+    "wireless_tool_control",
+    "tool_connect_ready",
+    "power_loss_reset",
+    "no_volt_switch",
+    "lanyard_ready",
+}
+
 
 def format_bool(value: bool | None) -> str:
     if value is None:
@@ -369,6 +382,26 @@ def build_compare_columns(selected_rows: list[dict]) -> list[dict]:
                 "headerName": row["sku"],
                 "minWidth": 280,
                 "tooltipField": f"model_{index}",
+                "cellRendererSelector": {
+                    "function": (
+                        "params.data.value_type === 'boolean' && params.value != null "
+                        "? {component: 'agCheckboxCellRenderer', params: {disabled: true}} : undefined"
+                    )
+                },
+                "cellStyle": {
+                    "function": (
+                        "params.data.value_type === 'boolean' "
+                        "? ({display: 'flex', alignItems: 'center', justifyContent: 'flex-start', paddingLeft: '12px'}) "
+                        ": null"
+                    )
+                },
+                "tooltipValueGetter": {
+                    "function": (
+                        "params.data.value_type === 'boolean' "
+                        "? (params.value === true ? 'Yes' : params.value === false ? 'No' : '-') "
+                        ": params.value"
+                    )
+                },
             }
         )
     return columns
@@ -400,9 +433,17 @@ def compare_display_value(row: dict, field_name: str) -> str:
 def build_compare_rows(selected_rows: list[dict]) -> list[dict]:
     rows = []
     for field_name, label in COMPARE_FIELDS:
-        compare_row = {"field_label": label}
+        value_type = "boolean" if field_name in COMPARE_BOOLEAN_FIELDS else "text"
+        compare_row = {
+            "field_label": label,
+            "field_name": field_name,
+            "value_type": value_type,
+        }
         for index, product_row in enumerate(selected_rows, start=1):
-            compare_row[f"model_{index}"] = compare_display_value(product_row, field_name)
+            if value_type == "boolean":
+                compare_row[f"model_{index}"] = product_row.get(field_name)
+            else:
+                compare_row[f"model_{index}"] = compare_display_value(product_row, field_name)
         rows.append(compare_row)
     return rows
 
