@@ -27,6 +27,7 @@ AG_GRID_THEME = {
 
 TEXT_FILTER = "agTextColumnFilter"
 NUMBER_FILTER = "agNumberColumnFilter"
+BOOLEAN_FILTER = "agSetColumnFilter"
 
 COMPARE_FIELDS = [
     ("sku", "SKU"),
@@ -166,6 +167,31 @@ def number_column(field: str, header_name: str, formatter: str | None = None, **
     return column
 
 
+def boolean_column(field: str, header_name: str, **kwargs) -> dict:
+    column = {
+        "field": field,
+        "headerName": header_name,
+        "filter": BOOLEAN_FILTER,
+        "cellDataType": "boolean",
+        "valueFormatter": {
+            "function": (
+                "params.value === true ? 'Yes' : "
+                "params.value === false ? 'No' : '-'"
+            )
+        },
+        "filterParams": {
+            "valueFormatter": {
+                "function": (
+                    "params.value === true ? 'Yes' : "
+                    "params.value === false ? 'No' : '-'"
+                )
+            }
+        },
+    }
+    column.update(kwargs)
+    return column
+
+
 MASTER_COLUMN_DEFS = [
     text_column(
         "sku",
@@ -225,18 +251,18 @@ MASTER_COLUMN_DEFS = [
         "params.value == null ? '-' : `${params.value.toLocaleString()} W`",
         minWidth=135,
     ),
-    text_column("brushless_display", "Brushless", minWidth=120),
-    text_column("variable_speed_display", "Variable Speed", minWidth=145),
-    text_column("kit_display", "Kit", minWidth=95),
-    text_column("tool_only_display", "Tool Only", minWidth=110),
-    text_column("battery_included_display", "Battery", minWidth=110),
-    text_column("charger_included_display", "Charger", minWidth=115),
-    text_column("anti_rotation_display", "Anti-Rotation", minWidth=140),
-    text_column("e_clutch_display", "E-CLUTCH", minWidth=120),
-    text_column("kickback_brake_display", "Kickback Brake", minWidth=145),
-    text_column("tool_connect_display", "Tool Connect", minWidth=135),
-    text_column(
-        "wireless_tool_control_display",
+    boolean_column("brushless", "Brushless", minWidth=120),
+    boolean_column("variable_speed", "Variable Speed", minWidth=145),
+    boolean_column("kit", "Kit", minWidth=95),
+    boolean_column("tool_only", "Tool Only", minWidth=110),
+    boolean_column("battery_included", "Battery", minWidth=110),
+    boolean_column("charger_included", "Charger", minWidth=115),
+    boolean_column("anti_rotation_system", "Anti-Rotation", minWidth=140),
+    boolean_column("e_clutch", "E-CLUTCH", minWidth=120),
+    boolean_column("kickback_brake", "Kickback Brake", minWidth=145),
+    boolean_column("tool_connect_ready", "Tool Connect", minWidth=135),
+    boolean_column(
+        "wireless_tool_control",
         "Wireless Tool Control",
         minWidth=185,
     ),
