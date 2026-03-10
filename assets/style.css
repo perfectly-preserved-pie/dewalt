@@ -200,6 +200,88 @@ a {
     margin-top: 1.4rem;
 }
 
+.modal-content {
+    border: 1px solid color-mix(in srgb, var(--dw-yellow) 18%, var(--dw-border));
+    border-radius: 1.2rem;
+    background:
+        linear-gradient(135deg, rgba(240, 197, 52, 0.08), transparent 42%),
+        var(--dw-panel);
+    color: var(--dw-text);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--dw-border);
+}
+
+.modal-title {
+    margin: 0.15rem 0 0;
+    color: #fff3bf;
+    font-size: 1.5rem;
+    line-height: 1.15;
+}
+
+.modal-sku {
+    color: var(--dw-yellow);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.modal-overview {
+    margin-bottom: 1rem;
+    color: var(--dw-muted);
+    line-height: 1.6;
+}
+
+.modal-spec-table {
+    margin-bottom: 1.35rem;
+}
+
+.modal-spec-table th,
+.modal-spec-table td {
+    padding: 0.55rem 0;
+    border-color: var(--dw-border);
+    vertical-align: top;
+}
+
+.modal-spec-label {
+    width: 32%;
+    color: var(--dw-muted);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.modal-spec-value {
+    color: var(--dw-text);
+}
+
+.modal-section {
+    margin-top: 1.2rem;
+    padding-top: 1.05rem;
+    border-top: 1px solid var(--dw-border);
+}
+
+.modal-section-title {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff3bf;
+}
+
+.modal-list {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: var(--dw-text);
+}
+
+.modal-list li + li {
+    margin-top: 0.45rem;
+}
+
 .section-title {
     margin: 0;
     font-size: 1.35rem;
