@@ -420,6 +420,8 @@ def parse_power_source(specs: dict[str, str], all_text: str) -> str:
         return "Cordless"
 
     lowered = all_text.lower()
+    if MAX_VOLTAGE_PATTERN.search(all_text):
+        return "Cordless"
     if (
         "cordless" in lowered
         or "tool only" in lowered
@@ -438,9 +440,13 @@ def sku_looks_like_bare_tool(sku: str) -> bool:
         sku: Product SKU string.
 
     Returns:
-        ``True`` when the SKU contains a ``B`` suffix pattern, otherwise ``False``.
+        ``True`` when the SKU ends in a bare-tool ``B`` suffix and does not contain
+        a kit-style ``P`` marker, otherwise ``False``.
     """
-    return "B" in sku.upper()
+    normalized_sku = re.sub(r"[^A-Z0-9]", "", sku.upper())
+    if "P" in normalized_sku:
+        return False
+    return normalized_sku.endswith("B")
 
 
 def is_supported_drill_driver(row: dict[str, Any]) -> bool:

@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-03-10T23:38:54+00:00",
+  "scraped_at": "2026-03-10T23:48:55+00:00",
   "catalog_url": "https://www.dewalt.com/products/power-tools/drills/hammer-drills",
   "listing_page_count": null,
   "raw_product_count": 35,
-  "product_count": 25,
-  "excluded_product_count": 10,
+  "product_count": 22,
+  "excluded_product_count": 13,
   "rows": [
     {
       "sku": "DC997CB",
@@ -480,60 +480,6 @@
       ]
     },
     {
-      "sku": "DCD798P1",
-      "title": "20V MAX* 1/2in. Brushless Hammer Drill Kit",
-      "url": "https://www.dewalt.com/product/dcd798p1/20v-max-12in-brushless-hammer-drill-kit",
-      "category": "Hammer Drill",
-      "series": [],
-      "power_source": "Corded",
-      "voltage_system": "20V",
-      "max_voltage_v": 20,
-      "nominal_voltage_v": 18.0,
-      "battery_type": null,
-      "battery_capacity_ah": null,
-      "amp_rating": null,
-      "chuck_size_label": "1/2",
-      "chuck_size_in": 0.5,
-      "chuck_type": "Keyless",
-      "speed_count": null,
-      "clutch_positions": null,
-      "no_load_speed": null,
-      "rpm_max": null,
-      "impact_rate_bpm": null,
-      "max_watts_out": 543,
-      "power_output_watts": null,
-      "tool_length_in": null,
-      "weight_lbs": null,
-      "brushless": true,
-      "variable_speed": false,
-      "led_light": null,
-      "lock_on_switch": null,
-      "secondary_handle": null,
-      "kit": true,
-      "tool_only": false,
-      "battery_included": true,
-      "charger_included": true,
-      "tool_connect_ready": false,
-      "description": "Complete a variety of concrete and masonry drilling applications with the 20V MAX* Brushless 1/2 in. Hammer Drill. With 543 unit watts out\u2020, this brushless hammer drill can complete a variety of tasks on the jobsite. The on-tool LED work light helps to provide illumination for efficiency and productivity.",
-      "features": [
-        "1/2 in. Metal Chuck- High Bit Retention and up to 1,650 RPMs no load in drill mode.",
-        "Get More Power With Up To 543 UWO\u2020 - And up to 28,050 BPMs in hammer mode for a variety of concrete and masonry applications.",
-        "Illuminate Workspaces - Using the on-tool LED work light."
-      ],
-      "additional_features": [],
-      "includes": [
-        "(1) DCD798 1/2 in. Hammer Drill",
-        "(1) Belt Hook",
-        "(1) DCB205 Battery",
-        "(1) Charger"
-      ],
-      "applications": [],
-      "disclaimers": [
-        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
-        "\u2020Based on using DCB205 battery."
-      ]
-    },
-    {
       "sku": "DCD799B",
       "title": "ATOMIC 20V MAX* 1/2 in. Hammer Drill (Tool Only)",
       "url": "https://www.dewalt.com/product/dcd799b/atomic-20v-max-12-hammer-drill-tool-only",
@@ -590,65 +536,6 @@
         "**DCD799 is Our Shortest 20V MAX* Hammer Drill, tool head length only.",
         "***The DEWALT DCD799 with a DEWALT DCB230 battery (sold separately) provides up to 14% More Power vs. DEWALT DCD778 with a DEWALT DCB230 (sold separately).",
         "\u2020 Based on using DCB230 battery (sold separately)."
-      ]
-    },
-    {
-      "sku": "DCD799P1",
-      "title": "ATOMIC 20V MAX * Brushless 1/2in. Hammer Drill Kit",
-      "url": "https://www.dewalt.com/product/dcd799p1/atomic-20v-max-brushless-12in-hammer-drill-kit",
-      "category": "Hammer Drill",
-      "series": [
-        "ATOMIC"
-      ],
-      "power_source": "Corded",
-      "voltage_system": "20V",
-      "max_voltage_v": 20,
-      "nominal_voltage_v": 18.0,
-      "battery_type": null,
-      "battery_capacity_ah": null,
-      "amp_rating": null,
-      "chuck_size_label": "1/2",
-      "chuck_size_in": 0.5,
-      "chuck_type": "Keyless",
-      "speed_count": null,
-      "clutch_positions": null,
-      "no_load_speed": null,
-      "rpm_max": null,
-      "impact_rate_bpm": null,
-      "max_watts_out": 585,
-      "power_output_watts": null,
-      "tool_length_in": null,
-      "weight_lbs": null,
-      "brushless": true,
-      "variable_speed": false,
-      "led_light": null,
-      "lock_on_switch": null,
-      "secondary_handle": null,
-      "kit": true,
-      "tool_only": false,
-      "battery_included": true,
-      "charger_included": true,
-      "tool_connect_ready": false,
-      "description": "Unlock power for tough masonry drilling applications with the ATOMIC 20V MAX* 1/2 in. Hammer Drill. This compact hammer drill delivers up to 585 UWO\u2020 so you can maintain productivity in tight areas.",
-      "features": [
-        "Our Shortest 20V MAX* Hammer Drill** - At 6.5 in. (tool head length only) to access hard to reach areas.",
-        "1/2 in. Metal Chuck with high bit retention.",
-        "Unlock Power In A Compact Size - With 585 UWO\u2020 and up to 28,050 BPMs to tackle tough jobs in tight spaces."
-      ],
-      "additional_features": [
-        "Illuminate Workspaces - Using the on-tool LED work light."
-      ],
-      "includes": [
-        "(1) DCD799 1/2 in. Hammer Drill",
-        "(1) Belt Hook",
-        "(1) DCB205 Battery",
-        "(1) Charger"
-      ],
-      "applications": [],
-      "disclaimers": [
-        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
-        "**DCD799 is Our Shortest 20V MAX* Hammer Drill, tool head length only.",
-        "\u2020 Based on using DCB205 battery."
       ]
     },
     {
@@ -766,71 +653,6 @@
       "includes": [
         "(1) 20V MAX* 1/2 in. XR Brushless Cordless Hammer Drill/Driver with Integrated Bluetooth",
         "(1) 360-Degree Side Handle"
-      ],
-      "applications": [],
-      "disclaimers": [
-        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
-      ]
-    },
-    {
-      "sku": "DCD997CP2BT",
-      "title": "TOOL CONNECT 20V MAX* 1/2 in. XR Brushless Cordless Hammer Drill/Driver Kit",
-      "url": "https://www.dewalt.com/product/dcd997cp2bt/tool-connect-20v-max-12-xr-brushless-cordless-hammer-drilldriver-kit",
-      "category": "Hammer Drill",
-      "series": [
-        "XR",
-        "TOOL CONNECT"
-      ],
-      "power_source": "Cordless",
-      "voltage_system": "20V MAX",
-      "max_voltage_v": 20,
-      "nominal_voltage_v": 18.0,
-      "battery_type": "Lithium Ion",
-      "battery_capacity_ah": 5.0,
-      "amp_rating": null,
-      "chuck_size_label": "1/2",
-      "chuck_size_in": 0.5,
-      "chuck_type": "Keyless",
-      "speed_count": 3,
-      "clutch_positions": null,
-      "no_load_speed": null,
-      "rpm_max": null,
-      "impact_rate_bpm": null,
-      "max_watts_out": null,
-      "power_output_watts": null,
-      "tool_length_in": 8.0,
-      "weight_lbs": null,
-      "brushless": true,
-      "variable_speed": false,
-      "led_light": true,
-      "lock_on_switch": null,
-      "secondary_handle": true,
-      "kit": true,
-      "tool_only": true,
-      "battery_included": true,
-      "charger_included": true,
-      "tool_connect_ready": true,
-      "description": "Take control of the jobsite with the TOOL CONNECT 20V MAX* 1/2 in. XR Brushless Cordless Hammer Drill/Driver. This Bluetooth-enabled product delivers efficient out-of-the-box compatibility to the TOOL CONNECT inventory management system. Track, manage, and customize the versatile TOOL CONNECT 20V MAX* 1/2 in. XR Hammer Drill/Driver in Site Manager or the TOOL CONNECT Control App. For convenience this drill is packed with (2) Bluetooth-enabled 20V MAX* 5Ah batteries featuring TOOL CONNECT technology, a charger, and a durable kit box for portability.",
-      "features": [
-        "Reduce Wasted Time And Money - The Last seen feature provides the street address of where your cordless drill/driver was last in range of your TOOL CONNECT and trade-enabled device",
-        "Quickly assign tools to jobsites and users on the TOOL CONNECT inventory manager software, increasing accountability and reducing lost tools",
-        "Receive diagnostics on the tool, like internal coin cell battery life, temperature, number of trigger pulls, and how long the tool has been running"
-      ],
-      "additional_features": [
-        "Deter Theft - Set \"disable when out of range\" alerts to help deter unauthorized use or theft",
-        "Easily Pair - Once you've downloaded the TOOL CONNECT app, easily pair with the app by holding down the pair button on the tool foot for 3-5 seconds",
-        "Precision - Program 3 customized rpm settings for precise speed of application",
-        "Customize the brightness and delay of the integrated LED",
-        "Heavy-duty 1/2 in. ratcheting nitro-carburized metal chuck with carbide inserts for superior bit gripping strength",
-        "The DCD997C is equipped with a Bind-Up Control system. This technology is capable sensing a bind-up situation and shuts the tool down if necessary"
-      ],
-      "includes": [
-        "(1) 20V MAX* 1/2 in. XR Brushless Cordless Hammer Drill/Driver with Integrated Bluetooth",
-        "(1) Charger",
-        "(2) DCB205BT Batteries",
-        "(1) 360-degree side handle",
-        "(1) Kit Box",
-        "(2) 20V MAX* Li-ion 5.0Ah Batteries with Tool Connect"
       ],
       "applications": [],
       "disclaimers": [
