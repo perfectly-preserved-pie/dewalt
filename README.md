@@ -1,7 +1,7 @@
 # DEWALT Tool Table and Comparison
 
 Dash app for browsing and comparing DEWALT bare-tool angle grinders with Dash AG Grid.
-The scraper is currently scoped to bare-tool cordless SKUs only.
+The scraper is currently scoped to all corded grinders plus bare-tool cordless SKUs.
 
 ## AI Disclosure
 This app was generated entirely with GPT-5.4.

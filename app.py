@@ -373,7 +373,8 @@ app.layout = dbc.Container(
                         html.P(
                             (
                                 "A Dash AG Grid catalog for DEWALT bare-tool angle grinders. "
-                                "Filter the master table, select models, and compare specs "
+                                "Corded grinders are included, and cordless grinders are limited "
+                                "to bare-tool SKUs. Filter the master table, select models, and compare specs "
                                 "and feature sets side by side."
                             ),
                             className="hero-copy",
@@ -443,7 +444,7 @@ app.layout = dbc.Container(
                                 html.Div(
                                     [
                                         html.Div(
-                                            "Select up to 4 bare-tool grinders in the master table to compare.",
+                                            "Select up to 4 grinders in the master table to compare.",
                                             className="panel-note",
                                         ),
                                         html.Div(id="selection-summary", className="selection-summary"),

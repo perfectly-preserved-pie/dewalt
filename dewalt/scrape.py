@@ -229,7 +229,7 @@ def sku_looks_like_bare_tool(sku: str) -> bool:
 
 def is_bare_tool(row: dict[str, Any]) -> bool:
     if row["power_source"] != "Cordless":
-        return False
+        return True
     title_lower = row["title"].lower()
     return "tool only" in title_lower or sku_looks_like_bare_tool(row["sku"])
 
