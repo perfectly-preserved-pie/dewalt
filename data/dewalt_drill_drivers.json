@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-03-10T23:26:41+00:00",
+  "scraped_at": "2026-03-10T23:29:29+00:00",
   "catalog_url": "https://www.dewalt.com/products/power-tools/drills/drill-drivers",
   "listing_page_count": null,
   "raw_product_count": 44,
@@ -548,7 +548,7 @@
       "battery_type": null,
       "battery_capacity_ah": null,
       "amp_rating": null,
-      "chuck_size_label": "0.5",
+      "chuck_size_label": "1/2",
       "chuck_size_in": 0.5,
       "chuck_type": "Metal",
       "speed_count": 2,

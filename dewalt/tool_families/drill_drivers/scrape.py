@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone
+from fractions import Fraction
 import json
 from pathlib import Path
 import re
@@ -209,6 +210,28 @@ def parse_float_value(raw_value: str | None) -> float | None:
         except ValueError:
             continue
     return None
+
+
+def normalize_chuck_size_label(raw_value: str | None) -> str | None:
+    """Normalize equivalent chuck-size labels to a single display value.
+
+    Args:
+        raw_value: Raw chuck-size specification string.
+
+    Returns:
+        A normalized fractional label such as ``"1/2"``, or ``None`` when unavailable.
+    """
+    if not raw_value:
+        return None
+
+    numeric_value = parse_float_value(raw_value)
+    if numeric_value is None:
+        return normalize_text(raw_value)
+
+    fraction = Fraction(numeric_value).limit_denominator(16)
+    if fraction.denominator == 1:
+        return str(fraction.numerator)
+    return f"{fraction.numerator}/{fraction.denominator}"
 
 
 def parse_int_value(raw_value: str | None) -> int | None:
@@ -526,7 +549,7 @@ def parse_product_page(url: str, html_text: str) -> dict[str, Any] | None:
         "battery_type": specs.get("Battery Type") or specs.get("Battery Chemistry"),
         "battery_capacity_ah": parse_float_value(specs.get("Battery Capacity [Ah]")),
         "amp_rating": parse_float_value(specs.get("Amps [A]")),
-        "chuck_size_label": specs.get("Chuck Size [in]"),
+        "chuck_size_label": normalize_chuck_size_label(specs.get("Chuck Size [in]")),
         "chuck_size_in": parse_float_value(specs.get("Chuck Size [in]")),
         "chuck_type": specs.get("Chuck Type"),
         "speed_count": parse_int_value(specs.get("Number of Speed Settings")),
