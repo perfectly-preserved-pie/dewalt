@@ -53,8 +53,9 @@ def format_family_list(labels: list[str]) -> str:
         labels: Ordered list of family labels.
 
     Returns:
-        A human-readable string joining the family labels.
+        A human-readable string joining the family labels, sorted alphabetically.
     """
+    labels = sorted(labels)
     if not labels:
         return "DEWALT tools"
     if len(labels) == 1:
