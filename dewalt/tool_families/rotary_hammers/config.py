@@ -12,17 +12,14 @@ ROTARY_HAMMER_FAMILY = ToolFamilyDefinition(
     tab_label="Rotary Hammers",
     hero_title="Rotary Hammer Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT rotary hammers. Corded tools are kept in "
-        "scope, cordless products are limited to bare-tool SKUs, and non-tool dust "
-        "extractors plus construction jacks are excluded. Filter the master table, "
-        "open detail popups, and compare hammer class, impact energy, and feature sets "
-        "side by side."
+        "Compare DEWALT rotary hammers by hammer type, impact energy, speed, and jobsite features. "
+        "Use the list to sort through corded tools and bare-tool cordless models."
     ),
-    selection_note="Select up to 4 rotary hammers to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 rotary hammers to compare. Tap a row for full details.",
     no_selection_note=(
-        "No rotary hammers selected yet. Use the checkboxes in the master table to build a comparison."
+        "No rotary hammers picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

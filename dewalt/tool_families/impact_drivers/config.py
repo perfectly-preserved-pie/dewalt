@@ -12,17 +12,14 @@ IMPACT_DRIVER_FAMILY = ToolFamilyDefinition(
     tab_label="Impact Drivers",
     hero_title="Impact Driver Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT impact drivers. "
-        "The current snapshot follows the existing repo scope: cordless tools are limited "
-        "to bare-tool SKUs, while kits, accessories, and impact wrenches are excluded. "
-        "Filter the master table, open detail popups, and compare core fastening specs "
-        "side by side."
+        "Compare DEWALT impact drivers by drive size, speed, torque, weight, and key fastening features. "
+        "This list stays focused on the bare-tool driver models."
     ),
-    selection_note="Select up to 4 impact drivers to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 impact drivers to compare. Tap a row for full details.",
     no_selection_note=(
-        "No impact drivers selected yet. Use the checkboxes in the master table to build a comparison."
+        "No impact drivers picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

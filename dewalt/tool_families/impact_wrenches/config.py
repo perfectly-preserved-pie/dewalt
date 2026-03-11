@@ -12,17 +12,14 @@ IMPACT_WRENCH_FAMILY = ToolFamilyDefinition(
     tab_label="Impact Wrenches",
     hero_title="Impact Wrench Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT impact wrenches. "
-        "Corded impact wrenches are included, cordless products are limited to bare-tool "
-        "SKUs, and pneumatic tools plus protective boots are excluded from the snapshot. "
-        "Filter the master table, open detail popups, and compare torque and retention "
-        "specs side by side."
+        "Compare DEWALT impact wrenches by drive size, torque, retention style, and tool size. "
+        "Use the list to sort through corded tools and bare-tool cordless models."
     ),
-    selection_note="Select up to 4 impact wrenches to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 impact wrenches to compare. Tap a row for full details.",
     no_selection_note=(
-        "No impact wrenches selected yet. Use the checkboxes in the master table to build a comparison."
+        "No impact wrenches picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

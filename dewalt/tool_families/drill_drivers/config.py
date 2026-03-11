@@ -12,16 +12,14 @@ DRILL_DRIVER_FAMILY = ToolFamilyDefinition(
     tab_label="Drill Drivers",
     hero_title="Drill Driver Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT drill drivers. "
-        "Corded drills are included, and cordless products are limited to bare-tool SKUs. "
-        "Filter the master table, open detail popups, and compare core specs and feature sets "
-        "side by side."
+        "Compare DEWALT drill drivers by power, chuck size, speed, weight, and key features. "
+        "Use the list to sort through corded drills and bare-tool cordless models."
     ),
-    selection_note="Select up to 4 drill drivers to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 drill drivers to compare. Tap a row for full details.",
     no_selection_note=(
-        "No drill drivers selected yet. Use the checkboxes in the master table to build a comparison."
+        "No drill drivers picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

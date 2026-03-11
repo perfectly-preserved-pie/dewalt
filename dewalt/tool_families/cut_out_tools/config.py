@@ -12,16 +12,14 @@ CUT_OUT_TOOL_FAMILY = ToolFamilyDefinition(
     tab_label="Cut-Out Tools",
     hero_title="Cut-Out Tool Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT cut-out tools. Corded cut-out tools are "
-        "kept in scope, cordless products are limited to bare-tool SKUs, and the "
-        "comparison view focuses on tool type, collet or wheel size, speed, and "
-        "light-duty cutting features."
+        "Compare DEWALT cut-out tools by size, speed, and the features that matter for light cutting work. "
+        "Use the list to sort through corded models and bare-tool cordless options."
     ),
-    selection_note="Select up to 4 cut-out tools to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 cut-out tools to compare. Tap a row for full details.",
     no_selection_note=(
-        "No cut-out tools selected yet. Use the checkboxes in the master table to build a comparison."
+        "No cut-out tools picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

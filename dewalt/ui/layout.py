@@ -201,9 +201,9 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
                             html.H1("DEWALT Compare", className="hero-title"),
                             html.P(
                                 (
-                                    f"Dash AG Grid catalogs for {format_family_list(family_labels)}. "
-                                    "Each tab includes a master table, a row-detail modal, and a "
-                                    "side-by-side comparison view."
+                                    f"Compare DEWALT {format_family_list(family_labels)} in one place. "
+                                    "Filter the list, open any model for the details, and line up "
+                                    "your top picks side by side."
                                 ),
                                 className="hero-copy",
                             ),

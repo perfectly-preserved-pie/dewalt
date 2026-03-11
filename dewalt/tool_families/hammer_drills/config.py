@@ -12,16 +12,14 @@ HAMMER_DRILL_FAMILY = ToolFamilyDefinition(
     tab_label="Hammer Drills",
     hero_title="Hammer Drill Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT hammer drills. "
-        "Corded hammer drills are included, and cordless products are limited to bare-tool SKUs. "
-        "Filter the master table, open detail popups, and compare core specs and feature sets "
-        "side by side."
+        "Compare DEWALT hammer drills by power, chuck size, speed, weight, and key features. "
+        "Use the list to sort through corded tools and bare-tool cordless models."
     ),
-    selection_note="Select up to 4 hammer drills to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 hammer drills to compare. Tap a row for full details.",
     no_selection_note=(
-        "No hammer drills selected yet. Use the checkboxes in the master table to build a comparison."
+        "No hammer drills picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

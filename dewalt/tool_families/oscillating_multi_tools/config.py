@@ -15,18 +15,16 @@ OSCILLATING_MULTI_TOOL_FAMILY = ToolFamilyDefinition(
     tab_label="Oscillating Multi-Tools",
     hero_title="Oscillating Multi-Tool Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT oscillating multi-tools. "
-        "Accessory blades are excluded, cordless products are limited to bare-tool "
-        "SKUs, and any corded tools are included when present. Filter the master "
-        "table, open detail popups, and compare speed and feature sets side by side."
+        "Compare DEWALT oscillating multi-tools by speed, size, weight, and key features. "
+        "Use the list to sort through corded tools and bare-tool cordless models."
     ),
     selection_note=(
-        "Select up to 4 oscillating multi-tools to compare. Clicking a row opens a detail popup."
+        "Pick up to 4 oscillating multi-tools to compare. Tap a row for full details."
     ),
     no_selection_note=(
-        "No oscillating multi-tools selected yet. Use the checkboxes in the master table to build a comparison."
+        "No oscillating multi-tools picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

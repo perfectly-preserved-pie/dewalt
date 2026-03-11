@@ -12,15 +12,14 @@ RATCHET_FAMILY = ToolFamilyDefinition(
     tab_label="Ratchets",
     hero_title="Ratchet Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT cordless ratchets. Bare-tool cordless "
-        "SKUs are kept in scope, kits are excluded, and the comparison view focuses "
-        "on drive sizes, ratchet head styles, torque, and reach."
+        "Compare DEWALT ratchets by drive size, head style, torque, reach, and key features. "
+        "This list stays focused on the bare-tool cordless ratchets."
     ),
-    selection_note="Select up to 4 ratchets to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 ratchets to compare. Tap a row for full details.",
     no_selection_note=(
-        "No ratchets selected yet. Use the checkboxes in the master table to build a comparison."
+        "No ratchets picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

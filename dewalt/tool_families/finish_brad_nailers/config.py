@@ -15,18 +15,16 @@ FINISH_BRAD_NAILER_FAMILY = ToolFamilyDefinition(
     tab_label="Finish/Brad Nailers",
     hero_title="Finish & Brad Nailer Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT finish, brad, and pin nailers. Pneumatic "
-        "models are kept in scope, cordless products are limited to bare-tool SKUs, "
-        "and the comparison view focuses on gauge, magazine setup, fastener length, "
-        "and productivity features."
+        "Compare DEWALT finish, brad, and pin nailers by gauge, magazine setup, fastener length, and jobsite features. "
+        "Use the list to sort through pneumatic models and bare-tool cordless options."
     ),
     selection_note=(
-        "Select up to 4 finish/brad nailers to compare. Clicking a row opens a detail popup."
+        "Pick up to 4 finish or brad nailers to compare. Tap a row for full details."
     ),
     no_selection_note=(
-        "No finish/brad nailers selected yet. Use the checkboxes in the master table to build a comparison."
+        "No finish or brad nailers picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

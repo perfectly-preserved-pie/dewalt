@@ -12,15 +12,14 @@ CIRCULAR_SAW_FAMILY = ToolFamilyDefinition(
     tab_label="Circular Saws",
     hero_title="Circular Saw Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT circular saws. Corded circular saws are "
-        "kept when present, cordless products are limited to bare-tool SKUs, and the "
-        "comparison view focuses on blade size, cut capacity, and jobsite features."
+        "Compare DEWALT circular saws by blade size, cut depth, bevel range, and jobsite features. "
+        "Use the list to sort through corded saws and bare-tool cordless models."
     ),
-    selection_note="Select up to 4 circular saws to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 circular saws to compare. Tap a row for full details.",
     no_selection_note=(
-        "No circular saws selected yet. Use the checkboxes in the master table to build a comparison."
+        "No circular saws picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

@@ -12,14 +12,12 @@ ANGLE_GRINDER_FAMILY = ToolFamilyDefinition(
     tab_label="Angle Grinders",
     hero_title="Angle Grinder Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT bare-tool angle grinders. "
-        "Corded grinders are included, and cordless grinders are limited "
-        "to bare-tool SKUs. Filter the master table, select models, and compare specs "
-        "and feature sets side by side."
+        "Compare DEWALT angle grinders by power, wheel size, speed, and key safety features. "
+        "Use the list to sort through corded models and bare-tool cordless options."
     ),
-    selection_note="Select up to 4 grinders to compare. Clicking a row opens a detail popup.",
-    no_selection_note="No grinders selected yet. Use the checkboxes in the master table to build a comparison.",
-    compare_title="Comparison",
+    selection_note="Pick up to 4 grinders to compare. Tap a row for full details.",
+    no_selection_note="No grinders picked yet. Check a few models to start a side-by-side compare.",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

@@ -12,16 +12,14 @@ MITER_SAW_FAMILY = ToolFamilyDefinition(
     tab_label="Miter Saws",
     hero_title="Miter Saw Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT miter saws. Corded saws are kept in scope, "
-        "cordless products are limited to bare-tool SKUs, and the comparison view "
-        "focuses on blade size, sliding vs. fixed layouts, cut capacity, and dust and "
-        "cutline features."
+        "Compare DEWALT miter saws by blade size, slide style, cut capacity, and jobsite features. "
+        "Use the list to sort through corded saws and bare-tool cordless models."
     ),
-    selection_note="Select up to 4 miter saws to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 miter saws to compare. Tap a row for full details.",
     no_selection_note=(
-        "No miter saws selected yet. Use the checkboxes in the master table to build a comparison."
+        "No miter saws picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),

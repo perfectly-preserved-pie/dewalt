@@ -12,16 +12,14 @@ VACUUM_FAMILY = ToolFamilyDefinition(
     tab_label="Vacuums",
     hero_title="Vacuum Compare",
     hero_copy=(
-        "A Dash AG Grid catalog for DEWALT vacuums and dust extractors. Corded vacuums "
-        "stay in scope, cordless and hybrid products are limited to bare-tool or "
-        "tool-only SKUs, and the comparison view focuses on tank size, suction specs, "
-        "hose dimensions, and dust-management features."
+        "Compare DEWALT vacuums and dust extractors by tank size, suction, hose setup, and cleanup features. "
+        "Use the list to sort through corded models and tool-only cordless options."
     ),
-    selection_note="Select up to 4 vacuums to compare. Clicking a row opens a detail popup.",
+    selection_note="Pick up to 4 vacuums to compare. Tap a row for full details.",
     no_selection_note=(
-        "No vacuums selected yet. Use the checkboxes in the master table to build a comparison."
+        "No vacuums picked yet. Check a few models to start a side-by-side compare."
     ),
-    compare_title="Comparison",
+    compare_title="Side-by-Side Compare",
     compare_fields=(
         ("sku", "SKU"),
         ("title", "Model"),
