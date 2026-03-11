@@ -26,6 +26,7 @@ class ToolFamilyIds:
     selection_summary: str
     compare_note: str
     compare_grid: str
+    compare_cards: str
     modal: str
     modal_header: str
     modal_content: str
@@ -46,6 +47,7 @@ def build_family_ids(slug: str) -> ToolFamilyIds:
         selection_summary=f"{slug}-selection-summary",
         compare_note=f"{slug}-compare-note",
         compare_grid=f"{slug}-compare-grid",
+        compare_cards=f"{slug}-compare-cards",
         modal=f"{slug}-modal",
         modal_header=f"{slug}-modal-header",
         modal_content=f"{slug}-modal-content",

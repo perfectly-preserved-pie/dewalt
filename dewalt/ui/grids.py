@@ -56,8 +56,8 @@ def build_master_grid(
             "sortable": True,
             "resizable": True,
             "floatingFilter": True,
+            "minWidth": 110,
         },
-        columnSize="sizeToFit",
         style={"width": "100%", "height": "620px"},
         dashGridOptions={
             "animateRows": False,
@@ -108,6 +108,7 @@ def build_compare_grid(
             "resizable": True,
             "wrapText": True,
             "autoHeight": True,
+            "minWidth": 180,
         },
         style={"width": "100%", "height": "620px"},
         dashGridOptions={

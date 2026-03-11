@@ -153,6 +153,10 @@ def build_family_tab(section: DashboardSection) -> dcc.Tab:
                                         className="compare-header",
                                     ),
                                     section.compare_grid,
+                                    html.Div(
+                                        id=context.family.ids.compare_cards,
+                                        className="mobile-compare-cards",
+                                    ),
                                 ],
                                 className="compare-shell",
                             ),

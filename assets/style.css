@@ -238,6 +238,70 @@ a {
     margin-top: 1.4rem;
 }
 
+.mobile-compare-cards {
+    display: none;
+    gap: 0.85rem;
+    margin-top: 1rem;
+}
+
+.mobile-compare-card {
+    padding: 1rem;
+    border: 1px solid color-mix(in srgb, var(--dw-yellow) 14%, var(--dw-border));
+    border-radius: 1rem;
+    background:
+        linear-gradient(135deg, rgba(240, 197, 52, 0.08), transparent 48%),
+        rgba(255, 255, 255, 0.03);
+}
+
+.mobile-compare-card-head {
+    display: grid;
+    gap: 0.25rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid var(--dw-border);
+}
+
+.mobile-compare-sku {
+    color: var(--dw-yellow);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.mobile-compare-title {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.mobile-compare-table {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.mobile-compare-row {
+    display: grid;
+    gap: 0.15rem;
+}
+
+.mobile-compare-label {
+    color: var(--dw-muted);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.mobile-compare-value {
+    color: var(--dw-text);
+    line-height: 1.45;
+}
+
+.mobile-compare-placeholder {
+    min-height: 12rem;
+}
+
 .modal-content {
     border: 1px solid color-mix(in srgb, var(--dw-yellow) 18%, var(--dw-border));
     border-radius: 1.2rem;
@@ -345,6 +409,21 @@ a {
         padding-inline: 0.4rem;
     }
 
+    .tool-tabs .tab-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+        scrollbar-width: thin;
+    }
+
+    .tool-tab {
+        flex: 0 0 auto;
+        margin-right: 0;
+        white-space: nowrap;
+    }
+
     .stat-card-wide {
         grid-column: auto;
     }
@@ -366,5 +445,42 @@ a {
 
     .tab-panel {
         padding: 0.85rem;
+    }
+
+    .grid-shell {
+        margin-top: 0.85rem;
+    }
+
+    .grid-shell .ag-root-wrapper,
+    .grid-shell .ag-header,
+    .grid-shell .ag-paging-panel {
+        border-radius: 0;
+    }
+
+    .grid-shell .ag-header-cell-text,
+    .grid-shell .ag-cell,
+    .grid-shell .ag-paging-panel {
+        font-size: 0.84rem;
+    }
+
+    .grid-shell .ag-header-cell,
+    .grid-shell .ag-cell {
+        padding-inline: 0.45rem;
+    }
+
+    .grid-shell .ag-paging-panel {
+        gap: 0.4rem;
+        min-height: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-block: 0.5rem;
+    }
+
+    .compare-grid {
+        display: none;
+    }
+
+    .mobile-compare-cards {
+        display: grid;
     }
 }
