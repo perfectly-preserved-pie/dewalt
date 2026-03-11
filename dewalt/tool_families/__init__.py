@@ -5,6 +5,7 @@ from .drill_drivers import DRILL_DRIVER_FAMILY
 from .hammer_drills import HAMMER_DRILL_FAMILY
 from .impact_drivers import IMPACT_DRIVER_FAMILY
 from .impact_wrenches import IMPACT_WRENCH_FAMILY
+from .oscillating_multi_tools import OSCILLATING_MULTI_TOOL_FAMILY
 from .base import ColumnDef, StatCard, ToolFamilyDefinition, ToolFamilyIds, RowData
 
 __all__ = [
@@ -13,6 +14,7 @@ __all__ = [
     "HAMMER_DRILL_FAMILY",
     "IMPACT_DRIVER_FAMILY",
     "IMPACT_WRENCH_FAMILY",
+    "OSCILLATING_MULTI_TOOL_FAMILY",
     "ColumnDef",
     "RowData",
     "StatCard",

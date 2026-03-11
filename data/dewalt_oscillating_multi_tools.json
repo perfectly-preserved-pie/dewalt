@@ -1,0 +1,159 @@
+{
+  "scraped_at": "2026-03-11T01:37:13+00:00",
+  "catalog_url": "https://www.dewalt.com/products/power-tools/multi-function-tools/oscillating-multi-tools",
+  "listing_page_count": 1,
+  "raw_product_count": 12,
+  "product_count": 3,
+  "excluded_product_count": 9,
+  "rows": [
+    {
+      "sku": "DCS353B",
+      "title": "XTREME 12V MAX* Brushless Cordless Oscillating Tool (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcs353b/xtreme-12v-max-brushless-cordless-oscillating-tool-tool-only",
+      "category": "Oscillating Multi-Tool",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "speed_count": null,
+      "oscillations_per_min": 18000,
+      "tool_length_in": 9.5,
+      "weight_lbs": 1.9,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "lock_on_switch": true,
+      "tool_free_accessory_change": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Whether you're plunge cutting into your decking, trimming wood and floorboards, or sanding down furniture, this XTREME 12V MAX* Brushless Cordless Oscillating Tool delivers the adaptability and utility you need for consistent professional results. Its compact size and pro-grade construction is suited for a wide range of jobs while the brushless motor delivers up to 18,000 oscillations per minute (opm) with a 3.2 degrees oscillation angle. Take advantage of the easily maneuverable build and control offered by the variable speed trigger, with enhanced visibility provided by an integrated LED. Battery & Charger Sold Separately",
+      "features": [
+        "Convenient Portability - Lightweight and compact design",
+        "Enhanced Performance - Long runtime with brushless motor",
+        "Versatile Utility - Universal accessory adapter makes it compatible with most oscillating tool accessory brands"
+      ],
+      "additional_features": [
+        "Ease Of Attachment Changes - Quick-Change accessory system allows blades and attachments to be changed quickly without wrenches",
+        "Illuminates Dark Work Surfaces - Bright LED allows you to see better and can make for accurate cutting",
+        "Ease Of Use - Trigger lock on/off capability",
+        "Match Speed To Application - With use of variable speed trigger"
+      ],
+      "includes": [
+        "(1) DCS353 XTREME 12V MAX* Brushless Oscillating Tool",
+        "(1) Wood Cutting Blade",
+        "(1) Wood/Metal Blade",
+        "(1) Universal Accessory Adaptor"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCS354B",
+      "title": "ATOMIC 20V MAX* Brushless Cordless Oscillating Multi-Tool (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcs354b/atomic-20v-max-brushless-cordless-oscillating-multi-tool-tool-only",
+      "category": "Oscillating Multi-Tool",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "speed_count": null,
+      "oscillations_per_min": 18000,
+      "tool_length_in": 11.2,
+      "weight_lbs": 2.33,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "lock_on_switch": null,
+      "tool_free_accessory_change": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "This 20V MAX* brushless cordless oscillating multi-tool includes a universal accessory adaptor and two wood cutting blades to help get your project started. The DCS354 cordless oscillating multi-tool has a powerful brushless motor providing up to 57% more run time over a similar brushed tool. The Quick-Change accessory system allows you to change blades quickly and easily, and with the universal accessory adaptor, it's compatible with most oscillating tool accessories. The DUAL-GRIP variable speed trigger provides ultimate speed and application control. The bright LED light illuminates dark work spaces. Battery charger and tool guide system sold separately.",
+      "features": [
+        "Brushless motor delivers up to 57% more run time over brushed",
+        "Dual-Grip variable speed trigger gives users ultimate speed and application control",
+        "Universal accessory adapter for use with most oscillating tool accessory brands"
+      ],
+      "additional_features": [
+        "Quick-Change accessory system allows blades and attachments to be changed quickly without wrenches",
+        "Bright LED Light illuminates dark work surfaces for accurate cutting",
+        "Bright LED light helps illuminates low-light work surfaces for accurate cutting"
+      ],
+      "includes": [
+        "(1) Wood With Nails Blade",
+        "(1) Fast-Cut Wood Blade",
+        "(1) Universal Accessory Adapter",
+        "(1) DCS354 20V MAX* Brushless Oscillating Multi-Tool"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCS356B",
+      "title": "20V MAX* XR Brushless Cordless 3-Speed Oscillating Multi-Tool (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcs356b/20v-max-xr-brushless-cordless-3-speed-oscillating-multi-tool-tool-only",
+      "category": "Oscillating Multi-Tool",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "speed_count": 3,
+      "oscillations_per_min": 20000,
+      "tool_length_in": 11.2,
+      "weight_lbs": 2.33,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "lock_on_switch": null,
+      "tool_free_accessory_change": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "This 20V MAX* cordless kit includes one brushless 3-speed oscillating multi-tool with a universal accessory adaptor and two wood cutting blades to help get your project started. The DCS356 Oscillating Multi-Tool has a powerful brushless motor that provides up to 57% more runtime over a similar brushed tool. The 3-speed selector allows users to choose their speed setting based on application. The Quick-Change accessory system allows you to change blades quickly and easily, and with the universal accessory adaptor, it's compatible with most oscillating tool accessories. The DUAL-GRIP variable-speed trigger provides ultimate speed and application control. The bright LED illuminates dark workspaces. Battery, charger, and tool guide system sold separately.",
+      "features": [
+        "The 3-speed selector allows users to choose their speed setting based on application",
+        "Brushless motor delivers up to 57% more runtime over brushed",
+        "Dual-Grip variable-speed trigger gives users ultimate speed and application control"
+      ],
+      "additional_features": [
+        "Universal accessory adapter for use with most oscillating tool accessory brands",
+        "Quick-Change accessory system allows blades and attachments to be changed quickly without wrenches",
+        "Bright LED illuminates dark work surfaces for accurate cutting",
+        "Bright LED light helps illuminate low-light work surfaces for accurate cutting"
+      ],
+      "includes": [
+        "(1) Wood With Nail Blade",
+        "(1) Fast-Cut Wood Blade",
+        "(1) Universal Accessory Adaptor",
+        "(1) DCS356 20V Max* XR Brushless Cordless Oscillating Multi-Tool"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    }
+  ]
+}

@@ -20,6 +20,9 @@ IMPACT_DRIVER_DATA_PATH = (
 IMPACT_WRENCH_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_impact_wrenches.json"
 )
+OSCILLATING_MULTI_TOOL_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_oscillating_multi_tools.json"
+)
 
 
 def normalize_power_source(value: str | None) -> str | None:
@@ -192,6 +195,41 @@ def load_impact_wrenches(path: Path = IMPACT_WRENCH_DATA_PATH) -> list[dict[str,
         A list of impact-wrench row dictionaries with normalized power-source labels.
     """
     snapshot = load_impact_wrench_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_oscillating_multi_tool_snapshot(
+    path: Path = OSCILLATING_MULTI_TOOL_DATA_PATH,
+) -> dict[str, Any]:
+    """Load the saved oscillating multi-tool snapshot from disk.
+
+    Args:
+        path: Filesystem path to the oscillating multi-tool snapshot JSON file.
+
+    Returns:
+        The parsed oscillating multi-tool snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_oscillating_multi_tools(
+    path: Path = OSCILLATING_MULTI_TOOL_DATA_PATH,
+) -> list[dict[str, Any]]:
+    """Load normalized oscillating multi-tool rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of oscillating multi-tool row dictionaries with normalized power-source
+        labels.
+    """
+    snapshot = load_oscillating_multi_tool_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)

@@ -9,6 +9,7 @@ from dewalt.tool_families import (
     HAMMER_DRILL_FAMILY,
     IMPACT_DRIVER_FAMILY,
     IMPACT_WRENCH_FAMILY,
+    OSCILLATING_MULTI_TOOL_FAMILY,
 )
 from dewalt.ui import (
     DashboardSection,
@@ -28,6 +29,7 @@ FAMILIES = (
     IMPACT_DRIVER_FAMILY,
     IMPACT_WRENCH_FAMILY,
     HAMMER_DRILL_FAMILY,
+    OSCILLATING_MULTI_TOOL_FAMILY,
 )
 COMPARE_BASE_COLUMNS = build_compare_base_columns()
 DASHBOARDS = [load_dashboard_context(family) for family in FAMILIES]
