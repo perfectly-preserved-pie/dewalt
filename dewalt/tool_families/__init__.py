@@ -13,6 +13,7 @@ from .oscillating_multi_tools import OSCILLATING_MULTI_TOOL_FAMILY
 from .ratchets import RATCHET_FAMILY
 from .rotary_hammers import ROTARY_HAMMER_FAMILY
 from .table_saws import TABLE_SAW_FAMILY
+from .vacuums import VACUUM_FAMILY
 from .base import ColumnDef, StatCard, ToolFamilyDefinition, ToolFamilyIds, RowData
 
 __all__ = [
@@ -29,6 +30,7 @@ __all__ = [
     "RATCHET_FAMILY",
     "ROTARY_HAMMER_FAMILY",
     "TABLE_SAW_FAMILY",
+    "VACUUM_FAMILY",
     "ColumnDef",
     "RowData",
     "StatCard",

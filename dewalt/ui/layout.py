@@ -46,6 +46,45 @@ def build_stat_card(card: StatCard) -> html.Div:
     )
 
 
+def format_snapshot_time(scraped_at: str) -> str:
+    """Format an ISO snapshot timestamp for display in hero cards.
+
+    Args:
+        scraped_at: Raw ISO timestamp from a tool-family snapshot.
+
+    Returns:
+        Human-readable timestamp text for the dashboard.
+    """
+    return scraped_at.replace("T", " ").replace("+00:00", " UTC")
+
+
+def build_snapshot_summary(sections: Sequence[DashboardSection]) -> html.Div:
+    """Build a single summary card body listing each family's snapshot time.
+
+    Args:
+        sections: Ordered dashboard sections to summarize.
+
+    Returns:
+        A ``Div`` containing one compact row per tool-family snapshot.
+    """
+    return html.Div(
+        [
+            html.Div(
+                [
+                    html.Span(section.context.family.tab_label, className="snapshot-family"),
+                    html.Span(
+                        format_snapshot_time(section.context.snapshot["scraped_at"]),
+                        className="snapshot-time",
+                    ),
+                ],
+                className="snapshot-entry",
+            )
+            for section in sections
+        ],
+        className="snapshot-list",
+    )
+
+
 def format_family_list(labels: list[str]) -> str:
     """Format tool-family labels into natural-language copy.
 
@@ -151,19 +190,17 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
     if not sections:
         raise ValueError("At least one dashboard section is required.")
 
-    latest_snapshot = max(section.context.snapshot["scraped_at"] for section in sections)
-    snapshot_time = latest_snapshot.replace("T", " ").replace("+00:00", " UTC")
-    family_labels = [section.context.family.tab_label for section in sections]
-    total_models = sum(len(section.context.display_rows) for section in sections)
+    sorted_sections = sorted(sections, key=lambda section: section.context.family.tab_label)
+    family_labels = [section.context.family.tab_label for section in sorted_sections]
+    total_models = sum(len(section.context.display_rows) for section in sorted_sections)
 
     stats = [
-        build_stat_card(
-            StatCard(
-                "Snapshot",
-                snapshot_time,
-                card_class_name="stat-card stat-card-wide",
-                value_class_name="stat-value stat-value-small",
-            )
+        html.Details(
+            [
+                html.Summary("Last Updated", className="stat-label snapshot-summary"),
+                build_snapshot_summary(sorted_sections),
+            ],
+            className="stat-card stat-card-wide snapshot-card",
         ),
         build_stat_card(StatCard("Families", str(len(sections)))),
         build_stat_card(StatCard("Models", str(total_models))),
@@ -194,9 +231,9 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
             ),
             dcc.Tabs(
                 id="tool-tabs",
-                value=sections[0].context.family.slug,
+                value=sorted_sections[0].context.family.slug,
                 className="tool-tabs",
-                children=sorted([build_family_tab(section) for section in sections], key=lambda tab: tab.label),
+                children=[build_family_tab(section) for section in sorted_sections],
             ),
         ],
         fluid=True,

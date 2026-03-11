@@ -44,6 +44,7 @@ TABLE_SAW_DATA_PATH = (
 ROTARY_HAMMER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_rotary_hammers.json"
 )
+VACUUM_DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "dewalt_vacuums.json"
 
 
 def normalize_power_source(value: str | None) -> str | None:
@@ -280,6 +281,36 @@ def load_table_saws(path: Path = TABLE_SAW_DATA_PATH) -> list[dict[str, Any]]:
         A list of table-saw row dictionaries with normalized power-source labels.
     """
     snapshot = load_table_saw_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_vacuum_snapshot(path: Path = VACUUM_DATA_PATH) -> dict[str, Any]:
+    """Load the saved vacuum snapshot from disk.
+
+    Args:
+        path: Filesystem path to the vacuum snapshot JSON file.
+
+    Returns:
+        The parsed vacuum snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_vacuums(path: Path = VACUUM_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized vacuum rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of vacuum row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_vacuum_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)

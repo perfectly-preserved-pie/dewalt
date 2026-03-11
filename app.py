@@ -17,6 +17,7 @@ from dewalt.tool_families import (
     RATCHET_FAMILY,
     ROTARY_HAMMER_FAMILY,
     TABLE_SAW_FAMILY,
+    VACUUM_FAMILY,
 )
 from dewalt.ui import (
     DashboardSection,
@@ -44,6 +45,7 @@ FAMILIES = (
     OSCILLATING_MULTI_TOOL_FAMILY,
     CUT_OUT_TOOL_FAMILY,
     FINISH_BRAD_NAILER_FAMILY,
+    VACUUM_FAMILY,
 )
 COMPARE_BASE_COLUMNS = build_compare_base_columns()
 DASHBOARDS = [load_dashboard_context(family) for family in FAMILIES]

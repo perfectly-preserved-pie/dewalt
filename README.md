@@ -1,6 +1,6 @@
 # DEWALT Tool Table and Comparison
 
-Dash app for browsing and comparing DEWALT angle grinders, circular saws, miter saws, table saws, drill drivers, impact drivers, impact wrenches, ratchets, hammer drills, rotary hammers, oscillating multi-tools, cut-out tools, and finish/brad nailers with Dash AG Grid.
+Dash app for browsing and comparing DEWALT angle grinders, circular saws, miter saws, table saws, drill drivers, impact drivers, impact wrenches, ratchets, hammer drills, rotary hammers, oscillating multi-tools, cut-out tools, finish/brad nailers, and vacuums with Dash AG Grid.
 The current scrapers are scoped to all corded tools plus bare-tool cordless SKUs.
 
 ## AI Disclosure
@@ -194,4 +194,18 @@ To build that snapshot from a local cache of DEWALT product pages instead:
 
 ```bash
 uv run python3 -m dewalt.tool_families.rotary_hammers.scrape --source-dir /tmp/dewalt-rotary-hammers
+```
+
+## Refresh the vacuum snapshot
+
+To refresh the checked-in vacuum dataset from the live DEWALT catalog:
+
+```bash
+uv run python3 -m dewalt.tool_families.vacuums.scrape
+```
+
+To build that snapshot from a local cache of DEWALT product pages instead:
+
+```bash
+uv run python3 -m dewalt.tool_families.vacuums.scrape --source-dir /tmp/dewalt-vacuums
 ```
