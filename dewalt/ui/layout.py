@@ -58,33 +58,6 @@ def format_snapshot_time(scraped_at: str) -> str:
     return scraped_at.replace("T", " ").replace("+00:00", " UTC")
 
 
-def build_snapshot_summary(sections: Sequence[DashboardSection]) -> html.Div:
-    """Build a single summary card body listing each family's snapshot time.
-
-    Args:
-        sections: Ordered dashboard sections to summarize.
-
-    Returns:
-        A ``Div`` containing one compact row per tool-family snapshot.
-    """
-    return html.Div(
-        [
-            html.Div(
-                [
-                    html.Span(section.context.family.tab_label, className="snapshot-family"),
-                    html.Span(
-                        format_snapshot_time(section.context.snapshot["scraped_at"]),
-                        className="snapshot-time",
-                    ),
-                ],
-                className="snapshot-entry",
-            )
-            for section in sections
-        ],
-        className="snapshot-list",
-    )
-
-
 def format_family_list(labels: list[str]) -> str:
     """Format tool-family labels into natural-language copy.
 
@@ -126,7 +99,22 @@ def build_family_tab(section: DashboardSection) -> dcc.Tab:
                 [
                     html.Div(
                         [
-                            html.H2(context.family.hero_title, className="section-title"),
+                            html.Div(
+                                [
+                                    html.H2(context.family.hero_title, className="section-title"),
+                                    html.Div(
+                                        [
+                                            html.Span("Last Updated", className="stat-label"),
+                                            html.Span(
+                                                format_snapshot_time(context.snapshot["scraped_at"]),
+                                                className="family-updated-time",
+                                            ),
+                                        ],
+                                        className="family-updated",
+                                    ),
+                                ],
+                                className="family-header",
+                            ),
                             html.P(context.family.hero_copy, className="family-copy"),
                         ],
                         className="family-overview",
@@ -195,13 +183,6 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
     total_models = sum(len(section.context.display_rows) for section in sorted_sections)
 
     stats = [
-        html.Details(
-            [
-                html.Summary("Last Updated", className="stat-label snapshot-summary"),
-                build_snapshot_summary(sorted_sections),
-            ],
-            className="stat-card stat-card-wide snapshot-card",
-        ),
         build_stat_card(StatCard("Families", str(len(sections)))),
         build_stat_card(StatCard("Models", str(total_models))),
     ]

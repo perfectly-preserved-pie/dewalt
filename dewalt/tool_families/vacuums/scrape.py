@@ -43,8 +43,10 @@ CFM_PATTERN = re.compile(r"(\d+(?:\.\d+)?)\s*cfm", re.I)
 AIR_WATTS_PATTERN = re.compile(r"(\d+(?:\.\d+)?)\s*air\s*watts?", re.I)
 DUAL_VOLTAGE_PATTERN = re.compile(r"(\d{2,3})\s*/\s*(\d{2,3})\s*v\s*max", re.I)
 HOSE_LENGTH_PATTERN = re.compile(
-    r"(\d+(?:\.\d+)?)\s*(?:ft\.?|foot|feet)\s*(?:long\s*)?(?:anti[- ]static\s*)?"
-    r"(?:flexible\s*)?(?:heavy[- ]duty\s*)?(?:crush[- ]resistant\s*)?hose",
+    r"(\d+(?:\.\d+)?)\s*(?:ft\.?|foot|feet|')\s*(?:x\s*\d+(?:-\d+/\d+|\s+\d+/\d+)?|"
+    r"x\s*\d+/\d+|x\s*\d+(?:\.\d+)?)?\s*(?:in\.?|inch|inches|\")?\s*(?:diameter\s*)?"
+    r"(?:long\s*)?(?:anti[- ]static\s*)?(?:flexible\s*)?(?:heavy[- ]duty\s*)?"
+    r"(?:crush[- ]resistant\s*)?(?:durable\s*)?hose",
     re.I,
 )
 ALT_HOSE_LENGTH_PATTERN = re.compile(
@@ -53,8 +55,8 @@ ALT_HOSE_LENGTH_PATTERN = re.compile(
 )
 HOSE_DIAMETER_PATTERN = re.compile(
     r"(\d+(?:-\d+/\d+|\s+\d+/\d+)?|\d+/\d+|\d+(?:\.\d+)?)\s*"
-    r"(?:in\.?|inch|inches|\")\s*(?:x\s*\d+(?:\.\d+)?\s*(?:ft\.?|foot|feet))?\s*"
-    r"(?:diameter\s*)?hose",
+    r"(?:in\.?|inch|inches|\")\s*(?:x\s*\d+(?:\.\d+)?\s*(?:ft\.?|foot|feet|'))?\s*"
+    r"(?:diameter\s*)?(?:durable\s*)?(?:flexible\s*)?hose",
     re.I,
 )
 CORD_LENGTH_PATTERN = re.compile(
