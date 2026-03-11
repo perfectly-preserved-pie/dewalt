@@ -7,6 +7,7 @@ from dewalt.tool_families import (
     ANGLE_GRINDER_FAMILY,
     DRILL_DRIVER_FAMILY,
     HAMMER_DRILL_FAMILY,
+    IMPACT_DRIVER_FAMILY,
 )
 from dewalt.ui import (
     DashboardSection,
@@ -20,7 +21,12 @@ from dewalt.ui import (
 )
 
 
-FAMILIES = (ANGLE_GRINDER_FAMILY, DRILL_DRIVER_FAMILY, HAMMER_DRILL_FAMILY)
+FAMILIES = (
+    ANGLE_GRINDER_FAMILY,
+    DRILL_DRIVER_FAMILY,
+    IMPACT_DRIVER_FAMILY,
+    HAMMER_DRILL_FAMILY,
+)
 COMPARE_BASE_COLUMNS = build_compare_base_columns()
 DASHBOARDS = [load_dashboard_context(family) for family in FAMILIES]
 SECTIONS = [

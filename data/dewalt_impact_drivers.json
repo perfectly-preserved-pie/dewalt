@@ -1,0 +1,671 @@
+{
+  "scraped_at": "2026-03-11T01:04:59+00:00",
+  "catalog_url": "https://www.dewalt.com/products/power-tools/impact-drivers-wrenches/impact-drivers",
+  "listing_page_count": 3,
+  "raw_product_count": 45,
+  "product_count": 11,
+  "excluded_product_count": 34,
+  "rows": [
+    {
+      "sku": "DCF801B",
+      "title": "XTREME 12V MAX* 1/4 in. Brushless Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf801b/xtreme-12v-max-14-brushless-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": null,
+      "no_load_speed": "0-2850",
+      "rpm_max": 2850,
+      "impact_rate_bpm": null,
+      "max_torque_in_lbs": 1450,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": 5.05,
+      "weight_lbs": 1.75,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Complete precision fastening applications in tight spaces without sacrificing power with the XTREME 12V MAX* Impact Driver. At only 5.05 in. long (front to back) with up to 1,450 in-lbs. of torque, this impact driver is designed COMPACT AND PERFORMANCE PACKED. Battery & Charger Sold Separately",
+      "features": [
+        "52% more torque**",
+        "19% shorter**",
+        "Brushless motor for maximum runtime and durability"
+      ],
+      "additional_features": [
+        "1/4 in. quick release drop and load hex that accepts 1 in. bit tips",
+        "3 mode settings including the Precision Drive feature for accuracy",
+        "3 LEDs on nose for work surface illumination",
+        "Lightweight at 1.75 lbs. (tool only)"
+      ],
+      "includes": [
+        "(1) Belt Clip",
+        "(1) DCF801B - 12V MAX* Brushless 1/4 in. Impact Driver"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "** DCF801 using DCB122 2.0Ah battery vs. DCF815 using DCB120 1.3Ah battery (sold separately).",
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF809B",
+      "title": "ATOMIC 20V MAX* 1/4 in. Brushless Compact Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf809b/atomic-20v-max-14-brushless-compact-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": 16.0,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": null,
+      "no_load_speed": "0-2800",
+      "rpm_max": 2800,
+      "impact_rate_bpm": null,
+      "max_torque_in_lbs": 1700,
+      "max_torque_nm": null,
+      "power_watts": 460,
+      "tool_length_in": null,
+      "weight_lbs": 2.1,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Tackle tough jobs and maneuver in small spaces with the ATOMIC 20V MAX* 1/4 in. Compact Impact Driver. At only 5.1 in. (front to back), this Impact Driver features 1,700 in-lbs. of torque and an ergonomically designed handle for premium control in demanding applications. Battery & Charger Sold Separately",
+      "features": [
+        "Only 5.1 in. in length to fit in tight spaces",
+        "1700 in-lbs of torque delivering the power you need to get a majority of applications done",
+        "Variable speed trigger allows for control and precision on delicate work surfaces"
+      ],
+      "additional_features": [
+        "DEWALT built brushless motor for efficient performance and runtime",
+        "3 bright LEDs for dimly lit workspaces"
+      ],
+      "includes": [
+        "(1) Belt Clip",
+        "(1) DCF809 20V Max* Brushless Compact 1/4 in. Impact Driver"
+      ],
+      "applications": [
+        "3 in. deck screw in pressure treated wood",
+        "3/8 in. lag bolt in pine",
+        "5/16 in. self-tapper in 20g metal"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF840B",
+      "title": "20V MAX* Brushless Cordless 1/4 in. Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf840b/20v-max-brushless-cordless-14-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": null,
+      "no_load_speed": "3200",
+      "rpm_max": 3200,
+      "impact_rate_bpm": null,
+      "max_torque_in_lbs": 1700,
+      "max_torque_nm": null,
+      "power_watts": 300,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Get 1,700 in-lb. of torque and up to 3,200 rpm for driving large-diameter screws with the 20V MAX* 1/4 in. Brushless Cordless Impact Driver. Engineered to be lightweight without sacrificing performance, this compact impact driver provides optimized maneuverability and access to confined areas when performing cabinetry and framing jobs. Battery & Charger Sold Separately",
+      "features": [
+        "High-Performance Brushless Motor - Delivers 1,700 in-lb of torque and 3,200 rpm to drive large-diameter screws",
+        "Maneuver With Ease - Compact design for optimized ergonomics and access to difficult-to-reach spots",
+        "Pro-Level Ccontrol And Precision - With variable speed trigger"
+      ],
+      "additional_features": [
+        "Brighten Dark Work Areas - Integrated 3-LED work light enhances visibility in low-light spaces"
+      ],
+      "includes": [
+        "(1) Tool",
+        "(1) Belt Hook"
+      ],
+      "applications": [
+        "Framing",
+        "Decking",
+        "Cabinetry",
+        "Electrical",
+        "Dry-Wall",
+        "Plumbing/Mechanical"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF845B",
+      "title": "20V MAX* XR 3-Speed Impact 1/4 in. Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf845b/20v-max-xr-3-speed-impact-14-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": 3,
+      "no_load_speed": "3400",
+      "rpm_max": 3400,
+      "impact_rate_bpm": 4200,
+      "max_torque_in_lbs": 1825,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": 8.07,
+      "weight_lbs": 2.35,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "Experience Power and drive large diameter screws with the 20V MAX* XR 1/4 in. 3-Speed Impact Driver. Featuring a compact design and 3-speeds, this powerful impact driver delivers 1,825 in-lbs. of max torque and premium user control for a variety of applications. This product is a Chip Ready tool for seamless integration into the TOOL CONNECT system (chip sold separately). Battery & Charger Sold Separately",
+      "features": [
+        "Brushless Motor - Delivers 1825 in-lbs of torque and 3400 RPM to drive large diameter screws",
+        "Complete Tough Fastening Applications - On the jobsite with 30% more torque**",
+        "Pro-Level Control - And precision with variable speed trigger and 3-speed setting"
+      ],
+      "additional_features": [
+        "Brighten Work Areas - With an integrated 3-LED work light for ehnanced visibility in low-light areas"
+      ],
+      "includes": [
+        "(1) DCF845 20V MAX* XR 1/4 in. 3-Speed Impact Driver",
+        "(1) Belt Hook"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "**Rated Torque vs. DCF885 Impact Driver with Rated Torque of 1400 in-lbs"
+      ]
+    },
+    {
+      "sku": "DCF850B",
+      "title": "ATOMIC 20V MAX* 1/4 in. 3-Speed Brushless Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf850b/atomic-20v-max-14-3-speed-brushless-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": 5.0,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": 3,
+      "no_load_speed": "3250",
+      "rpm_max": 3250,
+      "impact_rate_bpm": 3800,
+      "max_torque_in_lbs": 1825,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": 3.97,
+      "weight_lbs": 2.1,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Tackle tough jobs and maneuver in small spaces with the ATOMIC 20V MAX* 3-Speed 1/4 in. Impact Driver. At less than 4 in. (front to back), this Impact Driver features 1,825 in-lbs. of max torque and 3,250 rpm for driving large screws. Battery & Charger Sold Separately",
+      "features": [
+        "Maneuver With Ease - Compact, under 4 in. design for optimized ergonomics and access to difficult-to-reach spots",
+        "High-Performance Brushless Motor - Drive large-diameter screws with 1,825 in-lb. of max torque and 3,250 rpm.",
+        "Pro-Level Control - Work precisely with a variable 3-speed trigger."
+      ],
+      "additional_features": [
+        "Brighten Work Areas - Help enhance visibility in dimly lit spaces with the integrated 3-LED work light."
+      ],
+      "includes": [
+        "(1) Tool",
+        "(1) Belt Hook"
+      ],
+      "applications": [
+        "Framing",
+        "Decking",
+        "Cabinetry",
+        "Electrical",
+        "Dry-Wall",
+        "Plumbing/Mechanical"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF860B",
+      "title": "20V MAX* XR 1/4 in. 3-Speed Brushless High Torque Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf860b/20v-max-xr-14-3-speed-brushless-high-torque-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": 3,
+      "no_load_speed": "0-1800 / 0-2500 / 0-3800",
+      "rpm_max": 3800,
+      "impact_rate_bpm": 4500,
+      "max_torque_in_lbs": 2500,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": 4.8,
+      "weight_lbs": 2.4,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "This 20V MAX* XR 3-Speed High Torque Impact Driver is engineered for the demands of the pro with a max torque of 2,500 in-lbs., making it our highest torque impact driver\u2020. Maximize productivity with up to 63% faster driving**, a no-load speed of 0-3,800 RPM, 9 built-in LEDs, and 3-speed mode select to power through tough jobs. Battery and charger sold separately.",
+      "features": [
+        "Our Highest Torque Impact Driver\u2020 - Take on tough jobs with up to 66% more torque\u2020\u2020.",
+        "Fast, Efficient Performance - Work efficiently with up to 63% faster driving**.",
+        "Pro-Level Control - Get precise performance with a variable speed trigger and 3-speed mode select. Speeds 1 and 2 are optimized to match the installation speeds of commonly used self-drilling and tapping screws. Refer to the impact driver manual and screw manufacturer instructions for proper installation."
+      ],
+      "additional_features": [
+        "Pro-Level Power - Power through tough jobs with up to 2,500 in-lbs. max torque and a no-load speed up to 3,800 RPM.",
+        "Built-In LEDS - 9 built-in LEDs and 20-minute work light setting provide additional illumination.",
+        "1/4 in. QUICK-CONNECT Hex Chuck - Conveniently work with compatible 1/4 in. quick-connect hex chuck.",
+        "Simplify Asset Management - This TOOL CONNECT CHIP READY (chip sold separately) tool connects with the TOOL CONNECT Site Manager app to help you track and manage assets.",
+        "Part Of Our Best Performing Line Of 20V MAX* Power Tools - Innovative power tools designed to deliver certainty for the world's toughest pros."
+      ],
+      "includes": [
+        "(1) DCF860 20V MAX* XR 3-Speed High Torque 1/4 in. Impact Driver",
+        "(1) Belt Hook"
+      ],
+      "applications": [
+        "Electrical",
+        "Drywall",
+        "Plumbing & Mechanical",
+        "Deck Building",
+        "Dock Building"
+      ],
+      "disclaimers": [
+        "*Max initial voltage without workload is 20V. Nominal is 18V.",
+        "\u2020Based on rated max torque",
+        "**vs. DCF787 with 3\" x 3/8\" lag bolt in PT 4x4 using DCB2108 (sold separately)",
+        "\u2020\u2020Rated max torque, using DCB2108 (sold separately) vs. DCF787 (1500 in-lbs.)",
+        "\u2021Using DCB2108 8Ah battery (sold separately) vs. Milwaukee 2953 impact driver using 48-11-1880 8Ah battery (sold separately) with 3/4\" spade bit into 2x SPF. Milwaukee is a registered trademark of Milwaukee Electric Tool Corp., which has not endorsed or approved this comparison.",
+        "\u2021\u2021Using DCB2108 8Ah battery (sold separately) vs. Milwaukee 2953 impact driver using 48-11-1880 8Ah battery (sold separately) with 3\" x 3/8\" lag bolt in PT 4x4 Milwaukee is a registered trademark of Milwaukee Electric Tool Corp., which has not endorsed or approved this comparison."
+      ]
+    },
+    {
+      "sku": "DCF860BLR",
+      "title": "20V MAX* XR Brushless Cordless 3-Speed High Torque 1/4 in. Impact Driver With LANYARD READY Attachment Point (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf860blr/20v-max-xr-brushless-cordless-3-speed-high-torque-14-impact-driver-lanyard-ready-attachment-point-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": 3,
+      "no_load_speed": "0-1800 / 0-2500 / 0-3800",
+      "rpm_max": 3800,
+      "impact_rate_bpm": 4500,
+      "max_torque_in_lbs": 2500,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": 4.8,
+      "weight_lbs": 2.4,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": true,
+      "description": "This 20V MAX* XR 3-Speed High Torque Impact Driver is engineered for the demands of the pro with a max torque of 2,500 in-lbs., making it our highest torque impact driver\u2020. Maximize productivity with up to 63% faster driving**, a no-load speed of 0-3,800 RPM, 9 built-in LEDs, and 3-speed mode select to power through tough jobs. LANYARD READY attachment point is designed for users to utilize a lanyard to tether the tool and battery to rigid structures on jobsites. When working at height only use LANYARD READY equipped batteries (sold separately). Battery and charger sold separately.",
+      "features": [
+        "LANYARD READY attachment point is designed for users to utilize a lanyard to tether the tool and battery to rigid structures on jobsites. When working at height only use LANYARD READY equipped batteries (sold separately).",
+        "Our Highest Torque Impact Driver\u2020 - Take on tough jobs with up to 66% more torque\u2020\u2020.",
+        "Fast, Efficient Performance - Work efficiently with up to 63% faster driving**."
+      ],
+      "additional_features": [
+        "Pro-Level Control - Get precise performance with a variable speed trigger and 3-speed mode select. Speeds 1 and 2 are optimized to match the installation speeds of commonly used self-drilling and tapping screws. Refer to the impact driver manual and screw manufacturer instructions for proper installation.",
+        "Pro-Level Power - Power through tough jobs with up to 2,500 in-lbs. max torque and a no-load speed up to 3,800 RPM.",
+        "Built-In LEDS - 9 built-in LEDs and 20-minute work light setting provide additional illumination.",
+        "1/4 in. Quick-Connect Hex Chuck - Conveniently work with compatible 1/4 in. quick-connect hex chuck.",
+        "Up to 21% Faster Drilling vs. Milwaukee\u2021",
+        "Up to 20% Faster Driving vs. Milwaukee\u2021\u2021",
+        "Simplify Asset Management - This TOOL CONNECT CHIP READY (chip sold separately) tool connects with the TOOL CONNECT Site Manager app to help you track and manage assets.",
+        "Part Of Our Best Performing Line Of 20V MAX* Power Tools - Innovative power tools designed to deliver certainty for the world's toughest pros."
+      ],
+      "includes": [
+        "(1) DCF860 XR Impact Driver with LANYARD READY Attachment Point"
+      ],
+      "applications": [
+        "Electrical",
+        "Drywall",
+        "Plumbing & Mechanical",
+        "Deck Building"
+      ],
+      "disclaimers": [
+        "*Max initial voltage without workload is 20V. Nominal is 18V.",
+        "\u2020Based on rated max torque",
+        "**vs. DCF787 with 3\" x 3/8\" lag bolt in PT 4x4 using DCB2108LR (sold separately)",
+        "\u2020\u2020Rated max torque, using DCB2108LR (sold separately) vs. DCF787 (1500 in-lbs.)",
+        "\u2021Using DCB2108LR 8Ah battery (sold separately) vs. Milwaukee 2953 impact driver using 48-11-1880 8Ah battery (sold separately) with 3/4\" spade bit into 2x SPF. Milwaukee is a registered trademark of Milwaukee Electric Tool Corp., which has not endorsed or approved this comparison.",
+        "\u2021\u2021Using DCB2108LR 8Ah battery (sold separately) vs. Milwaukee 2953 impact driver using 48-11-1880 8Ah battery (sold separately) with 3\" x 3/8\" lag bolt in PT 4x4 Milwaukee is a registered trademark of Milwaukee Electric Tool Corp., which has not endorsed or approved this comparison."
+      ]
+    },
+    {
+      "sku": "DCF870B",
+      "title": "20V MAX* XR Brushless Cordless 1/4 in. Quiet Hydraulic Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf870b/20v-max-xr-brushless-cordless-14-quiet-hydraulic-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": null,
+      "no_load_speed": "0-1100 / 0-3000",
+      "rpm_max": 3000,
+      "impact_rate_bpm": 4200,
+      "max_torque_in_lbs": 500,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": 4.0,
+      "weight_lbs": 2.2,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": true,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Complete framing, cabinetry, and other applications in tight areas with our quietest impact driver\u2021. The 20V MAX* XR Brushless Cordless 1/4 in. Quiet Hydraulic Impact Driver helps reduce noise disturbance in sensitive environments with up to 57% quieter operation**. Featuring an advanced hydraulic mechanism, this impact driver delivers consistent performance for demanding applications in tough conditions. Battery & Charger Sold Separately",
+      "features": [
+        "Our Quietest Impact Driver\u2021 - Reduce noise disturbances with up to 57% quieter** operation.",
+        "Up To 40% Faster Driving*** - Drive large screws quickly and finish jobs fast.",
+        "Up to 195% Faster Driving - Vs. Milwaukee\u2020\u2020"
+      ],
+      "additional_features": [
+        "Up to 250% Faster Driving - 5 Lags vs. Milwaukee\u2020\u2020\u2020",
+        "Advanced Engineering - provides consistent performance in demanding applications and performs in cold temperatures",
+        "Designed For Tight Spaces - Complete framing, cabinetry, and other applications in tight areas with an ergonomic design.",
+        "Up To 6X Brighter\u2021\u2021 - Help illuminate work areas with 9 LEDs featuring a 20 minute work light mode.",
+        "Part Of Our Best Performing Line Of 20V MAX* Power Tools - Innovative power tools designed to deliver certainty for the world's toughest pros."
+      ],
+      "includes": [
+        "(1) DCF870 Hydraulic Impact Driver",
+        "(1) Belt Hook"
+      ],
+      "applications": [
+        "Cabinetry",
+        "Electrical",
+        "Plumbing & Mechanical",
+        "Deck Building"
+      ],
+      "disclaimers": [
+        "*Maximum initial battery voltage (measured without a workload) is 20. Nominal voltage is 18.",
+        "**RMS sound pressure difference vs. DCF787 impact driver with 3\" deck screw into PT 4x4 using DCBP034 (sold separately)",
+        "\u2021While impacting only, RMS sound pressure difference with 5\" deck screw into PT 6x6 using DCBP034 (sold separately) vs. currently produced DEWALT cordless impact drivers.",
+        "\u2020\u20203\" x 3/8\" lag bolt into PT 4x4 using DCBP034 (sold separately) vs. Milwaukee 2760 using 48-11-1820. (Milwaukee is a registered trademark of Milwaukee Electric Tool Corp., which has not endorsed or approved this comparison.)",
+        "\u2020\u2020\u2020Total driving time of 5 consecutive 3\"x 3/8\" lag bolts into PT 4x4 using DCBP034 (sold separately) vs. Milwaukee 2760 and 48-11-1820. (Milwaukee is a registered trademark of Milwaukee Electric Tool Corp., which has not endorsed or approved this comparison.)",
+        "\u2021\u2021vs. DCF787 impact driver",
+        "***DCF787 with 3\" x 3/8\" lag bolt into PT 4x4 using DCBP034 (sold separately)"
+      ]
+    },
+    {
+      "sku": "DCF885B",
+      "title": "20V MAX* Cordless 1/4 in. Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf885b/20v-max-cordless-14-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": null,
+      "no_load_speed": "2800",
+      "rpm_max": 2800,
+      "impact_rate_bpm": 3200,
+      "max_torque_in_lbs": 1400,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": false,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Complete tough jobs in tight spaces with this 20V MAX* 1/4 in. Impact Driver. Featuring a compact design and an onboard LED, this powerful impact driver is ideal for maintaining productivity on long days. Battery & Charger Sold Separately",
+      "features": [
+        "Fits into tight areas with compact (5.55 in. front to back) design",
+        "Provides visibility without shadows with 3 LEDs with 20-second delay after trigger release",
+        "One-handed loading 1/4 in. hex chuck accepts 1 in. bit tips"
+      ],
+      "additional_features": [
+        "Portability with included belt hook"
+      ],
+      "includes": [
+        "(1) Belt Hook",
+        "(1) DCF885 1/4 in Impact Driver"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF887B",
+      "title": "20V MAX* XR 3-Speed 1/4 in. Impact Driver (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf887b/20v-max-xr-3-speed-14-impact-driver-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": 3,
+      "no_load_speed": "3250",
+      "rpm_max": 3250,
+      "impact_rate_bpm": 3600,
+      "max_torque_in_lbs": 1825,
+      "max_torque_nm": 205,
+      "power_watts": null,
+      "tool_length_in": null,
+      "weight_lbs": 2.0,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Experience Power and complete tough jobs in tight spaces with this 20V MAX* XR 3-Speed 1/4 in. Impact Driver. Featuring a compact design and 3-speeds, this powerful impact driver delivers premium user control for a variety of applications. Battery & Charger Sold Separately",
+      "features": [
+        "DEWALT-built brushless motor and XR Li-Ion batteries deliver more runtime and capacity over standard units",
+        "3-speed settings for optimized application versatility",
+        "Precision drive in speed 1 for precision applications and added control"
+      ],
+      "additional_features": [
+        "3 LEDs with 20-second delay after trigger release, provide visibility without shadows",
+        "One-handed loading 1/4\" hex chuck with easy grip sleeve, accepts 1\" bit tips",
+        "Compact and lightweight design to fit into tight areas"
+      ],
+      "includes": [
+        "(1) Belt Hook",
+        "(1) DCF887 - 20V MAX* XR 1/4\" 3-Speed Impact Driver"
+      ],
+      "applications": [
+        "DCF887",
+        "Metal Fabrication",
+        "Electromechanical Installation and Facade"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF888B",
+      "title": "20V MAX* XR Brushless Cordless Impact Driver With TOOL CONNECT (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf888b/20v-max-xr-brushless-cordless-impact-driver-tool-connect-tool-only",
+      "category": "Impact Driver",
+      "series": [
+        "XR",
+        "TOOL CONNECT"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "chuck_size_label": "1/4",
+      "chuck_size_in": 0.25,
+      "speed_count": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_torque_in_lbs": 1825,
+      "max_torque_nm": null,
+      "power_watts": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": true,
+      "led_light": true,
+      "hydraulic": false,
+      "high_torque": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "Experience Power and complete tough jobs in tight spaces with the 20V MAX* XR Impact Driver featuring TOOL CONNECT technology. This Bluetooth-enabled product delivers efficient out-of-the-box compatibility to the TOOL CONNECT inventory management system. Battery & Charger Sold Separately",
+      "features": [
+        "LAST SEEN feature helps reduce wasted time and money by providing the street address of where your impact driver was last in range of your Tool Connect-enabled device",
+        "Easily and quickly assign tools to jobsites and users on the Tool Connect Inventory Manager software, increasing accountability and reducing lost tools",
+        "Receive diagnostics on your impact driver like internal coin cell battery life, temperature, number of trigger pulls, and how long the tool has been running"
+      ],
+      "additional_features": [
+        "Set \"disable when out of range\" alerts to help deter unauthorized use or theft",
+        "Once you've downloaded the Tool Connect app, easily pair with the app by holding down the pair button on the tool foot for 3-5 seconds",
+        "Customize your impact driverfrom your Tool Connect app, including speed and torque, the Precision Drive control feature and LED light brightness and delay",
+        "DEWALT brushless motor delivers up to 75% more runtime vs. 18V NiCad brushed motors",
+        "Compact (5.3\" front to back), lightweight (2.8 lbs without battery) design fits into tight areas",
+        "Use Precision Drive in speed 1 for precise applications and added control",
+        "Includes a default Home mode and 3 programmable modes to customize speed and light brightness"
+      ],
+      "includes": [
+        "(1) DCF888 Tool Connect Impact Driver"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    }
+  ]
+}
