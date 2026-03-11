@@ -1,0 +1,241 @@
+{
+  "scraped_at": "2026-03-11T03:09:59+00:00",
+  "catalog_url": "https://www.dewalt.com/products/power-tools/multi-function-tools/cut-out-tools",
+  "listing_page_count": 1,
+  "raw_product_count": 9,
+  "product_count": 4,
+  "excluded_product_count": 5,
+  "rows": [
+    {
+      "sku": "DCE555B",
+      "title": "20V MAX* XR Brushless Drywall Cut-Out Tool (Tool Only)",
+      "url": "https://www.dewalt.com/product/dce555b/20v-max-xr-brushless-drywall-cut-out-tool-tool-only",
+      "category": "Cut-Out Tool",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "tool_type": "Cut-Out Tool",
+      "collet_size_display": "1/8 in., 2/13 in., 1/4 in.",
+      "wheel_diameter_label": null,
+      "wheel_diameter_in": null,
+      "max_cut_depth_in": null,
+      "rpm_max": 26000,
+      "max_watts_out": null,
+      "tool_length_in": 9.5,
+      "weight_lbs": 1.6,
+      "brushless": true,
+      "led_light": true,
+      "tool_free_bit_change": true,
+      "axis_lock": null,
+      "dust_extraction": false,
+      "tool_connect_ready": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Get fast, clean cuts on a variety of wall paneling with the 20V MAX* Drywall Cut-Out Tool featuring a 26,000 rpm brushless motor. It's compact and lightweight design makes it the most compact drywall cut-out tool in its class**. Designed with a forward-positioned on-off button and tool-free bit change system, this product offers versatility for a wide range of jobs. Battery & Charger Sold Separately",
+      "features": [
+        "26,000 RPM brushless motor delivers fast and consistent cutting performance",
+        "Brushless motor for efficient performance and runtime",
+        "Forward-positioned on-off button designed for ease-of-use"
+      ],
+      "additional_features": [
+        "Tool-free bit change enables fast bit changes without the need for a wrench.",
+        "LED light helps to illuminate dark work surfaces for accurate cutting",
+        "Accepts 1/8\", 5/32\", and 1/4\" bits and collets",
+        "Compact size and weight designed to reduce fatique during periods of extended use.",
+        "Depth guide designed for consistent cutting depth and consistent engagement with cutting edge of bit",
+        "Tool Connect CHIP READY: Chip pocket accepts Tool Connect Chip DCE042 and connects with Tool Connect Site Manager app for easy asset management on the jobsite. (DCE042 sold separately)"
+      ],
+      "includes": [
+        "(1) DCE555 20V MAX* XR Brushless Drywall Cut-Out Tool",
+        "(1) Belt Clip"
+      ],
+      "applications": [],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCS438B",
+      "title": "20V MAX* XR 3 in. Brushless Cut-Off Tool (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcs438b/20v-max-xr-3-brushless-cut-tool-tool-only",
+      "category": "Cut-Out Tool",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "tool_type": "Cut-Off Tool",
+      "collet_size_display": null,
+      "wheel_diameter_label": "3",
+      "wheel_diameter_in": 3.0,
+      "max_cut_depth_in": 0.875,
+      "rpm_max": 20000,
+      "max_watts_out": 550,
+      "tool_length_in": null,
+      "weight_lbs": 2.0,
+      "brushless": true,
+      "led_light": true,
+      "tool_free_bit_change": null,
+      "axis_lock": true,
+      "dust_extraction": true,
+      "tool_connect_ready": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Cut a wide range of materials with the 20V MAX* XR Brushless 3 in. Cut-Off Tool. With a no-load speed of 20,000 rpm, this durable tool is designed for metal, tile, stone, plastic, and drywall/fiber cement. Offering quick wheel changes and both forward and reverse capability, this tool is delivers optimized performance depending on the application. The included dust shroud with adjustable shoe and AirLock connection allows for convenient attachment to DEWALT extractors, while the integrated LED lets you work in dark spaces. As a part of the 20V MAX* system, this TOOL CONNECT Chip-Ready product can be seamlessly intergraded into your current inventory. Battery & Charger Sold Separately",
+      "features": [
+        "20,000 RPM motor with 7/8 in. max depth of cut",
+        "Power Through Difficult Applications - With brushless motor and 550 MWO**",
+        "Cut A Wide Range Of Materials - Includes Bonded Abrasive Wheel, Diamond\u2020 Multi-Material Wheel, and Diamond\u2020 Tile Wheel (This blade uses manufactured diamonds engineered for cutting)"
+      ],
+      "additional_features": [
+        "Compatible With Accessories - Includes an adaptor ring to be placed over 3/8 in. arbor, allowing use of 3 in. wheels that require a 7/16 in. arbor",
+        "Connect To Extractors - Includes a removable dust shroud with an AirLock connection, enabling the unit to be connected to a DEWALT extractor (sold separately)",
+        "TOOL CONNECT Chip Ready - Chip pocket accepts TOOL CONNECT Chip DCE042 (sold separately) and connects with Site Manager app for easy asset management on the jobsite",
+        "Conveniently Set Desired Depth - Dust shroud features tool-free depth adjustment with mm and inch markings",
+        "Illuminate Dark Work Areas - With bright LED",
+        "Quickly Adjsut Spark Direction - When cutting metal with tool-free adjustable guard"
+      ],
+      "includes": [
+        "(1) Hex Wrench",
+        "(1) DCS438 20V MAX* XR Brushless cordless 3 in. Cut-Off Tool",
+        "(1) Removable Dust Shroud With Adjustable Shoe and Airlock Connection",
+        "(1) DW8711 Bonded Abrasive Wheel",
+        "(1) DW8530 Diamond\u2020 Multi-Material Wheel",
+        "(1) DW47350 Diamond\u2020 Tile Wheel",
+        "(1) 7/16 in. Arbor Adapter Ring"
+      ],
+      "applications": [
+        "Cutting metal",
+        "Cutting tile",
+        "Cutting cement board",
+        "Cutting stone",
+        "Cutting plastic"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "** DCS438 tested with DCB203 battery",
+        "\u2020 This blade uses manufactured diamonds engineered for cutting"
+      ]
+    },
+    {
+      "sku": "DCS551B",
+      "title": "20V MAX* Drywall Cut Out Tool (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcs551b/20v-max-drywall-cut-out-tool-tool-only",
+      "category": "Cut-Out Tool",
+      "series": [],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "tool_type": "Cut-Out Tool",
+      "collet_size_display": null,
+      "wheel_diameter_label": null,
+      "wheel_diameter_in": null,
+      "max_cut_depth_in": null,
+      "rpm_max": 26000,
+      "max_watts_out": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": false,
+      "led_light": true,
+      "tool_free_bit_change": true,
+      "axis_lock": null,
+      "dust_extraction": false,
+      "tool_connect_ready": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Cut through drywall fast with the 20V MAX* Drywall Cut Out Tool. A 26,000 rpm motor and tool-free bit changing capability lets you tackle drywall jobs with ease. A dust-sealed switch protects against dust ingestion for long tool life. Compatible with 20V MAX* batteries and chargers, this cordless product can be added to your existing lineup. Battery & Charger Sold Separately",
+      "features": [
+        "26,000 RPM motor delivers fast cutting in drywall, acoustical ceiling tiles, plywood, etc.",
+        "Tool-free for fast and easy bit changing without a wrench",
+        "Dust-sealed switch protects against dust ingestion for longer tool life"
+      ],
+      "additional_features": [
+        "Bright LED light illuminates dark work surfaces for accurate cutting"
+      ],
+      "includes": [
+        "(1) 20V MAX* Drywall Cut Out Tool"
+      ],
+      "applications": [
+        "Cutting holes in drywall for recessed lighting, electrical boxes or outlets"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DW660",
+      "title": "Cut Out Tool",
+      "url": "https://www.dewalt.com/product/dw660/cut-out-tool",
+      "category": "Cut-Out Tool",
+      "series": [],
+      "power_source": "Corded",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "tool_type": "Cut-Out Tool",
+      "collet_size_display": null,
+      "wheel_diameter_label": null,
+      "wheel_diameter_in": null,
+      "max_cut_depth_in": null,
+      "rpm_max": 30000,
+      "max_watts_out": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": null,
+      "led_light": true,
+      "tool_free_bit_change": true,
+      "axis_lock": null,
+      "dust_extraction": false,
+      "tool_connect_ready": false,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Ideal for outlet cuts in drywall, the DW660 Cut Out Tool features a 5 amp motor that delivers up to 30,000 rpm. Designed with a slim design, durable construction, and a bump switch provides ease-of-use on tough jobs.",
+      "features": [
+        "Tool-free bit change for fast and easy bit changing without a wrench",
+        "Turn-on/Bump-off switch allows user to easily shut tool off",
+        "5.0 amp, 30,000 rpm motor provides more cutting power"
+      ],
+      "additional_features": [
+        "Slim body design and ergonomic for less fatigue over prolonged use",
+        "Dust-Sealed Switch protects against dust ingestion for longer switch life",
+        "Jam-pot construction provides jobsite durability"
+      ],
+      "includes": [
+        "(1) 1/4\", 1/8\" Collets",
+        "(1) Drywall Cutting Bit"
+      ],
+      "applications": [
+        "Cutting holes in drywall for recessed lighting, electrical boxes or outlets",
+        "Ceramic tile work",
+        "Countertop Cut-outs",
+        "Cutting holes in Hardiplank, cement board",
+        "Cutting holes in plywood or cabinets for installation",
+        "Cutting holes in acoustical ceiling tile for sprinkler systems and recessed lighting",
+        "Cutting holes in Plexiglas",
+        "Cutting holes in light-gauge/non-ferrous metals, HVAC"
+      ],
+      "disclaimers": []
+    }
+  ]
+}

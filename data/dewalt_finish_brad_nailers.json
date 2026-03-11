@@ -1,0 +1,622 @@
+{
+  "scraped_at": "2026-03-11T03:16:59+00:00",
+  "catalog_url": "https://www.dewalt.com/products/power-tools/nailers-staplers/finish-brad-nailers",
+  "listing_page_count": 2,
+  "raw_product_count": 27,
+  "product_count": 11,
+  "excluded_product_count": 16,
+  "rows": [
+    {
+      "sku": "D51257K",
+      "title": "16 Gauge 1\" - 2-1/2\" Finish Nailer",
+      "url": "https://www.dewalt.com/product/d51257k/16-gauge-1-2-12-finish-nailer",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Pneumatic",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 16,
+      "magazine_angle_deg": 0.0,
+      "magazine_loading": null,
+      "magazine_capacity": null,
+      "fastener_max_length_in": 2.5,
+      "weight_lbs": null,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": false,
+      "low_nail_lockout": false,
+      "selectable_trigger": false,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "",
+      "features": [
+        "Sealed Lube Dual Tech - Motor works as an oil free and oil lube unit",
+        "Tool-Free Features - Adjustable belt hook, nail depth adjustment, jam clearing, 360 degrees exhaust",
+        "Uses 1 in. to 2-1/2 in. (25.4 mm-65 mm) 16 gauge straight collated nails"
+      ],
+      "additional_features": [
+        "Includes carrying case, sample finish nails and safety glasses",
+        "Low profile no-mar pad",
+        "Sequential action trigger installed",
+        "Trigger lock-off",
+        "70-120 PSI operating pressure"
+      ],
+      "includes": [
+        "(1) Sample Finish Nails \"FN\" style",
+        "(1) Safety Glasses",
+        "(2) Allen Wrenches",
+        "(1) Air Fitting",
+        "(1) Carry Case"
+      ],
+      "applications": [],
+      "disclaimers": []
+    },
+    {
+      "sku": "D51276K",
+      "title": "1 in. to 2-1/2 in. 15ga Finish Nailer",
+      "url": "https://www.dewalt.com/product/d51276k/1-2-12-15ga-finish-nailer",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Pneumatic",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 15,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": null,
+      "fastener_max_length_in": 2.5,
+      "weight_lbs": null,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": false,
+      "low_nail_lockout": false,
+      "selectable_trigger": false,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "",
+      "features": [
+        "Sealed Lube Dual Tech - Motor works as an oil free and oil lube unit",
+        "Tool-Free Features - Adjustable belt hook, nail depth adjustment, jam clearing, 360 degrees exhaust",
+        "Uses 1 in. to 2-1/2 in. (25.4mm-65mm) 34 degrees collated nails, rear load"
+      ],
+      "additional_features": [
+        "Includes carrying case, sample finish nails and safety glasses",
+        "Low profile no-mar pad",
+        "Sequential action trigger installed",
+        "Trigger lock-off",
+        "70-120 PSI operating pressure, lightweight 3.85 lbs (1.75 kg)"
+      ],
+      "includes": [
+        "(1) Sample in.DA in. Style Angle Finish Nails",
+        "(2) Wrenches",
+        "(1) Air Fitting",
+        "(1) Carry Case"
+      ],
+      "applications": [],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCN623B",
+      "title": "ATOMIC COMPACT SERIES 20V MAX* Brushless Cordless 23ga Pin Nailer (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcn623b/atomic-compact-series-20v-max-brushless-cordless-23ga-pin-nailer-tool-only",
+      "category": "Finish/Brad Nailer",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "nailer_type": "Pin Nailer",
+      "gauge": 23,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": 110,
+      "fastener_max_length_in": 0.5,
+      "weight_lbs": 4.1,
+      "brushless": true,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": true,
+      "selectable_trigger": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Complete finish, trim, and remodeling work with this ATOMIC COMPACT SERIES 20V MAX* Brushless Cordless 23 Ga. Pin Nailer. The battery-powered nailer is designed to drive 23 Ga. pin nails measuring between 5/8 in. and 1-1/2 in. with its high-output brushless motor. Take advantage of cordless convenience as you seamlessly drive nails with no hoses, compressors, or gas cartridges required. Battery & Charger Sold Separately",
+      "features": [
+        "Compatible With Several Sizes Of Fasteners - Unit works with 23 Ga. pin nails from 5/8\" up to 1-1/2 in. in length",
+        "Designed For Ease Of Use - With tool-free jam release and tool-free depth adjust",
+        "Know When To Reload - Low nail lockout system with LED indicator to inform user when it's time to reload"
+      ],
+      "additional_features": [
+        "Shots Per Charge - DCN623B drives 2,000 nails on average per charge**"
+      ],
+      "includes": [
+        "(1) DCN623 DEWALT 20V MAX* 23 Ga. Cordless Pin Nailer"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "**1\" pins in 2X SPF lumber with DEWALT DCB203 2.0 Ah battery"
+      ]
+    },
+    {
+      "sku": "DCN650B",
+      "title": "20V MAX* XR 15 GA Cordless Angled Finish Nailer (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcn650b/20v-max-xr-15-ga-cordless-angled-finish-nailer-tool-only",
+      "category": "Finish/Brad Nailer",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 15,
+      "magazine_angle_deg": 34.0,
+      "magazine_loading": "Rear Load",
+      "magazine_capacity": null,
+      "fastener_max_length_in": 2.5,
+      "weight_lbs": null,
+      "brushless": true,
+      "led_light": true,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "The DEWALT DCN650 15 Gauge Angled Finish Nailer drives 15 Gauge angled finish nails from 1-1/4\" to 2-1/2\" which makes it ideal for fastening crown molding, casing, baseboards, and hardwood floor installation. With its brushless motor powered by a DEWALT 20V MAX* Lithium-Ion battery the DCN650 is ready to go to work without the hassle of using gas, compressor, and hose. Tackle jobs both large and small with the features of a pneumatic tool and the freedom of cordless. * - Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18. Battery & Charger Sold Separately",
+      "features": [
+        "100% battery powered. Eliminates the hassle of using gas, compressor, and hose",
+        "Brushless motor maximizes runtime and durability",
+        "Micro nose improves line of sight and accuracy of nail placement (Compared to DEWALT DC628)"
+      ],
+      "additional_features": [
+        "Tool-free selectable trigger for sequential or contact actuation modes",
+        "Tool-free depth adjustment for precise countersinking of nails",
+        "Tool-free jam release to quickly and easily clear nail jams",
+        "Multi-functional LED lights help to provide both workspace illumination and tool diagnostics",
+        "Integrated tool-free stall release lever to quickly reset the driver blade in the event of a stall",
+        "Adjustable belt hook for left or right attachment depending on user preference",
+        "Inline magazine provides easy use in multiple orientations and in tight spaces",
+        "Compatible with all DEWALT 20V MAX* batteries"
+      ],
+      "includes": [
+        "(1) DCN650 - Angle Finish Nailer"
+      ],
+      "applications": [
+        "Crown Moldings",
+        "Baseboards",
+        "Door/Window Casings",
+        "Exterior Trim",
+        "Hardwood Floor Installation"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCN660B",
+      "title": "20V MAX* XR 16ga Cordless Angled Finish Nailer (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcn660b/20v-max-xr-16ga-cordless-angled-finish-nailer-tool-only",
+      "category": "Finish/Brad Nailer",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 16,
+      "magazine_angle_deg": 20.0,
+      "magazine_loading": "Rear Load",
+      "magazine_capacity": 110,
+      "fastener_max_length_in": 2.5,
+      "weight_lbs": null,
+      "brushless": true,
+      "led_light": true,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "The DEWALT DCN660 16 Gauge Angled Finish Nailer drives 16 Gauge angled finish nails from 1-1/4\" to 2-1/2\" which makes it ideal for fastening crown molding, casing, and baseboards. With its brushless motor powered by a DEWALT 20V MAX* Lithium-Ion battery the DCN660 is ready to go to work without the hassle of using gas, compressor, and hose. Tackle jobs both large and small with the features of a pneumatic tool and the freedom of cordless. * - Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18. Battery & Charger Sold Separately",
+      "features": [
+        "100% battery powered. Eliminates the hassle of using gas, compressor, and hose",
+        "Brushless motor maximizes runtime and durability",
+        "Tool-free selectable trigger for sequential or contact actuation modes"
+      ],
+      "additional_features": [
+        "Tool-free depth adjustment for precise countersinking of nails",
+        "Tool-free jam release to quickly and easily clear nail jams",
+        "Multi-functional LED lights help to provide both workspace illumination and tool diagnostics",
+        "Integrated tool-free stall release lever to quickly reset the driver blade in the event of a stall",
+        "Adjustable belt hook for left or right attachment depending on user preference",
+        "Inline magazine provides easy use in multiple orientations and in tight spaces",
+        "Compatible with all DEWALT 20V MAX* batteries"
+      ],
+      "includes": [
+        "(1) DCN660 - Angled Finish Nailer"
+      ],
+      "applications": [
+        "Interior Trim",
+        "Door and Window Casings",
+        "Baseboards",
+        "Built Ins",
+        "Crown Molding",
+        "Quarter Round Molding"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCN662B",
+      "title": "20V MAX* XR 16ga Cordless Straight Finish Nailer (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcn662b/20v-max-xr-16ga-cordless-straight-finish-nailer-tool-only",
+      "category": "Finish/Brad Nailer",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 16,
+      "magazine_angle_deg": 0.0,
+      "magazine_loading": "Rear Load",
+      "magazine_capacity": 110,
+      "fastener_max_length_in": 2.5,
+      "weight_lbs": null,
+      "brushless": true,
+      "led_light": true,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "The DEWALT DCN662 20V MAX* XR 16 GA Cordless Straight Finish Nailer drives 16 Gauge straight finish nails from from 1-1/4\" to 2-1/2\" which makes it ideal for fastening baseboards, door/window casing, and crown molding. With its brushless motor powered by a DEWALT 20V MAX* Lithium-Ion battery the DCN662 is ready to go to work without the hassle of using gas, compressor, and hose. Tackle jobs both large and small with the features of a pneumatic tool and the freedom of cordless. Battery & Charger Sold Separately",
+      "features": [
+        "100% battery powered. Eliminates the hassle of using gas, compressor, and hose",
+        "Brushless motor maximizes runtime and durability",
+        "Micro nose improves line of sight and accuracy of nail placement (Compared to DEWALT DC616)"
+      ],
+      "additional_features": [
+        "Tool-free selectable trigger for sequential or contact actuation modes",
+        "Tool-free depth adjustment for precise countersinking of nails",
+        "Tool-free jam release to quickly and easily clear nail jams",
+        "Multi-functional LED lights help to provide both workspace illumination and tool diagnostics",
+        "Integrated tool-free stall release lever to quickly reset the driver blade in the event of a stall",
+        "Adjustable belt hook for left or right attachment depending on user preference",
+        "Compatible with all DEWALT 20V MAX* batteries"
+      ],
+      "includes": [
+        "(1) DCN662 - Straight Finish Nailer"
+      ],
+      "applications": [
+        "Crown Moldings",
+        "Baseboards",
+        "Door/Window Casings",
+        "Chair Railing",
+        "Exterior Trim"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DWFP12231",
+      "title": "18 Gauge 2 in. Brad Nailer Kit",
+      "url": "https://www.dewalt.com/product/dwfp12231/18-gauge-2-brad-nailer-kit",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Pneumatic",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Brad Nailer",
+      "gauge": 18,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": null,
+      "fastener_max_length_in": 2.0,
+      "weight_lbs": 2.65,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": false,
+      "kit": true,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "The DEWALT DWP12231 18 Gauge 2 in. Brad Nailer drives 18 Gauge brad nails from 5/8\" to 2\" which makes it ideal for fastening decorative molding, casing, kitchen crown, and shoe molding. With its long life, maintenance-free motor, the DWFP12231 is ready to go to work.",
+      "features": [
+        "Long life maintenance-free motor to keep from staining the work surface",
+        "Sequential style trigger",
+        "Tool-free depth-of-drive adjustment with detents for proper setting of nail heads"
+      ],
+      "additional_features": [
+        "Tool-free jam release mechanism for easy nail removal",
+        "Rear exhaust to keep contaminates away from work",
+        "Drives 18 gauge nails from 5/8 in. to 2 in. length",
+        "Adjustable belt hook allows the tool to be kept near the user",
+        "Kit includes: carrying case, and owners manual",
+        "Removable non-marring nose tip with on tool storage",
+        "Integrated rubber grip for improved comfort"
+      ],
+      "includes": [
+        "(1) Carrying case",
+        "(1) 1/4 in. Fitting"
+      ],
+      "applications": [],
+      "disclaimers": []
+    },
+    {
+      "sku": "DWFP12233",
+      "title": "18 GA Precision Point Brad Nailer",
+      "url": "https://www.dewalt.com/product/dwfp12233/18-ga-precision-point-brad-nailer",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Pneumatic",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Brad Nailer",
+      "gauge": 18,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": 100,
+      "fastener_max_length_in": 2.125,
+      "weight_lbs": 3.1,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": true,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "",
+      "features": [
+        "Precision Point Technology - Precise nail placement as a result of a smaller nose compared to current DEWALT nailers and no need to compress the contact trip to actuate the tool",
+        "Drives 18 Ga. brad nails from 5/8 in. to 2-1/8 in. length",
+        "Long life maintenance-free motor to keep from staining the work surface"
+      ],
+      "additional_features": [
+        "Tool-free jam release mechanism for easy nail removal",
+        "Tool-free depth-of-drive adjustment for proper setting of nail heads",
+        "Selectable Trigger - Sequential or contact actuation",
+        "Rear exhaust to keep contaminates away from work",
+        "Adjustable belt hook allows the tool to be kept near the user",
+        "Kit Includes - Nailer, fitting, carrying case and extra no-mar tips"
+      ],
+      "includes": [
+        "(1) Nailer",
+        "(1) Fitting",
+        "(1) Carrying Case",
+        "(1) Extra No-Mar Tips"
+      ],
+      "applications": [
+        "Interior Trim",
+        "Baseboards",
+        "Shoe Molding",
+        "Cabinetry",
+        "Door & Window Casings",
+        "Furniture",
+        "Kitchen Crown Molding",
+        "Paneling"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DWFP2350K",
+      "title": "23 GA Pin Nailer",
+      "url": "https://www.dewalt.com/product/dwfp2350k/23-ga-pin-nailer",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Pneumatic",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Pin Nailer",
+      "gauge": 23,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": null,
+      "fastener_max_length_in": 2.0,
+      "weight_lbs": 42.6,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": true,
+      "selectable_trigger": false,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Our 23 GA Pin Nailer sets 2 in. nails recessed into oak with the power and adaptability to deliver professional results. This is the ideal tool for contractors, woodworkers, and cabinet builders looking to fasten materials while keeping nail visibility to a minimum. Tool-free jam release and depth adjustment for easy nail removal. Pick up this hard-working pneumatic fastening tool for completing finish and trim jobs.",
+      "features": [
+        "Drives 23 GA 2 in. nails recessed into oak",
+        "World\"s first 23 GA Pin Nailer with tool-free jam release for easy nail removal",
+        "Tool-free depth adjustment for driving recessed fasteners"
+      ],
+      "additional_features": [
+        "Oil-free operation reduces risk of oil stains on work surface",
+        "Low nail lockout with bypass and reload alert",
+        "Uses 23 GA headless pin nails from 5/8 in. to 2 in. length",
+        "Reversible belt hook for hands-free carrying on the jobsite"
+      ],
+      "includes": [
+        "(1) 1/4 in. fitting",
+        "(1) Carrying Case",
+        "(2) No-Mar Tips",
+        "(1) Owners Manual",
+        "(1) Nailers"
+      ],
+      "applications": [
+        "Decorative Trim",
+        "Decorative Molding",
+        "Cabinet Crown Molding",
+        "Miter Returns",
+        "Raised Panels Doors",
+        "Crafts"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DWFP71917",
+      "title": "16 GA Precision Point Finish Nailer",
+      "url": "https://www.dewalt.com/product/dwfp71917/16-ga-precision-point-finish-nailer",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Pneumatic",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 16,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": 100,
+      "fastener_max_length_in": 2.5,
+      "weight_lbs": 3.9,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": true,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "",
+      "features": [
+        "Precision Point Technology - Easy nail placement as a result of a smaller nose compared to current DEWALT nailers and no need to compress the contact trip to actuate the tool",
+        "Drives straight 16 Ga. finish nails from 1-1/4 in. to 2-1/2 in. length",
+        "Long life maintenance-free motor to keep from staining the work surface"
+      ],
+      "additional_features": [
+        "Tool-free jam release mechanism for easy nail removal",
+        "Tool-free depth-of-drive adjustment for proper setting of nail heads",
+        "Selectable Trigger - Sequential or contact actuation",
+        "Rear exhaust to keep contaminates away from work",
+        "Adjustable belt hook allows the tool to be kept near the user",
+        "Kit Includes - Nailer, fitting, carrying case and extra no-mar tips"
+      ],
+      "includes": [
+        "(1) Nailer",
+        "(1) Fitting",
+        "(1) Carrying Case",
+        "(1) Extra No-Mar Tips"
+      ],
+      "applications": [
+        "Interior Trim, Baseboards, Cabinetry, Door & Window Casings, Furniture, Crown Molding, Hardwood Flooring, Stairs, Paneling"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DWFP72155",
+      "title": "15 GA Precision Point \"DA\" Style Angle Finish Nailer",
+      "url": "https://www.dewalt.com/product/dwfp72155/15-ga-precision-point-da-style-angle-finish-nailer",
+      "category": "Finish/Brad Nailer",
+      "series": [],
+      "power_source": "Corded",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "nailer_type": "Finish Nailer",
+      "gauge": 15,
+      "magazine_angle_deg": null,
+      "magazine_loading": null,
+      "magazine_capacity": 100,
+      "fastener_max_length_in": 0.25,
+      "weight_lbs": 4.2,
+      "brushless": null,
+      "led_light": null,
+      "jam_clearing": true,
+      "tool_free_depth_adjust": true,
+      "low_nail_lockout": false,
+      "selectable_trigger": true,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "The DEWALT DWFP72155 15 GA PrecisionPoint \"DA\" Style Angle Finish Nailer drives 15 Gauge DA style nails from 1-1/4 in. to 2-1/2 in. making it ideal for interior trim, baseboards, crown molding and more. With its 16 in. On-center gauge to measure exactly 16 in. from end to nose, and PrecisionPoint technology for precise nail placement, this tool is ready to work.",
+      "features": [
+        "Precision Point Technology - Precise nail placement due to a smaller nose, compared to current DEWALT nailers, and no need to compress the contact trip to actuate the tool",
+        "Long-life, maintenance-free motor helps to keep from staining the work surface",
+        "Tool-free jam release mechanism for easy nail removal"
+      ],
+      "additional_features": [
+        "Tool-free depth-of-drive adjustment for proper setting of nail heads",
+        "Selectable Trigger - Sequential or contact actuation",
+        "Integrated air blower allows to clear away debris from work surface",
+        "16 in. on-center gauge flips out to measure exactly 16 in. from end to nose for installing wall trim",
+        "Rear exhaust to keep contaminates away from work",
+        "Adjustable belt hook allows the tool to be kept near the user"
+      ],
+      "includes": [
+        "(1) DWFP72155 Finish Nailer",
+        "(1) Fitting",
+        "(1) Carrying Case",
+        "(1) Sample No-Mar Tips"
+      ],
+      "applications": [
+        "Interior Trim, Baseboards, Cabinetry, Door & Window Casings, Furniture, Crown Molding, Hardwood Flooring, Stairs, Paneling"
+      ],
+      "disclaimers": []
+    }
+  ]
+}

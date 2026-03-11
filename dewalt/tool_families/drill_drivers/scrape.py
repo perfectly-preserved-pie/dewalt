@@ -446,7 +446,7 @@ def sku_looks_like_bare_tool(sku: str) -> bool:
     normalized_sku = re.sub(r"[^A-Z0-9]", "", sku.upper())
     if "P" in normalized_sku:
         return False
-    return normalized_sku.endswith("B")
+    return re.fullmatch(r"[A-Z]+[0-9]+[A-Z]*B", normalized_sku) is not None
 
 
 def is_supported_drill_driver(row: dict[str, Any]) -> bool:

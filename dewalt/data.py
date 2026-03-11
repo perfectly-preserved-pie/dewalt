@@ -11,8 +11,14 @@ ANGLE_GRINDER_DATA_PATH = (
 CIRCULAR_SAW_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_circular_saws.json"
 )
+CUT_OUT_TOOL_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_cut_out_tools.json"
+)
 DRILL_DRIVER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_drill_drivers.json"
+)
+FINISH_BRAD_NAILER_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_finish_brad_nailers.json"
 )
 HAMMER_DRILL_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_hammer_drills.json"
@@ -26,8 +32,14 @@ IMPACT_WRENCH_DATA_PATH = (
 OSCILLATING_MULTI_TOOL_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_oscillating_multi_tools.json"
 )
+MITER_SAW_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_miter_saws.json"
+)
 RATCHET_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_ratchets.json"
+)
+TABLE_SAW_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_table_saws.json"
 )
 ROTARY_HAMMER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_rotary_hammers.json"
@@ -122,6 +134,70 @@ def load_circular_saws(path: Path = CIRCULAR_SAW_DATA_PATH) -> list[dict[str, An
     return rows
 
 
+def load_cut_out_tool_snapshot(path: Path = CUT_OUT_TOOL_DATA_PATH) -> dict[str, Any]:
+    """Load the saved cut-out-tool snapshot from disk.
+
+    Args:
+        path: Filesystem path to the cut-out-tool snapshot JSON file.
+
+    Returns:
+        The parsed cut-out-tool snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_cut_out_tools(path: Path = CUT_OUT_TOOL_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized cut-out-tool rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of cut-out-tool row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_cut_out_tool_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_finish_brad_nailer_snapshot(
+    path: Path = FINISH_BRAD_NAILER_DATA_PATH,
+) -> dict[str, Any]:
+    """Load the saved finish/brad-nailer snapshot from disk.
+
+    Args:
+        path: Filesystem path to the finish/brad-nailer snapshot JSON file.
+
+    Returns:
+        The parsed finish/brad-nailer snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_finish_brad_nailers(
+    path: Path = FINISH_BRAD_NAILER_DATA_PATH,
+) -> list[dict[str, Any]]:
+    """Load normalized finish/brad-nailer rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of finish/brad-nailer row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_finish_brad_nailer_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
 def load_drill_driver_snapshot(path: Path = DRILL_DRIVER_DATA_PATH) -> dict[str, Any]:
     """Load the saved drill-driver snapshot from disk.
 
@@ -144,6 +220,66 @@ def load_drill_drivers(path: Path = DRILL_DRIVER_DATA_PATH) -> list[dict[str, An
         A list of drill-driver row dictionaries with normalized power source labels.
     """
     snapshot = load_drill_driver_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_miter_saw_snapshot(path: Path = MITER_SAW_DATA_PATH) -> dict[str, Any]:
+    """Load the saved miter-saw snapshot from disk.
+
+    Args:
+        path: Filesystem path to the miter-saw snapshot JSON file.
+
+    Returns:
+        The parsed miter-saw snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_miter_saws(path: Path = MITER_SAW_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized miter-saw rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of miter-saw row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_miter_saw_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_table_saw_snapshot(path: Path = TABLE_SAW_DATA_PATH) -> dict[str, Any]:
+    """Load the saved table-saw snapshot from disk.
+
+    Args:
+        path: Filesystem path to the table-saw snapshot JSON file.
+
+    Returns:
+        The parsed table-saw snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_table_saws(path: Path = TABLE_SAW_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized table-saw rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of table-saw row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_table_saw_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)

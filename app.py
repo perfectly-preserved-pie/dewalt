@@ -6,13 +6,17 @@ import dash_bootstrap_components as dbc
 from dewalt.tool_families import (
     ANGLE_GRINDER_FAMILY,
     CIRCULAR_SAW_FAMILY,
+    CUT_OUT_TOOL_FAMILY,
     DRILL_DRIVER_FAMILY,
+    FINISH_BRAD_NAILER_FAMILY,
     HAMMER_DRILL_FAMILY,
     IMPACT_DRIVER_FAMILY,
     IMPACT_WRENCH_FAMILY,
+    MITER_SAW_FAMILY,
     OSCILLATING_MULTI_TOOL_FAMILY,
     RATCHET_FAMILY,
     ROTARY_HAMMER_FAMILY,
+    TABLE_SAW_FAMILY,
 )
 from dewalt.ui import (
     DashboardSection,
@@ -35,7 +39,11 @@ FAMILIES = (
     HAMMER_DRILL_FAMILY,
     ROTARY_HAMMER_FAMILY,
     CIRCULAR_SAW_FAMILY,
+    MITER_SAW_FAMILY,
+    TABLE_SAW_FAMILY,
     OSCILLATING_MULTI_TOOL_FAMILY,
+    CUT_OUT_TOOL_FAMILY,
+    FINISH_BRAD_NAILER_FAMILY,
 )
 COMPARE_BASE_COLUMNS = build_compare_base_columns()
 DASHBOARDS = [load_dashboard_context(family) for family in FAMILIES]

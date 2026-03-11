@@ -1,6 +1,6 @@
 # DEWALT Tool Table and Comparison
 
-Dash app for browsing and comparing DEWALT angle grinders, circular saws, drill drivers, impact drivers, impact wrenches, ratchets, hammer drills, rotary hammers, and oscillating multi-tools with Dash AG Grid.
+Dash app for browsing and comparing DEWALT angle grinders, circular saws, miter saws, table saws, drill drivers, impact drivers, impact wrenches, ratchets, hammer drills, rotary hammers, oscillating multi-tools, cut-out tools, and finish/brad nailers with Dash AG Grid.
 The current scrapers are scoped to all corded tools plus bare-tool cordless SKUs.
 
 ## AI Disclosure
@@ -54,6 +54,62 @@ To build that snapshot from a local cache of DEWALT product pages instead:
 
 ```bash
 uv run python3 -m dewalt.tool_families.circular_saws.scrape --source-dir /tmp/dewalt-circular-saws
+```
+
+## Refresh the miter-saw snapshot
+
+To refresh the checked-in miter-saw dataset from the live DEWALT catalog:
+
+```bash
+uv run python3 -m dewalt.tool_families.miter_saws.scrape
+```
+
+To build that snapshot from a local cache of DEWALT product pages instead:
+
+```bash
+uv run python3 -m dewalt.tool_families.miter_saws.scrape --source-dir /tmp/dewalt-miter-saws
+```
+
+## Refresh the table-saw snapshot
+
+To refresh the checked-in table-saw dataset from the live DEWALT catalog:
+
+```bash
+uv run python3 -m dewalt.tool_families.table_saws.scrape
+```
+
+To build that snapshot from a local cache of DEWALT product pages instead:
+
+```bash
+uv run python3 -m dewalt.tool_families.table_saws.scrape --source-dir /tmp/dewalt-table-saws
+```
+
+## Refresh the cut-out-tool snapshot
+
+To refresh the checked-in cut-out-tool dataset from the live DEWALT catalog:
+
+```bash
+uv run python3 -m dewalt.tool_families.cut_out_tools.scrape
+```
+
+To build that snapshot from a local cache of DEWALT product pages instead:
+
+```bash
+uv run python3 -m dewalt.tool_families.cut_out_tools.scrape --source-dir /tmp/dewalt-cut-out-tools
+```
+
+## Refresh the finish/brad-nailer snapshot
+
+To refresh the checked-in finish/brad-nailer dataset from the live DEWALT catalog:
+
+```bash
+uv run python3 -m dewalt.tool_families.finish_brad_nailers.scrape
+```
+
+To build that snapshot from a local cache of DEWALT product pages instead:
+
+```bash
+uv run python3 -m dewalt.tool_families.finish_brad_nailers.scrape --source-dir /tmp/dewalt-finish-brad-nailers
 ```
 
 ## Refresh the hammer-drill snapshot
