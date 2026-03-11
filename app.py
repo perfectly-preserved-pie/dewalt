@@ -5,6 +5,7 @@ import dash_bootstrap_components as dbc
 
 from dewalt.tool_families import (
     ANGLE_GRINDER_FAMILY,
+    CIRCULAR_SAW_FAMILY,
     DRILL_DRIVER_FAMILY,
     HAMMER_DRILL_FAMILY,
     IMPACT_DRIVER_FAMILY,
@@ -33,6 +34,7 @@ FAMILIES = (
     RATCHET_FAMILY,
     HAMMER_DRILL_FAMILY,
     ROTARY_HAMMER_FAMILY,
+    CIRCULAR_SAW_FAMILY,
     OSCILLATING_MULTI_TOOL_FAMILY,
 )
 COMPARE_BASE_COLUMNS = build_compare_base_columns()

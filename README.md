@@ -1,6 +1,6 @@
 # DEWALT Tool Table and Comparison
 
-Dash app for browsing and comparing DEWALT angle grinders, drill drivers, impact drivers, impact wrenches, ratchets, hammer drills, rotary hammers, and oscillating multi-tools with Dash AG Grid.
+Dash app for browsing and comparing DEWALT angle grinders, circular saws, drill drivers, impact drivers, impact wrenches, ratchets, hammer drills, rotary hammers, and oscillating multi-tools with Dash AG Grid.
 The current scrapers are scoped to all corded tools plus bare-tool cordless SKUs.
 
 ## AI Disclosure
@@ -40,6 +40,20 @@ To build that snapshot from a local cache of DEWALT product pages instead:
 
 ```bash
 uv run python3 -m dewalt.tool_families.drill_drivers.scrape --source-dir /tmp/dewalt-drill-drivers
+```
+
+## Refresh the circular-saw snapshot
+
+To refresh the checked-in circular-saw dataset from the live DEWALT catalog:
+
+```bash
+uv run python3 -m dewalt.tool_families.circular_saws.scrape
+```
+
+To build that snapshot from a local cache of DEWALT product pages instead:
+
+```bash
+uv run python3 -m dewalt.tool_families.circular_saws.scrape --source-dir /tmp/dewalt-circular-saws
 ```
 
 ## Refresh the hammer-drill snapshot

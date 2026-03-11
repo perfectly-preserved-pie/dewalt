@@ -8,6 +8,9 @@ from typing import Any
 ANGLE_GRINDER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_angle_grinders.json"
 )
+CIRCULAR_SAW_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_circular_saws.json"
+)
 DRILL_DRIVER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_drill_drivers.json"
 )
@@ -81,6 +84,36 @@ def load_angle_grinders(path: Path = ANGLE_GRINDER_DATA_PATH) -> list[dict[str, 
         A list of grinder row dictionaries with normalized power source labels.
     """
     snapshot = load_angle_grinder_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_circular_saw_snapshot(path: Path = CIRCULAR_SAW_DATA_PATH) -> dict[str, Any]:
+    """Load the saved circular-saw snapshot from disk.
+
+    Args:
+        path: Filesystem path to the circular-saw snapshot JSON file.
+
+    Returns:
+        The parsed circular-saw snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_circular_saws(path: Path = CIRCULAR_SAW_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized circular-saw rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of circular-saw row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_circular_saw_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)
