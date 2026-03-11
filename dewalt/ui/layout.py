@@ -195,7 +195,7 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
                 id="tool-tabs",
                 value=sections[0].context.family.slug,
                 className="tool-tabs",
-                children=[build_family_tab(section) for section in sections],
+                children=sorted([build_family_tab(section) for section in sections], key=lambda tab: tab.label),
             ),
         ],
         fluid=True,
