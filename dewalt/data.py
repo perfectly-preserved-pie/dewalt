@@ -23,6 +23,12 @@ IMPACT_WRENCH_DATA_PATH = (
 OSCILLATING_MULTI_TOOL_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_oscillating_multi_tools.json"
 )
+RATCHET_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_ratchets.json"
+)
+ROTARY_HAMMER_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_rotary_hammers.json"
+)
 
 
 def normalize_power_source(value: str | None) -> str | None:
@@ -230,6 +236,66 @@ def load_oscillating_multi_tools(
         labels.
     """
     snapshot = load_oscillating_multi_tool_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_ratchet_snapshot(path: Path = RATCHET_DATA_PATH) -> dict[str, Any]:
+    """Load the saved ratchet snapshot from disk.
+
+    Args:
+        path: Filesystem path to the ratchet snapshot JSON file.
+
+    Returns:
+        The parsed ratchet snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_ratchets(path: Path = RATCHET_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized ratchet rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of ratchet row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_ratchet_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_rotary_hammer_snapshot(path: Path = ROTARY_HAMMER_DATA_PATH) -> dict[str, Any]:
+    """Load the saved rotary-hammer snapshot from disk.
+
+    Args:
+        path: Filesystem path to the rotary-hammer snapshot JSON file.
+
+    Returns:
+        The parsed rotary-hammer snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_rotary_hammers(path: Path = ROTARY_HAMMER_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized rotary-hammer rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of rotary-hammer row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_rotary_hammer_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)

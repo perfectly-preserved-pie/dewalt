@@ -1,0 +1,536 @@
+{
+  "scraped_at": "2026-03-11T01:43:36+00:00",
+  "catalog_url": "https://www.dewalt.com/products/power-tools/ratchets/ratchets",
+  "listing_page_count": 1,
+  "raw_product_count": 18,
+  "product_count": 10,
+  "excluded_product_count": 8,
+  "rows": [
+    {
+      "sku": "DCF500B",
+      "title": "XTREME 12V MAX* 3/8 in. & 1/4 in. Brushless Cordless Sealed Head Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf500b/xtreme-12v-max-38-14-brushless-cordless-sealed-head-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "1/4 in. & 3/8 in.",
+      "head_type": "Sealed Head",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "max_torque_ft_lbs": 50.0,
+      "max_torque_nm": 68.0,
+      "tool_length_in": 13.0,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "fw_rev_switch": true,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Fasten or remove small nuts, bolts, and other fasteners in tight areas with the XTREME 12V MAX* 3/8\" & 1/4\" Sealed Head Ratchet. The brushless motor delivers up to 50 ft-lbs. of max torque with a no-load speed of 0-450 RPMs\u2020. Maximize versatility with the ability to quickly swap between 1/4\" square drive, 3/8\" square drive, and 1/4\" quick change hex interchangeable anvils as well as change from forward to reverse for efficient working in tight areas. The sealed head design and glass-filled nylon tool housing provides protection against automotive oils and solvents found on the job. Brighten your workspace with the integrated LED light and prevent accidental tool activation using the tool's trigger lock. Battery and charger sold separately.",
+      "features": [
+        "Interchangeable Anvil Design - Provides the ability to quickly swap between 3/8\" square drive, and 1/4\" square drive, and 1/4\" quick change hex",
+        "Brushless Motor - Delivers 50 ft-lbs of max torque and 0-450 No-Load RPM",
+        "Help Prevent Damage From Automotive Oils And Solvents - With glass-filled nylon tool housing"
+      ],
+      "additional_features": [
+        "On-Board LED Light - Helps to illuminate tight, lowlight spaces",
+        "Variable Speed Trigger -Helps optimize user speed and control based on application",
+        "Forward/Reverse Switch - Allows for efficient working in tight spaces",
+        "Trigger Lock - Helps prevent accidental activation when applied",
+        "Cordless Compatibility - Across all DEWALT 12V MAX* batteries (sold separately)"
+      ],
+      "includes": [
+        "(1) DCF500 Ratchet",
+        "(2) 1/4\" Square Drive",
+        "(3) 3/8\" Square Drive",
+        "(4) 1/4\" Quick Change Hex"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "*Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8 volts.",
+        "\u2020Based on performance with the DCB124G battery."
+      ]
+    },
+    {
+      "sku": "DCF503B",
+      "title": "XTREME 12V MAX* Brushless 3/8 in. Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf503b/xtreme-12v-max-brushless-38-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "3/8 in.",
+      "head_type": "Standard",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "max_torque_ft_lbs": null,
+      "max_torque_nm": null,
+      "tool_length_in": null,
+      "weight_lbs": 2.2,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": null,
+      "fw_rev_switch": null,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": null,
+      "charger_included": false,
+      "description": "Rapidly fasten and remove bolts, nuts, and other fasteners with this XTREME 12V MAX* Brushless Cordless 3/8 in. Ratchet. Designed for long-lasting performance, the ratchet delivers 60 ft-lbs of max torque for jobs in compact spaces while its glass-filled nylon housing helps prevent damage from harsh chemicals and solvents on the worksite. Keep productivity high by brightening work areas with its integrated LED worklight and adjust the output speed as needed with the variable speed trigger. Battery & Charger Sold Separately",
+      "features": [
+        "Engineered For Torque And Versatility - Brushless motor delivers up to 60 ft-lbs of max torque for use with a wide variety of fastener sizes and applications",
+        "Helps combat damage caused by some oils and solvents with glass-filled nylon housing",
+        "Brighten Workspaces - With an onboard led worklight that helps illuminate applications"
+      ],
+      "additional_features": [
+        "Access Hard-To-Reach Spots - Compact design and low-profile head designed to allow for accessibility in tight locations",
+        "Speed Control - Variable speed trigger helps user optimize speed based on application",
+        "Cordless Compatibility - Works with all DEWALT 12V MAX* batteries and chargers (battery and charger sold separately)",
+        "Trigger Lock - Helps prevent accidental activation when applied"
+      ],
+      "includes": [
+        "(1) DCF503 Ratchet"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF503EB",
+      "title": "XTREME 12V MAX* 3/8 in. Brushless Extended Reach Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf503eb/xtreme-12v-max-38-brushless-extended-reach-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "3/8 in.",
+      "head_type": "Standard",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "max_torque_ft_lbs": null,
+      "max_torque_nm": null,
+      "tool_length_in": null,
+      "weight_lbs": 2.6,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": null,
+      "fw_rev_switch": null,
+      "extended_reach": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": null,
+      "charger_included": false,
+      "description": "Take on difficult-ro-reach fastening work with this versatile XTREME 12V MAX* Brushless Cordless 3/8 in. Extended Reach Ratchet. Designed to help you access confined workspaces, the ratchet features an extended neck and a brushless motor that outputs 60 ft-lbs of max torque for speedy fastening and removal of nuts and bolts. The ratchet also helps provide illumination in workspaces with its onboard LED worklight. Battery and charger not included. Battery & Charger Sold Separately",
+      "features": [
+        "Engineered For Torque And Versatility - Brushless motor delivers up to 60 ft-lbs of max torque for use with a wide variety of fastener sizes and applications",
+        "Access Hard-To-Reach Spots - Longer neck than standard model with compact and low-profile head designed for use in tight locations",
+        "Helps combat damage caused by some oils and solvents with glass-filled nylon housing"
+      ],
+      "additional_features": [
+        "Brighten Workspaces - With an onboard led worklight that helps illuminate applications",
+        "Speed Control - Variable speed trigger helps user optimize speed based on application",
+        "Cordless Compatibility - Works with all DEWALT 12V MAX* batteries and chargers (battery and charger sold separately)",
+        "Trigger Lock - Helps prevent accidental activation when applied"
+      ],
+      "includes": [
+        "(1) DCF503E Extended Reach Ratchet"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF504B",
+      "title": "XTREME 12V MAX* Brushless 1/4 in. Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf504b/xtreme-12v-max-brushless-14-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "1/4 in.",
+      "head_type": "Other",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "max_torque_ft_lbs": null,
+      "max_torque_nm": null,
+      "tool_length_in": 12.0,
+      "weight_lbs": 1.7,
+      "brushless": null,
+      "variable_speed": true,
+      "led_light": null,
+      "fw_rev_switch": null,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": null,
+      "charger_included": false,
+      "description": "When the project calls for quick fastening or removal, trust this XTREME 12V MAX* Brushless Cordless 1/4 in. Ratchet to help you complete the job. Engineered to fasten and remove small nuts, bolts, and other fasteners in hard-to-reach work areas, this power tool delivers the durability and versatility needed to handle a variety of applications with its 1/4 in. square drive and 40 ft-lbs of max torque. Designed to resist the effects of harsh jobsite chemicals and solvents, the ratchet features a protective, glass-filled nylon housing to help deliver long-lasting performance. Manual operation is also an option to tackle stubborn fastening applications. Battery and charger not included. Battery & Charger Sold Separately",
+      "features": [
+        "Torque And Versatility - Brushless motor delivers 40 ft-lbs of max torque for use with a wide variety of fastener sizes and applications",
+        "Helps Combat Damage Caused By Some Oils And Solvents - With glass-filled nylon housing",
+        "Brighten Workspaces - With an onboard LED worklight that helps illuminate applications"
+      ],
+      "additional_features": [
+        "Access Hard-To-Reach Spots - Compact design and low-profile head designed to allow for accessibility in tight locations",
+        "Speed Control - Variable speed trigger helps user optimize speed based on application",
+        "Cordless Compatibility - Works with all DEWALT 12V MAX* batteries and chargers (battery and charger sold separately)",
+        "Trigger Lock - Helps prevent accidental activation when applied"
+      ],
+      "includes": [
+        "(1) DCF504 Ratchet"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF510B",
+      "title": "20V XR Brushless 3/8 in. & 1/2 in. Sealed Head Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf510b/20v-xr-brushless-38-12-sealed-head-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "3/8 in. & 1/2 in.",
+      "head_type": "Sealed Head",
+      "no_load_speed": "300",
+      "rpm_max": 300,
+      "max_torque_ft_lbs": 75.0,
+      "max_torque_nm": 102.0,
+      "tool_length_in": 15.0,
+      "weight_lbs": 2.6,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "fw_rev_switch": true,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Engineered with the professional in mind, the 20V MAX* XR 3/8\" & 1/2\" Sealed Head Ratchet has the power, versatility, and durability, needed on the job. This cordless ratchet has a brushless motor that delivers 75 ft-lbs. of max torque and a no-load speed of 0-300 RPM to fasten and remove stubborn nuts and bolts. Maximize versatility with the ability to quickly swap between interchangeable 3/8\" and 1/2\" square drive anvils for a variety of applications, as well as quickly change from forward/reverse for efficient working. The sealed head design and glass-filled nylon tool housing is designed to help prevent damage from automotive oils and solvents found on the job. Brighten your workspace with the integrated LED light and prevent accidental tool activation using the tool's trigger lock. Battery & Charger Sold Separately",
+      "features": [
+        "Interchangeable Anvil Design - Provides the ability to quickly swap between 3/8\" and 1/2\" square drives",
+        "Brushless Motor - Delivers 75 ft-lbs of max torque and 0-300 No-Load RPM",
+        "Help Prevent Damage From Automotive Oils And Solvents - With glass-filled nylon tool housing"
+      ],
+      "additional_features": [
+        "On-Board LED Light - Helps to illuminate lowlight spaces",
+        "Variable Speed Trigger - Helps optimize user speed and control based on application",
+        "Forward/Reverse Switch - Allows for efficient working in tight spaces",
+        "Trigger Lock - Helps prevent accidental activation when applied"
+      ],
+      "includes": [
+        "(1) DCF510 Ratchet",
+        "(1) 3/8 in. Square Drive",
+        "(1) 1/2 in. Square Drive"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "\u2020Based on performance with the DCBP034 battery."
+      ]
+    },
+    {
+      "sku": "DCF512B",
+      "title": "20V MAX* ATOMIC COMPACT SERIES Brushless 1/2 in. Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf512b/20v-max-atomic-compact-series-brushless-12-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_display": "1/2 in.",
+      "head_type": "Standard",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "max_torque_ft_lbs": 70.0,
+      "max_torque_nm": 95.0,
+      "tool_length_in": null,
+      "weight_lbs": 2.4,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": null,
+      "fw_rev_switch": null,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": null,
+      "charger_included": false,
+      "description": "Take advantage of 70 ft-lbs of max torque as you fasten and remove bolts and nuts using this ATOMIC 20V MAX* Brushless Cordless 1/2 in. Ratchet. Engineered for performance and durability, the ratchet offers variable speed control to help you tackle a variety of applications while the glass-filled nylon housing is designed to help prevent damage from abrasive solvents and chemicals as you work. Its compact design helps you reach difficult-to-access fasteners and you can maintain a steady and well-lit workflow thanks to its onboard LED worklight. Battery & Charger Sold Separately",
+      "features": [
+        "Engineered For High Torque And Versatility - Brushless motor delivers up to 70 ft-lbs of torque for use with a wide variety of fastener sizes and applications",
+        "Helps Combat Damage Caused By Some Oils And Solvents - With glass-filled nylon housing",
+        "Brighten Workspaces - With an onboard LED worklight that helps illuminate applications"
+      ],
+      "additional_features": [
+        "Access Hard-To-Reach Spots - Compact design and low-profile head designed to allow for mobility in tight locations",
+        "Speed Control - Variable speed trigger helps user optimize speed based on application",
+        "Cordless Compatibility - Works with all DEWALT 20V MAX* batteries and chargers (battery and charger sold separately)",
+        "Trigger Lock - Helps prevent accidental activation when applied"
+      ],
+      "includes": [
+        "(1) DCF512 Ratchet"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF513B",
+      "title": "ATOMIC COMPACT SERIES 20V MAX* Brushless 3/8 in. Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf513b/atomic-compact-series-20v-max-brushless-38-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "3/8 in.",
+      "head_type": "Standard",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "max_torque_ft_lbs": null,
+      "max_torque_nm": null,
+      "tool_length_in": 14.2,
+      "weight_lbs": 2.4,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": null,
+      "fw_rev_switch": null,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": null,
+      "charger_included": false,
+      "description": "Get the performance and versatility you need to complete challenging fastening work with this ATOMIC 20V MAX* Brushless Cordless 3/8 in. Ratchet. Delivering 70 ft-lbs of max torque, the ratchet helps you tighten and remove a broad range of nuts, bolts, and other fasteners of various sizes. The glass-filled nylon housing helps prevent the effects of harsh autmotive solvents and chemicals. Its integrated LED worklight helps keep your workspace well-lit, while its compact build is designed to help you access difficult-to-reach fasteners. Battery & Charger Sold Separately",
+      "features": [
+        "Engineered For High Torque And Versatility - Brushless motor delivers up to 70 ft-lbs of torque for use with a wide variety of fastener sizes and applications",
+        "Helps combat damage caused by some oils and solvents with glass-filled nylon housing",
+        "Brighten Workspaces - With an onboard led worklight that helps illuminate applications"
+      ],
+      "additional_features": [
+        "Access Hard-To-Reach Spots - Compact design and low-profile head designed to allow for mobility in tight locations",
+        "Speed Control - Variable speed trigger helps user optimize speed based on application",
+        "Cordless Compatibility - Works with all DEWALT 20V MAX* batteries and chargers (battery and charger sold separately)",
+        "Trigger Lock - Helps prevent accidental activation when applied"
+      ],
+      "includes": [
+        "(1) DCF513 Ratchet"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF514B",
+      "title": "ATOMIC 20V MAX* Brushless Cordless 1/4 in. Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf514b/atomic-20v-max-brushless-cordless-14-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "1/4 in.",
+      "head_type": "Standard",
+      "no_load_speed": "0-250",
+      "rpm_max": 250,
+      "max_torque_ft_lbs": 45.0,
+      "max_torque_nm": 61.0,
+      "tool_length_in": 13.2,
+      "weight_lbs": 1.83,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "fw_rev_switch": true,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "Designed to deliver up to 250 RPM (no-load speed) and up to 45 ft-lbs. of max torque, the ATOMIC 20V MAX* Brushless Cordless 1/4 in. Ratchet (battery and charger sold separately) removes stubborn fasteners for a wide range of professional applications. This tool features a variable speed trigger, easy-to-access forward/reverse switch, and trigger lock that helps prevent accidental activations. Ideal for harsh environments, this ratchet features a glass-filled nylon tool housing engineered to help resist damage from harsh chemicals and solvents.",
+      "features": [
+        "Powerful Brushless Motor - Complete challenging applications with up to 250 RPM (no-load) and up to 45 ft-lbs. of max torque.",
+        "Help Optimize Performance - Match the speed of your tool to your application with a variable speed trigger.",
+        "Ergonomically Designed - Easily change between forward and reverse with greasy hands or while wearing gloves."
+      ],
+      "additional_features": [
+        "Durable Tool Housing - Help prevent damage from harsh fluids, chemicals, and solvents with a glass-filled nylon tool housing.",
+        "Trigger Lock - Apply the integrated trigger lock to avoid accidental tool activations.",
+        "High Visibility - Help illuminate your work surface with a built-in LED.",
+        "Where Size Meets Power - ATOMIC compact tools are part of the DEWALT 20V MAX* system, offering power without compromise.",
+        "Tool Only - Compatible with DEWALT 20V MAX* batteries (sold separately)"
+      ],
+      "includes": [
+        "(1) DCF514 ATOMIC 20V MAX* Brushless Cordless 1/4 in. Ratchet"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "*Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF514EB",
+      "title": "ATOMIC 20V MAX* Brushless Cordless 1/4 in. Extended Reach Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf514eb/atomic-20v-max-brushless-cordless-14-extended-reach-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "1/4 in.",
+      "head_type": "Standard",
+      "no_load_speed": "0-250",
+      "rpm_max": 250,
+      "max_torque_ft_lbs": 45.0,
+      "max_torque_nm": 61.0,
+      "tool_length_in": 18.1,
+      "weight_lbs": 2.35,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "fw_rev_switch": true,
+      "extended_reach": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "description": "With a long neck design, up to 250 RPM (no-load speed), and up to 45 ft-lbs. of max torque, the ATOMIC 20V MAX* Brushless Cordless 1/4 in. Extended Reach Ratchet (battery and charger sold separately) removes stubborn fasteners in difficult-to-reach areas. This tool features a variable speed trigger, easy-to-access forward/reverse switch, and trigger lock that helps prevent accidental activations. Ideal for harsh environments, this extended reach ratchet features a glass-filled nylon tool housing engineered to help resist damage from harsh chemicals and solvents.",
+      "features": [
+        "Powerful Brushless Motor - Complete challenging applications with up to 250 RPM (no-load) and up to 45 ft-lbs. of max torque.",
+        "Extended Reach - Access tight spaces and loosen difficult-to-reach fasteners with a long neck design and low profile head.",
+        "Help Optimize Performance - Match the speed of your tool to your application with a variable speed trigger."
+      ],
+      "additional_features": [
+        "Ergonomically Designed - Easily change between forward and reverse with greasy hands or while wearing gloves.",
+        "Durable Tool Housing - Help prevent damage from harsh fluids, chemicals, and solvents with a glass-filled nylon tool housing.",
+        "Trigger Lock - Apply the integrated trigger lock to avoid accidental tool activations.",
+        "High Visibility - Help illuminate your work surface with a built-in LED.",
+        "Where Size Meets Power - ATOMIC compact tools are part of the DEWALT 20V MAX* system, offering power without compromise.",
+        "Tool Only - Compatible with DEWALT 20V MAX* batteries (sold separately)"
+      ],
+      "includes": [
+        "(1) DCF514E ATOMIC 20V MAX* Brushless Cordless 1/4 in. Extended Reach Ratchet (Tool Only)"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "*Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF520B",
+      "title": "20V MAX* XR Brushless Cordless 1/4 in. & 3/8 in. Sealed Head Ratchet (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf520b/20v-max-xr-brushless-cordless-14-38-sealed-head-ratchet-tool-only",
+      "category": "Ratchet",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_display": "1/4 in. & 3/8 in.",
+      "head_type": "Sealed Head",
+      "no_load_speed": "0-450",
+      "rpm_max": 450,
+      "max_torque_ft_lbs": 50.0,
+      "max_torque_nm": 67.0,
+      "tool_length_in": 14.25,
+      "weight_lbs": 2.4,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "fw_rev_switch": true,
+      "extended_reach": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": true,
+      "charger_included": false,
+      "description": "Complete challenging applications with the versatile 20V MAX* XR Brushless Cordless 1/4 in. & 3/8 in. Sealed Head Ratchet (battery and charger sold separately). Our highest speed 20V MAX* ratchet** delivers a no-load speed up to 450 RPM and up to 50 ft-lbs. of max torque. Take advantage of the interchangeable anvil design to quickly swap between 3/8 in. square drive, 1/4 in. square drive, and 1/4 in. low-profile hex anvils for versatility in a wide range of applications. Featuring a sealed-head, a trigger lock, and a built-in LED, this next-generation XR tool is engineered to take on tough fastening jobs.",
+      "features": [
+        "Our Highest Speed 20V MAX* Ratchet** - Complete challenging applications quickly with a no-load speed up to 450 RPM.",
+        "Versatile Performance - Quickly swap between 3/8 in. square drive, 1/4 in. square drive, and 1/4 in. low-profile hex anvils with the interchangeable anvil design.",
+        "Powerful Brushless Motor - Fasten and remove difficult or stubborn bolts with up 50 ft-lbs. of max torque."
+      ],
+      "additional_features": [
+        "Ergonomically Designed - Change directions in tight spaces with ease utilizing a sealed-head design that offers easy access to the forward/reverse switch.",
+        "Trigger Lock - Apply the integrated trigger lock to avoid accidental tool activations.",
+        "High Visibility - Help illuminate your work surface with a built-in LED.",
+        "Part Of Our Best Performing Line Of 20V MAX* Power Tools - Innovative power tools designed to deliver certainty for the world's toughest pros",
+        "Tool Only - Compatible with DEWALT 20V MAX* batteries (sold separately)"
+      ],
+      "includes": [
+        "(1) DCF520 20V MAX* XR Brushless Cordless 1/4 in. & 3/8 in. Sealed Head Ratchet",
+        "(1) 1/4 in. Square Drive Anvil",
+        "(1) 3/8 in. Square Drive Anvil",
+        "(1) 1/4 in. Low Profile Hex Anvil"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "*Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "**Based on rated no-load speed of published data by DEWALT for its 20V MAX* cordless ratchets."
+      ]
+    }
+  ]
+}
