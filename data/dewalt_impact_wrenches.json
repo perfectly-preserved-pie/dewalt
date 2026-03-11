@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-03-11T01:21:15+00:00",
+  "scraped_at": "2026-03-11T01:25:58+00:00",
   "catalog_url": "https://www.dewalt.com/products/power-tools/impact-drivers-wrenches/impact-wrenches",
   "listing_page_count": 5,
   "raw_product_count": 78,
-  "product_count": 33,
-  "excluded_product_count": 45,
+  "product_count": 30,
+  "excluded_product_count": 48,
   "rows": [
     {
       "sku": "DCF889B",
@@ -1296,62 +1296,6 @@
       ]
     },
     {
-      "sku": "DCF911P1",
-      "title": "20V MAX Brushless Compact Impact Wrench (5.0Ah)",
-      "url": "https://www.dewalt.com/product/dcf911p1/20v-max-brushless-compact-impact-wrench-50ah",
-      "category": "Impact Wrench",
-      "series": [],
-      "power_source": "Corded",
-      "voltage_system": "20V",
-      "max_voltage_v": 20,
-      "nominal_voltage_v": 18.0,
-      "battery_type": null,
-      "battery_capacity_ah": null,
-      "drive_size_label": null,
-      "drive_size_in": null,
-      "anvil_type": null,
-      "torque_class": "Compact",
-      "no_load_speed": null,
-      "rpm_max": null,
-      "impact_rate_bpm": null,
-      "max_fastening_torque_ft_lbs": null,
-      "max_breakaway_torque_ft_lbs": null,
-      "tool_length_in": null,
-      "weight_lbs": null,
-      "brushless": true,
-      "variable_speed": null,
-      "led_light": null,
-      "precision_wrench": false,
-      "kit": false,
-      "tool_only": false,
-      "battery_included": false,
-      "charger_included": true,
-      "tool_connect_ready": false,
-      "lanyard_ready": false,
-      "description": "",
-      "features": [
-        "3 lights illuminate simultaneously, resulting in no shadow",
-        "Best durability to withstand external SHOCKS or internal stress",
-        "Compact head design & excellent weight balance"
-      ],
-      "additional_features": [
-        "High performance brushless motor fitted",
-        "Improved space utilization with dramatically shorter battlefield lengths",
-        "Optimized impact technology delivers maximum torque power at tightening moments up to 338 Nm",
-        "Powerful 542 Nm maximum torque at the moment of release"
-      ],
-      "includes": [
-        "(1) DCF911 Impact Wrench",
-        "(1) DCB205 - 20V MAX XR* 5.0Ah Battery",
-        "(1) Belt Clip",
-        "(1) Charger"
-      ],
-      "applications": [],
-      "disclaimers": [
-        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
-      ]
-    },
-    {
       "sku": "DCF913B",
       "title": "20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil (Tool Only)",
       "url": "https://www.dewalt.com/product/dcf913b/20v-max-38-cordless-impact-wrench-hog-ring-anvil-tool-only",
@@ -1405,59 +1349,6 @@
       ],
       "disclaimers": [
         "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
-      ]
-    },
-    {
-      "sku": "DCF913P1",
-      "title": "20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil Kit",
-      "url": "https://www.dewalt.com/product/dcf913p1/20v-max-38-cordless-impact-wrench-hog-ring-anvil-kit",
-      "category": "Impact Wrench",
-      "series": [],
-      "power_source": "Corded",
-      "voltage_system": "20V",
-      "max_voltage_v": 20,
-      "nominal_voltage_v": 18.0,
-      "battery_type": null,
-      "battery_capacity_ah": null,
-      "drive_size_label": "3/8",
-      "drive_size_in": 0.375,
-      "anvil_type": "Hog Ring",
-      "torque_class": null,
-      "no_load_speed": null,
-      "rpm_max": null,
-      "impact_rate_bpm": null,
-      "max_fastening_torque_ft_lbs": null,
-      "max_breakaway_torque_ft_lbs": null,
-      "tool_length_in": null,
-      "weight_lbs": null,
-      "brushless": null,
-      "variable_speed": null,
-      "led_light": null,
-      "precision_wrench": false,
-      "kit": true,
-      "tool_only": false,
-      "battery_included": false,
-      "charger_included": true,
-      "tool_connect_ready": false,
-      "lanyard_ready": false,
-      "description": "Take on a variety of fastening projects using the 20V MAX* 3/8 in. Cordless impact wrench with hog ring anvil kit. The high-output impact wrench delivers the power needed for both large and small jobs with up to 250 ft-lbs of tightening torque and 400 ft-lbs of BREAKAWAY torque. Its compact, lightweight build was engineered for seamless maneuverability in tight spots. Dimly lit work conditions are no problem for this cordless impact wrench, which features an on-board LED for visibility in dark spaces.",
-      "features": [
-        "Access hard-to-reach workspaces with its compact size",
-        "Brighten dark work areas with on-board LED ring",
-        "Quickly change sockets: hog ring anvil for rapid, secure socket changes"
-      ],
-      "additional_features": [
-        "Strong performance: up to 250 ft-lbs of max tightening torque and 400 ft-lbs of max BREAKAWAY torque"
-      ],
-      "includes": [
-        "(1) DCF913 Impact Wrench",
-        "(1) DCB205 - 20V MAX XR* 5.0Ah Battery",
-        "(1) Belt Clip",
-        "(1) Charger"
-      ],
-      "applications": [],
-      "disclaimers": [
-        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
       ]
     },
     {
@@ -1647,64 +1538,6 @@
       ],
       "disclaimers": [
         "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
-      ]
-    },
-    {
-      "sku": "DCF923P1",
-      "title": "ATOMIC 20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil Kit",
-      "url": "https://www.dewalt.com/product/dcf923p1/atomic-20v-max-38-cordless-impact-wrench-hog-ring-anvil-kit",
-      "category": "Impact Wrench",
-      "series": [
-        "ATOMIC"
-      ],
-      "power_source": "Corded",
-      "voltage_system": "20V",
-      "max_voltage_v": 20,
-      "nominal_voltage_v": 18.0,
-      "battery_type": null,
-      "battery_capacity_ah": null,
-      "drive_size_label": "3/8",
-      "drive_size_in": 0.375,
-      "anvil_type": "Hog Ring",
-      "torque_class": null,
-      "no_load_speed": null,
-      "rpm_max": null,
-      "impact_rate_bpm": null,
-      "max_fastening_torque_ft_lbs": null,
-      "max_breakaway_torque_ft_lbs": null,
-      "tool_length_in": null,
-      "weight_lbs": null,
-      "brushless": null,
-      "variable_speed": null,
-      "led_light": null,
-      "precision_wrench": true,
-      "kit": true,
-      "tool_only": false,
-      "battery_included": false,
-      "charger_included": true,
-      "tool_connect_ready": false,
-      "lanyard_ready": false,
-      "description": "The ATOMIC 20V MAX* 3/8 in. Cordless Impact Wrench was designed easily to handle various fastening projects. Get up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque with this compact power tool that offers easy maneuverability without sacrificing power. Choose between 4 speed settings including Precision Wrench control feature and Timber Screw mode to allow for reliable high-level performance, operability, and versatility. Dark work areas are no problem with this Cordless Impact Wrench, which comes with an LED work light for visibility in dimly lit spaces.",
-      "features": [
-        "Brighten Dark Workspaces With Onboard Led And Brightness Control",
-        "Built For Long Life: Glass-Filled Nylon Housing Provides Resistance From Damage Caused By Some Oils And Solvents",
-        "Enhanced User Control In A Variety Of Applications With 4 Speed Settings"
-      ],
-      "additional_features": [
-        "Helps Prevent Overtightening And Fastener Run-Off With Precision WrenchControl",
-        "Optimized Speed In Wood With Timber Screw Mode",
-        "Quickly Change Sockets: Hog Ring Anvil For Rapid, Secure Socket Changes",
-        "Strong Performance: Up To 300 Ft-Lbs Of Max Fastening Torque And 450 Ft-Lbs Of Max BREAKAWAY Torque"
-      ],
-      "includes": [
-        "(1) DCF923 Impact Wrench",
-        "(1) DCB205 - 20V MAX XR* 5.0Ah Battery",
-        "(1) Belt Clip",
-        "(1) Charger"
-      ],
-      "applications": [],
-      "disclaimers": [
-        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
       ]
     },
     {

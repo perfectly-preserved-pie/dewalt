@@ -10,6 +10,7 @@ from typing import Any
 import requests
 
 from dewalt.tool_families.drill_drivers.scrape import (
+    MAX_VOLTAGE_PATTERN,
     PAGE_PATTERN,
     extract_section_items,
     extract_text_items,
@@ -52,7 +53,7 @@ def fetch_url(url: str, timeout: int = 20) -> str:
     raise RuntimeError(f"Failed to fetch {url}")
 
 
-def parse_power_source(specs: dict[str, str], all_text: str) -> str:
+def parse_power_source(specs: dict[str, str], title: str, all_text: str) -> str:
     """Parse the wrench power-source classification."""
     raw_value = specs.get("Power Source")
     if raw_value:
@@ -64,11 +65,15 @@ def parse_power_source(specs: dict[str, str], all_text: str) -> str:
         if "pneumatic" in lowered or "air" in lowered:
             return "Pneumatic"
 
+    if MAX_VOLTAGE_PATTERN.search(title):
+        return "Cordless"
+
     lowered = all_text.lower()
     if (
         specs.get("Battery Voltage [V]")
         or specs.get("Battery Type")
         or specs.get("Battery Chemistry")
+        or "cordless" in lowered
         or "battery sold separately" in lowered
         or "battery & charger sold separately" in lowered
         or "battery and charger sold separately" in lowered
@@ -272,7 +277,7 @@ def parse_product_page(url: str, html_text: str) -> dict[str, Any] | None:
     all_text = " ".join(part for part in all_text_parts if part)
     lowered = all_text.lower()
 
-    power_source = parse_power_source(specs, all_text)
+    power_source = parse_power_source(specs, title, all_text)
     voltage_system, max_voltage_v = parse_voltage_system(specs, power_source, all_text)
     drive_size_label = parse_drive_size_label(specs, title, description)
     no_load_speed = specs.get("No Load Speed [RPM]") or specs.get("RPM")
