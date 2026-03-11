@@ -17,6 +17,9 @@ HAMMER_DRILL_DATA_PATH = (
 IMPACT_DRIVER_DATA_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "dewalt_impact_drivers.json"
 )
+IMPACT_WRENCH_DATA_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "dewalt_impact_wrenches.json"
+)
 
 
 def normalize_power_source(value: str | None) -> str | None:
@@ -159,6 +162,36 @@ def load_impact_drivers(path: Path = IMPACT_DRIVER_DATA_PATH) -> list[dict[str, 
         A list of impact-driver row dictionaries with normalized power-source labels.
     """
     snapshot = load_impact_driver_snapshot(path)
+    rows = []
+    for row in snapshot.get("rows", []):
+        normalized_row = dict(row)
+        normalized_row["power_source"] = normalize_power_source(row.get("power_source"))
+        rows.append(normalized_row)
+    return rows
+
+
+def load_impact_wrench_snapshot(path: Path = IMPACT_WRENCH_DATA_PATH) -> dict[str, Any]:
+    """Load the saved impact-wrench snapshot from disk.
+
+    Args:
+        path: Filesystem path to the impact-wrench snapshot JSON file.
+
+    Returns:
+        The parsed impact-wrench snapshot payload as a dictionary.
+    """
+    return load_snapshot(path)
+
+
+def load_impact_wrenches(path: Path = IMPACT_WRENCH_DATA_PATH) -> list[dict[str, Any]]:
+    """Load normalized impact-wrench rows from the snapshot.
+
+    Args:
+        path: Filesystem path to the snapshot JSON file.
+
+    Returns:
+        A list of impact-wrench row dictionaries with normalized power-source labels.
+    """
+    snapshot = load_impact_wrench_snapshot(path)
     rows = []
     for row in snapshot.get("rows", []):
         normalized_row = dict(row)

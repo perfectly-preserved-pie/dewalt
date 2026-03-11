@@ -1,0 +1,1937 @@
+{
+  "scraped_at": "2026-03-11T01:21:15+00:00",
+  "catalog_url": "https://www.dewalt.com/products/power-tools/impact-drivers-wrenches/impact-wrenches",
+  "listing_page_count": 5,
+  "raw_product_count": 78,
+  "product_count": 33,
+  "excluded_product_count": 45,
+  "rows": [
+    {
+      "sku": "DCF889B",
+      "title": "20V MAX* 1/2 in. High Torque Impact Wrench (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf889b/20v-max-12-high-torque-impact-wrench-tool-only",
+      "category": "Impact Wrench",
+      "series": [],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Detent Pin",
+      "torque_class": "High Torque",
+      "no_load_speed": "1500",
+      "rpm_max": 1500,
+      "impact_rate_bpm": 2300,
+      "max_fastening_torque_ft_lbs": 400.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 10.9,
+      "weight_lbs": 5.2,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The DCF889B 20V MAX* Lithium Ion 1/2\" High Torque Impact Wrench is powerful and versatile for fastening various applications. Designed for comfort, speed control, and working in dark spaces. Battery & Charger Sold Separately",
+      "features": [
+        "400 ft-lbs of maximum torque to perform a wide range of heavy-duty fastening applications",
+        "Ergonomic handle provides user superior comfort and control",
+        "Variable speed trigger with electric brake provides user improved control"
+      ],
+      "additional_features": [
+        "LED light provides user greater visibility when working in dark environments",
+        "Durable magnesium gear case and all metal transmission for extended durability"
+      ],
+      "includes": [
+        "(1) 20V MAX* 1/2 in. High Torque Impact Wrench"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF890",
+      "title": "20V MAX* XR 3/8\" Compact Impact Wrench",
+      "url": "https://www.dewalt.com/product/dcf890/20v-max-xr-38-compact-impact-wrench",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": null,
+      "torque_class": "Compact",
+      "no_load_speed": "2800",
+      "rpm_max": 2800,
+      "impact_rate_bpm": 3200,
+      "max_fastening_torque_ft_lbs": 150.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 8.13,
+      "weight_lbs": 2.0,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "With a Pilot Point; Tip that starts on contact, DEWALT Gold Ferrous Drill Bits deliver clean, accurate holes, and helps to reduced lock-ups. A No-Spin Shank eliminates the bit spinning in the chuck, and a tapered web provides helps to increased durability to helps to reduce breakage. Size markings are located above the shank to helps to prevent wearing.",
+      "features": [
+        "Compact and ergonomic with only 5.5\" head length and 2 lbs (tool only)",
+        "DEWALT built brushless motor for increased efficiency and runtime",
+        "Max torque of 150 ft-lbs in a compact package for a variety of different fastening applciations"
+      ],
+      "additional_features": [
+        "3 LEDs and a belt clip for additional ease of use"
+      ],
+      "includes": [],
+      "applications": [],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF890B",
+      "title": "20V MAX* XR 3/8 in. Compact Impact Wrench (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf890b/20v-max-xr-38-compact-impact-wrench-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Compact",
+      "no_load_speed": "2800",
+      "rpm_max": 2800,
+      "impact_rate_bpm": 3200,
+      "max_fastening_torque_ft_lbs": 150.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 8.13,
+      "weight_lbs": 2.38,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The DCF890 3/8\" Impact Wrench is compact and lightweight allowing the tool to be utilized in tight areas while the 3 LED lights provide visibility in low lit areas. Plus, it has a brushless motor for increase power, runtime and durability. Battery & Charger Sold Separately",
+      "features": [
+        "Compact and ergonomic with only 5.5\" head length and 2 lbs (tool only)",
+        "DEWALT built brushless motor for increased efficiency and runtime",
+        "Max torque of 150 ft-lbs in a compact package for a variety of different fastening appliciations"
+      ],
+      "additional_features": [
+        "3 LEDs and a belt clip for additional ease of use"
+      ],
+      "includes": [
+        "(1) Belt Clip",
+        "(1) DCF890 - 20V MAX* XR 3/8\" Compact Impact Wrench Tool"
+      ],
+      "applications": [
+        "Fastening decking bolts",
+        "Ductile Pipe"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF891B",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf891b/20v-max-xr-12-mid-range-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": 3100,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": null,
+      "weight_lbs": 4.0,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR Cordless 1/2 in. Mid-Range Impact Wrench with Hog Ring Anvil. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (Tool only), making it ideal for pipe flanges, grooved couplings, tilt wall braces, wheel lugs, concrete anchor setting and many other applications where high torque is needed in compact spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Tackle Wide Range Of Fastening Applications - With 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose The Output Level Based On The Job - Control is in your hands with 4 speed settings and a variable speed trigger",
+        "Helps Prevent Overtightening And Fastener Run-Off - With Precision Wrench control"
+      ],
+      "additional_features": [
+        "Illuminate Dark Workspaces - Using the on-tool LED work light",
+        "Built For Comfortable Use - When working in tight spaces with compact and lightweight design"
+      ],
+      "includes": [
+        "(1) DCF891 Impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt wall brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF891BLR",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Impact Wrench With LANYARD READY Attachment Point",
+      "url": "https://www.dewalt.com/product/dcf891blr/20v-max-xr-12-mid-range-impact-wrench-lanyard-ready-attachment-point",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": null,
+      "torque_class": "Mid-Range",
+      "no_load_speed": "2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": 3250,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": 6.95,
+      "weight_lbs": 3.7,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": true,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR Cordless 1/2 in. Mid-Range Impact Wrench with LANYARD READY Attachment Point (Tool Only). This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (Tool only), making it ideal for pipe flanges, grooved couplings, tilt wall braces, wheel lugs, concrete anchor setting and many other applications where high torque is needed in compact spaces. LANYARD READY attachment point is designed for users to utilize a lanyard to tether the tool and battery to rigid structures on jobsites. When working at height only use LANYARD READY equipped batteries (sold separately). Battery and charger sold separately.",
+      "features": [
+        "LANYARD READY attachment point is designed for users to utilize a lanyard to tether the tool and battery to rigid structures on jobsites. When working at height only use LANYARD READY equipped batteries (sold separately).",
+        "Tackle Wide Range Of Fastening Applications - With 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose The Output Level Based On The Job - Control is in your hands with 4 speed settings and a variable speed trigger"
+      ],
+      "additional_features": [
+        "Helps Prevent Overtightening And Fastener Run-Off - With Precision Wrench control",
+        "Illuminate Dark Workspaces - Using the on-tool LED work light",
+        "Built For Comfortable Use - When working in tight spaces with compact and lightweight design",
+        "Part Of Our Best Performing Line Of 20V MAX* Power Tools - Innovative power tools designed to deliver certainty for the world's toughest pros."
+      ],
+      "includes": [
+        "(1) DCF891 20V MAX* XR 1/2 in. Mid-Range Impact Wrench with LANYARD READY Attachment Point"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt Wall Brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": [
+        "*Max initial voltage without workload is 20V. Nominal is 18V."
+      ]
+    },
+    {
+      "sku": "DCF891GP2",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Impact Wrench with Hog Ring Anvil and Oil-Resistant Batteries Kit",
+      "url": "https://www.dewalt.com/product/dcf891gp2/20v-max-xr-12-mid-range-impact-wrench-hog-ring-anvil-and-oil-resistant-batteries-kit",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": null,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": true,
+      "tool_only": true,
+      "battery_included": true,
+      "charger_included": true,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR Cordless 1/2 in. Mid-Range Impact Wrench with Hog Ring Anvil. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (Tool only), making it ideal for automotive maintenance, tire changes, suspension repairs and many other applications where high torque is needed in compact spaces.",
+      "features": [
+        "Tackle wide range of fastening applications with 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose the output level based on the job: Control is in your hands with 4 speed settings and a variable speed trigger",
+        "Helps prevent overtightening and fastener run-off with precision wrench control"
+      ],
+      "additional_features": [
+        "Illuminate dark workspaces using the on-tool led work light",
+        "Built for comfortable use when working in tight spaces with compact and lightweight design"
+      ],
+      "includes": [
+        "(1) DCF891 Impact wrench",
+        "(2) DCB205G Oil resistant 5.0Ah batteries",
+        "(1) Charger",
+        "(1) Kit bag",
+        "(1) Belt clip"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt wall brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF891P2",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Impact Wrench Kit with Hog Ring Anvil",
+      "url": "https://www.dewalt.com/product/dcf891p2/20v-max-xr-12-mid-range-impact-wrench-kit-hog-ring-anvil",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": 3100,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": 15.0,
+      "weight_lbs": 9.7,
+      "brushless": null,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": true,
+      "tool_only": true,
+      "battery_included": true,
+      "charger_included": true,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR Cordless 1/2 in. Mid-Range Impact Wrench with Hog Ring Anvil. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (Tool only), making it ideal for pipe flanges, grooved couplings, tilt wall braces, wheel lugs, concrete anchor setting and many other applications where high torque is needed in compact spaces. Battery and charger sold separately.",
+      "features": [
+        "Tackle wide range of fastening applications with 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose the output level based on the job: Control is in your hands with 4 speed settings and a variable speed trigger",
+        "Helps prevent overtightening and fastener run-off with precision wrench control"
+      ],
+      "additional_features": [
+        "Illuminate dark workspaces using the on-tool led work light",
+        "Built for comfortable use when working in tight spaces with compact and lightweight design"
+      ],
+      "includes": [
+        "(1) DCF891 Impact Wrench",
+        "(2) DCB205 5.0Ah Batteries",
+        "(1) Charger",
+        "(1) Kit bag",
+        "(1) Belt clip"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt wall brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF891Q1",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Impact Wrench Kit With Hog Ring Anvil",
+      "url": "https://www.dewalt.com/product/dcf891q1/20v-max-xr-12-mid-range-impact-wrench-kit-hog-ring-anvil",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": 14.75,
+      "weight_lbs": 8.0,
+      "brushless": null,
+      "variable_speed": true,
+      "led_light": null,
+      "precision_wrench": true,
+      "kit": true,
+      "tool_only": true,
+      "battery_included": true,
+      "charger_included": true,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR Cordless 1/2 in. Mid-Range Impact Wrench with Hog Ring Anvil. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (Tool only), making it ideal for pipe flanges, grooved couplings, tilt wall braces, wheel lugs, concrete anchor setting and many other applications where high torque is needed in compact spaces.",
+      "features": [
+        "Tackle Wide Range Of Fastening Applications - With 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose The Output Level Based On The Job - Control is in your hands with 4 speed settings and a variable speed trigger",
+        "Helps Prevent Overtightening And Fastener Run-Off - With Precision Wrench control"
+      ],
+      "additional_features": [
+        "Illuminate Dark Workspaces - Using the on-tool LED work light",
+        "Built For Comfortable Use - When working in tight spaces with compact and lightweight design"
+      ],
+      "includes": [
+        "(1) DCF891 Impact Wrench",
+        "(1) DCB240 4.0Ah Battery",
+        "(1) Charger",
+        "(1) Kit Bag",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt wall brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF891QQ1",
+      "title": "20V MAX* XR Brushless Cordless 1/2 In. Mid-Torque Impact Wrench With Hog Ring Anvil Kit",
+      "url": "https://www.dewalt.com/product/dcf891qq1/20v-max-xr-brushless-cordless-12-mid-torque-impact-wrench-hog-ring-anvil-kit",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "XR Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": 3250,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": 6.95,
+      "weight_lbs": 3.7,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": true,
+      "tool_only": true,
+      "battery_included": true,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this 20V MAX* XR Brushless Cordless 1/2 in. Mid-Torque Impact Wrench with Hog Ring Anvil Kit. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button mode select to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (tool only), making it ideal for pipe flanges, grooved couplings, tilt wall braces, wheel lugs, and many other applications where high torque is needed in compact spaces.",
+      "features": [
+        "Tackle A Wide Range Of Fastening Applications - With 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose The Output Level Based On The Job - Control is in your hands with 4 speed settings and a variable speed trigger",
+        "Helps Prevent Overtightening And Fastener Run-Off - With Precision Wrench control"
+      ],
+      "additional_features": [
+        "Illuminate Dark Workspaces - Using the on-tool LED work light",
+        "Built For Comfortable Use - When working in tight spaces with a compact and lightweight design"
+      ],
+      "includes": [
+        "(1) DCF891 1/2 In. Mid-Torque Impact Wrench",
+        "(1) DCB2104 DEWALT XR 4 Ah Battery"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flanges",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt Wall Brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF892B",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Impact Wrench With Detent Pin Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf892b/20v-max-xr-12-mid-range-impact-wrench-detent-pin-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Detent Pin",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": 3250,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": 800.0,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR Cordless 1/2 in. Mid-Range Impact Wrench with Detent Pin Anvil. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. This Impact Wrench brings high torque and weighs less than 4 lbs. (Tool only), making it ideal for pipe flanges, grooved couplings, tilt wall braces, wheel lugs, concrete anchor setting and many other applications where high torque is needed in compact spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Tackle Wide Range Of Fastening Applications - With 600 ft-lbs of max fastening torque and 800 ft-lbs of max breakaway torque",
+        "Choose The Output Level Based On The Job - Control is in your hands with 4 speed settings and a variable speed trigger",
+        "Helps Prevent Overtightening And Fastener Run-Off - With Precision Wrench control"
+      ],
+      "additional_features": [
+        "Illuminate Dark Workspaces - Using the on-tool LED work light",
+        "Built For Comfortable Use - When working in tight spaces with compact and lightweight design"
+      ],
+      "includes": [
+        "(1) DCF892 Impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Automotive Repair (General)",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Screw Anchors (i.e. Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly",
+        "Tilt wall brace",
+        "Electrical Maintenance"
+      ],
+      "disclaimers": []
+    },
+    {
+      "sku": "DCF894B",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Cordless Impact Wrench With Detent Pin Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf894b/20v-max-xr-12-mid-range-cordless-impact-wrench-detent-pin-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Detent Pin",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "0-900 /0-2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 330.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 6.95,
+      "weight_lbs": 3.48,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The 20V MAX* XR 1/2 in. Mid-Range Cordless Impact Wrench with Detent Pin Anvil delivers up to 330 ft-lbs max of fastening torque and a lightweight, ergonomic design. This tool also features Precision Wrench Control, which helps to prevent overtightening in forward and fastener run-off in reverse. This Mid-Range Cordless Impact Wrench is ideal for grooved couplings, pipe flanges, wheel lugs, concrete anchor setting, and many other applications where a lot of torque is needed in a compact space. Battery & Charger Sold Separately",
+      "features": [
+        "Up to 330 ft-lbs max of fastening torque at only 3.48lbs",
+        "Includes the new Precision Wrench Control feature, which helps add more control when using the tool in forward and reverse. In Forward, the tool will pause before impacting to help prevent overtightening. In Reverse, the tool lowers speed when fastener is loose to help prevent run-off.",
+        "3 mode settings to complete a variety of applications"
+      ],
+      "additional_features": [
+        "DEWALT-built brushless motor for increased efficiency and runtime vs. brushed model",
+        "Variable speed trigger helps to provide speed control",
+        "LED light to help illuminate dimly lit areas",
+        "Compact and lightweight design for comfort when working in tight spaces"
+      ],
+      "includes": [
+        "(1) DCF894 Mid-Range Impact Wrench With Detent Pin Anvil"
+      ],
+      "applications": [
+        "Grooved Couplings",
+        "Structural Steel",
+        "Curtain Wall Installation",
+        "Concrete Anchors",
+        "Wheel Lugs",
+        "General Bolt Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF894HB",
+      "title": "20V MAX* XR 1/2 in. Mid-Range Cordless Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf894hb/20v-max-xr-12-mid-range-cordless-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": 3100,
+      "max_fastening_torque_ft_lbs": null,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 8.625,
+      "weight_lbs": 3.9,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The 20V MAX* XR 1/2 in. Mid-Range Cordless Impact Wrench with Hog Ring Anvil delivers up to 330 ft-lbs max of fastening torque and a lightweight, ergonomic design. This tool also features Precision Wrench Control, which helps to prevent overtightening in forward and fastener run-off in reverse. This Mid-Range Cordless Impact Wrench is ideal for grooved couplings, pipe flanges, wheel lugs, concrete anchor setting, and many other applications where a lot of torque is needed in a compact space. Battery & Charger Sold Separately",
+      "features": [
+        "Up to 330 ft-lbs max of fastening torque at only 3.48lbs",
+        "Includes the new Precision Wrench Control feature, which helps add more control when using the tool in forward and reverse. In Forward, the tool will pause before impacting to help prevent overtightening. In Reverse, the tool lowers speed when fastener is loose to help prevent run-off.",
+        "3 mode settings to complete a variety of applications"
+      ],
+      "additional_features": [
+        "DEWALT-built brushless motor for increased efficiency and runtime vs. brushed model",
+        "Variable speed trigger helps to provide speed control",
+        "LED light to help illuminate dimly lit areas",
+        "Compact and lightweight design for comfort when working in tight spaces"
+      ],
+      "includes": [
+        "(1) DCF894 Mid-Range Impact Wrench with Hog Ring Anvil"
+      ],
+      "applications": [
+        "Grooved Couplings",
+        "Structural Steel",
+        "Curtain Wall Installation",
+        "Concrete Anchors",
+        "Wheel Lugs",
+        "General Bolt Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF896B",
+      "title": "20V MAX* Tool Connect 1/2 in. Mid-Range Detent Pin Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf896b/20v-max-tool-connect-12-mid-range-detent-pin-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "TOOL CONNECT"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Detent Pin",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "2000",
+      "rpm_max": 2000,
+      "impact_rate_bpm": 3100,
+      "max_fastening_torque_ft_lbs": 3960.0,
+      "max_breakaway_torque_ft_lbs": 600.0,
+      "tool_length_in": 8.3,
+      "weight_lbs": 3.48,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "The DCF896 Mid-Range Impact Wrench is based off of the latest edition to the DEWALT impact wrench family, the DCF894. Integrated Bluetooth technology pairs this tool with the free Tool Connect mobile app and online inventory manager portal, allowing users to track, manage and customize the tool settings. Through the app, users are able to program three customized modes based on individual needs and have control over forward and reverse speed to account for different fastener sizes and types, LED brightness and delay as well as Precision Wrench and the all new exclusive Precision Tap modes. Within Precision Wrench, users can program the tool to automatically shut off after impacting for a set amount of time, useful for those performing repeatable applications and helps with tightening consistancy by removing variability in impact time. Precision Tap mode is designed to make tapping threads faster and easier by having the tool automatically alternate between forward and reverse, keeping rotations consistant and eliminating the need to manually change the tool's direction. Use this tool along with other Tool Connect offerings for a complete management solution. Battery & Charger Sold Separately",
+      "features": [
+        "330 ft-lbs of max fastening torque and 600 ft-lbs of max breakaway torque to complete a wide variety of applications.",
+        "Compact design of only 6.95\" and 3.48 lbs allows access to tight spaces and reduces user fatigue.",
+        "3 fully customizable modes allow you to personalize your impact wrench through the Tool Connect app including setting: Speed, LED brightness and delay, Precision Wrench Control and Precision Tap Controls."
+      ],
+      "additional_features": [
+        "Precision Wrench allows user to set runoff speed in reverse helping to prevent fastener runoff. In forward, users can set pause before impact and auto shut off times to aide in fastening consistency.",
+        "Precision Tap automatically alternates the tool between forward and reverse allowing for easier and faster cutting of threads (vs. manual tapping).",
+        "Brushless motor for increased efficiency and runtime vs. brushed models.",
+        "Variable speed trigger helps provide speed control to the user.",
+        "Through the Tool Connect app receive diagnostics on your impact wrench such as internal coin cell battery life, tool temperature, number of trigger pulls and how long the tool has been running.",
+        "Track your tool utilizing the last seen feature which provides the street address of where your tool was last in range of a Tool Connect enabled device. Help prevent theft by setting the tool to disable when out of range and receiving out of range alerts.",
+        "Easily and quickly assign tools to jobsites and users on fthe Tool Connect Inventory Manager Software, increasing accountabilty and reducing lost tools."
+      ],
+      "includes": [
+        "(1) Belt Clip",
+        "(1) DCF896 Impact Wrench w/ Detent Pin Anvil"
+      ],
+      "applications": [
+        "Grooved Couplings",
+        "Mechanical Anchors",
+        "Pipe Flange",
+        "Automotive Repair",
+        "Heavy Equipment Repair",
+        "Manufacturing Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF896HB",
+      "title": "20V MAX* Tool Connect 1/2 in. Mid-Range Impact Wrench With Hog Ring Anvil (Tool only)",
+      "url": "https://www.dewalt.com/product/dcf896hb/20v-max-tool-connect-12-mid-range-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "TOOL CONNECT"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "Mid-Range",
+      "no_load_speed": "1900",
+      "rpm_max": 1900,
+      "impact_rate_bpm": 2400,
+      "max_fastening_torque_ft_lbs": 330.0,
+      "max_breakaway_torque_ft_lbs": 600.0,
+      "tool_length_in": 8.06,
+      "weight_lbs": 3.9,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "The DCF896 Mid-Range Impact Wrench is based off of the latest edition to the DEWALT impact wrench family, the DCF894. Integrated Bluetooth technology pairs this tool with the free Tool Connect mobile app and online inventory manager portal, allowing users to track, manage and customize the tool settings. Through the app, users are able to program three customized modes based on individual needs and have control over forward and reverse speed to account for different fastener sizes and types, LED brightness and delay as well as Precision Wrench and the all new exclusive Precision Tap modes. Within Precision Wrench, users can program the tool to automatically shut off after impacting for a set amount of time, useful for those performing repeatable applications and helps with tightening consistancy by removing variability in impact time. Precision Tap mode is designed to make tapping threads faster and easier by having the tool automatically alternate between forward and reverse, keeping rotations consistant and eliminating the need to manually change the tool's direction. Use this tool along with other Tool Connect offerings for a complete management solution. Battery & Charger Sold Separately",
+      "features": [
+        "330 ft-lbs of max fastening torque and 600 ft-lbs of max breakaway torque to complete a wide variety of applications.",
+        "Compact design of only 6.95\" and 3.48 lbs allows access to tight spaces and reduces user fatigue.",
+        "3 fully customizable modes allow you to personalize your impact wrench through the Tool Connect app including setting: Speed, LED brightness and delay, Precision Wrench Control and Precision Tap Controls."
+      ],
+      "additional_features": [
+        "Precision Wrench allows user to set runoff speed in reverse helping to prevent fastener runoff. In forward, users can set pause before impact and auto shut off times to aide in fastening consistency.",
+        "Precision Tap automatically alternates the tool between forward and reverse allowing for easier and faster cutting of threads (vs. manual tapping).",
+        "Brushless motor for increased efficiency and runtime vs. brushed models.",
+        "Variable speed trigger helps provide speed control to the user",
+        "Through the Tool Connect app receive diagnostics on your impact wrench such as internal coin cell battery life, tool temperature, number of trigger pulls and how long the tool has been running.",
+        "Track your tool utilizing the last seen feature which provides the street address of where your tool was last in range of a Tool Connect enabled device. Help prevent theft by setting the tool to disable when out of range and receiving out of range alerts.",
+        "Easily and quickly assign tools to jobsites and users on fthe Tool Connect Inventory Manager Software, increasing accountabilty and reducing lost tools."
+      ],
+      "includes": [
+        "(1) Belt Clip",
+        "(1) DCF896H Impact Wrench With Hog Ring Anvil"
+      ],
+      "applications": [
+        "Grooved Couplings",
+        "Mechanical Anchors",
+        "Pipe Flange",
+        "Automotive Repair",
+        "Heavy Equipment Repair",
+        "Manufacturing Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF897B",
+      "title": "20V MAX* XR High Torque 3/4 in. Impact Wrench With Hog Ring Retention Pin Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf897b/20v-max-xr-high-torque-34-impact-wrench-hog-ring-retention-pin-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/4",
+      "drive_size_in": 0.75,
+      "anvil_type": "Hog Ring",
+      "torque_class": "High Torque",
+      "no_load_speed": "0-400/1200/1900",
+      "rpm_max": 1900,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 700.0,
+      "max_breakaway_torque_ft_lbs": 1200.0,
+      "tool_length_in": 8.0,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": null,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "20V MAX* XR Brushless High Torque 3/4\" Impact Wrench with Hog Ring Retention Pin Anvil (Bare)",
+      "features": [
+        "Up to 700 ft-lbs of max torque and 1200 ft-lbs of max breakaway torque",
+        "Compact design of 8-13/16\" in length",
+        "Multi-speed control for a variety of applications (0-400/ 1,200/ 1,900 RPM)"
+      ],
+      "additional_features": [
+        "3/4\" hog ring with retention pin anvil",
+        "LED light with 20 second delay for increased visibility"
+      ],
+      "includes": [
+        "(1) DCF897 - 20V MAX* XR Brushless High Torque 3/4 in. Impact Wrench With Hog Ring Retention Pin Anvil"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF898B",
+      "title": "20V MAX* XR High Torque 7/16 in. Impact Wrench With Quick Release Chuck (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf898b/20v-max-xr-high-torque-716-impact-wrench-quick-release-chuck-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "7/16",
+      "drive_size_in": 0.4375,
+      "anvil_type": "Quick Release",
+      "torque_class": "High Torque",
+      "no_load_speed": "0-400/ 1,200/ 1,900",
+      "rpm_max": 1900,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 500.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 10.9,
+      "weight_lbs": 7.0,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The DCF898B 20V MAX* XR Brushless High Torque 7/16\" Impact Wrench with Quick Release Chuck is powerful and versatile for fastening various applications. Designed for comfort, speed control, and working in dark spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Up to 500 ft-lbs of max torque",
+        "Compact design of 8-13/16\" in length",
+        "Multi-speed control for a variety of applications (0-400/ 1,200/ 1,900 RPM)"
+      ],
+      "additional_features": [
+        "Quick release 7/16\" chuck and lift hook",
+        "LED light with 20-second delay for increased visibility"
+      ],
+      "includes": [
+        "(1) 20V MAX* XR High Torque 7/16 in. Impact Wrench With Quick Release Chuck"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF899HB",
+      "title": "20V MAX* XR High Torque 1/2 in. Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf899hb/20v-max-xr-high-torque-12-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "High Torque",
+      "no_load_speed": "1900",
+      "rpm_max": 1900,
+      "impact_rate_bpm": 2400,
+      "max_fastening_torque_ft_lbs": 700.0,
+      "max_breakaway_torque_ft_lbs": 1200.0,
+      "tool_length_in": 10.9,
+      "weight_lbs": 6.6,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The DCF899HB 20V MAX* XR Brushless High Torque 1/2 in. Impact Wrench w. Hog Ring Anvil is powerful and versatile for fastening various applications. Designed for comfort, speed control, and working in dark spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Up to 700 ft-lbs of max torque and 1200 ft-lbs of max breakaway torque",
+        "Compact design of 8-13/16 in. length",
+        "Multi-speed control for a variety of applications (0-400/ 1,200/ 1,900 RPM)"
+      ],
+      "additional_features": [
+        "1/2 in. Anvil with hog ring (also available in detent pin)",
+        "LED light with 20-second delay for increased visibility"
+      ],
+      "includes": [
+        "(1) 20V MAX* XR Brushless High Torque 1/2 in. Impact Wrench"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF900B",
+      "title": "20V MAX* XR 1/2 In. High Torque Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf900b/20v-max-xr-12-high-torque-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "High Torque",
+      "no_load_speed": "2300",
+      "rpm_max": 2300,
+      "impact_rate_bpm": 2200,
+      "max_fastening_torque_ft_lbs": 1030.0,
+      "max_breakaway_torque_ft_lbs": 1400.0,
+      "tool_length_in": 9.94,
+      "weight_lbs": 7.1,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "Complete the toughest jobs utilizing the power of the DEWALT 20V MAX* XR 1/2 in. High Torque Impact Wrench. Delivering 1030 ft-lbs. of max fastening torque and 1400 ft-lbs. of max breakaway torque, making it ideal for large sized pipe flanges, grooved couplings, wheel lugs, and many other heavy-duty impact wrench applications. The PRECISION WRENCH mode is included to help prevent overtightening in forward, and run-off in reverse, for additional user control. Utilize the updated 4-mode push button switch to easily transition speeds and adjust LED brightness when needed. Battery & Charger Sold Separately",
+      "features": [
+        "Complete A Wide Variety Of Fastening Applications - With 1030 ft-lbs of max fastening torque and 1400 ft-lbs of max breakaway torque.",
+        "Increase User Control In A Variety Of Applications - With 4-mode speed settings and variable speed trigger.",
+        "Designed To Help Prevent Overtightening And Fastener Run-Off - With Precision Wrench control."
+      ],
+      "additional_features": [
+        "Reduce Wear And Tear On The Battery While You Work With BATTERYGUARD - A shock-absorbing battery-to-tool connection (battery sold separately).",
+        "Illuminate Dark Workspaces - Using the on-tool LED work light."
+      ],
+      "includes": [
+        "(1) DCF900 Impact Wrench"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF901B",
+      "title": "XTREME 12V MAX* Brushless 1/2 in. Cordless Impact Wrench (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf901b/xtreme-12v-max-brushless-12-cordless-impact-wrench-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": null,
+      "torque_class": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 250.0,
+      "max_breakaway_torque_ft_lbs": 400.0,
+      "tool_length_in": null,
+      "weight_lbs": 2.59,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Ideal for use in a wide variety of automotive applications, the XTREME 12V MAX* Brushless 1/2 in. Cordless Impact Wrench delivers 250 ft-lbs of max tightening torque and 400 ft-lbs of max breakaway torque to tackle stuck and stubborn fasteners. Access tight areas with its compact design while the LED ring illuminates your workspace. With a glass-filled nylon housing that resists harsh chemicals and solvents, this tool will deliver quality performance day in and day out. Includes the tool only. Battery & Charger Sold Separately",
+      "features": [
+        "Multi-Use Tool: 250 Ft-Lbs Max Tightening Torque And 400 Ft-Lbs Max Breakaway Torque For Use In A Wide Variety Of Automotive Applications",
+        "Access Tight Areas: Compact Size For Work In Hard-To-Reach Spaces",
+        "Damage-Resistant: Glass-Filled Nylon Housing Resists Effects Of Harsh Automotive Chemicals And Solvents"
+      ],
+      "additional_features": [
+        "Increased Visibility: Led Ring Makes It Easier To See In Low Light Situations"
+      ],
+      "includes": [
+        "(1) Belt Hook",
+        "(1) DCF901"
+      ],
+      "applications": [
+        "Brake repair",
+        "Engine bay work",
+        "Suspension repair"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF902B",
+      "title": "XTREME 12V MAX* Brushless 3/8 in. Cordless Impact Wrench (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf902b/xtreme-12v-max-brushless-38-cordless-impact-wrench-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": null,
+      "torque_class": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 1500.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 5.11,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The XTREME 12V MAX* Brushless 3/8 in. Cordless Impact Wrench is compact and performance packed. This cordless impact wrench is designed for hard-to-reach applications requiring tightening or loosening of nuts and bolts. At only 5.1 in. long with 1,500 in-lbs. of fastening torque and 2,400 in-lbs. of breakaway torque, it is packed to perform. It also features 3 LEDs positioned on the nose to illuminate work areas. This impact wrench is equipped with a 3-mode switch with Precision Wrench to help prevent overtightening and runoff. Battery and charger sold separately.",
+      "features": [
+        "30% more torque**",
+        "17% shorter**",
+        "Brushless motor for maximum runtime and durability"
+      ],
+      "additional_features": [
+        "3/8 in. square drive",
+        "3 mode settings including Precision Wrench for control in a variety of applications",
+        "3 LEDs for illumination onto work surface",
+        "Lightweight at 1.73 lbs. (tool only)"
+      ],
+      "includes": [
+        "(1) Belt Clip",
+        "(1) DCF902B - 12V MAX* Impact Wrench"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "** DCF902 using DCB122 2Ah battery vs. DCF813 using DCB120 1.3Ah battery (sold separately).",
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF903B",
+      "title": "XTREME 12V MAX* 3/8 in. Brushless Impact Wrench (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf903b/xtreme-12v-max-38-brushless-impact-wrench-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XTREME"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "12V MAX",
+      "max_voltage_v": 12,
+      "nominal_voltage_v": 10.8,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": "0-2850",
+      "rpm_max": 2850,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 250.0,
+      "max_breakaway_torque_ft_lbs": 400.0,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Ideal for use in a wide variety of automotive applications, the XTREME 12V MAX* Brushless 3/8 in. Cordless Impact Wrench delivers 250 ft-lbs of max tightening torque and 400 ft-lbs of max breakaway torque to tackle stuck and stubborn fasteners. Access tight areas with its compact design while the LED ring illuminates your workspace. With a glass-filled nylon housing that resists harsh chemicals and solvents, this tool will deliver quality performance day in and day out. Includes the tool only. Battery & Charger Sold Separately",
+      "features": [
+        "Multi-Use Tool - 250 ft-lbs max tightening torque and 400 ft-lbs max breakaway torque for use in a wide variety of automotive applications",
+        "Access Tight Areas - Compact size for work in hard-to-reach spaces",
+        "Damage-Resistant - Glass-filled nylon housing resists effects of harsh automotive chemicals and solvents"
+      ],
+      "additional_features": [
+        "Increased Visibility - LED ring makes it easier to see in low light situations"
+      ],
+      "includes": [
+        "(1) Belt Hook",
+        "(1) DCF903"
+      ],
+      "applications": [
+        "Brake repair",
+        "Engine bay work",
+        "Suspension repair"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 12 volts. Nominal voltage is 10.8."
+      ]
+    },
+    {
+      "sku": "DCF911B",
+      "title": "20V MAX* 1/2 in. Cordless Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf911b/20v-max-12-cordless-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": "2800",
+      "rpm_max": 2800,
+      "impact_rate_bpm": 3250,
+      "max_fastening_torque_ft_lbs": 250.0,
+      "max_breakaway_torque_ft_lbs": 400.0,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "This 20V MAX* 1/2 in. Cordless Impact Wrench with Hog Ring Anvil was built for quick loosening and tightening of bolts, lug nuts, and other fasteners. The Impact Wrench delivers 250 ft-lbs of fastening torque and 400 ft-lbs of breakaway torque in a lightweight body suited for a range of applications in confined, difficult-to-access workspaces. Use the integrated LED in low-light spots for enhanced visibility as you work. Battery & Charger Sold Separately",
+      "features": [
+        "Strong Performance - Up to 250 ft-lbs of max tightening torque and 400 ft-lbs of max breakaway torque",
+        "Access Hard-To-Reach Workspaces - With its compact size",
+        "Quickly Change Sockets - Hog ring anvil for rapid, secure socket changes"
+      ],
+      "additional_features": [
+        "Brighten Dark Work Areas - With on-board LED ring"
+      ],
+      "includes": [
+        "(1) DCF911 Impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Automotive Maintenance / Repair",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Fabrication / Installlation"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
+      ]
+    },
+    {
+      "sku": "DCF911P1",
+      "title": "20V MAX Brushless Compact Impact Wrench (5.0Ah)",
+      "url": "https://www.dewalt.com/product/dcf911p1/20v-max-brushless-compact-impact-wrench-50ah",
+      "category": "Impact Wrench",
+      "series": [],
+      "power_source": "Corded",
+      "voltage_system": "20V",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_label": null,
+      "drive_size_in": null,
+      "anvil_type": null,
+      "torque_class": "Compact",
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": null,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": true,
+      "variable_speed": null,
+      "led_light": null,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": true,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "",
+      "features": [
+        "3 lights illuminate simultaneously, resulting in no shadow",
+        "Best durability to withstand external SHOCKS or internal stress",
+        "Compact head design & excellent weight balance"
+      ],
+      "additional_features": [
+        "High performance brushless motor fitted",
+        "Improved space utilization with dramatically shorter battlefield lengths",
+        "Optimized impact technology delivers maximum torque power at tightening moments up to 338 Nm",
+        "Powerful 542 Nm maximum torque at the moment of release"
+      ],
+      "includes": [
+        "(1) DCF911 Impact Wrench",
+        "(1) DCB205 - 20V MAX XR* 5.0Ah Battery",
+        "(1) Belt Clip",
+        "(1) Charger"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF913B",
+      "title": "20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf913b/20v-max-38-cordless-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 250.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 5.866,
+      "weight_lbs": 2.685,
+      "brushless": null,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The versatile 20V MAX* 3/8 in. Cordless Impact Wrench with Hog Ring Anvil was engineered to handle multiple applications. Fasten or loosen bolts and lug nuts with up to 250 ft-lbs of max tightening torque and 400 ft-lbs of max breakaway torque. Its compact size was designed for maneuvering in tight spots. Illuminate low-light work areas with the built-in LED ring for visibility in dimly lit workspaces. Battery & Charger Sold Separately",
+      "features": [
+        "Strong Performance - Up to 250 ft-lbs of max tightening torque and 400 ft-lbs of max breakaway torque",
+        "Access Hard-To-Reach Workspaces - With its compact size",
+        "Quickly Change Sockets - Hog ring anvil for rapid, secure socket changes"
+      ],
+      "additional_features": [
+        "Brighten Dark Work Areas - With on-board LED ring"
+      ],
+      "includes": [
+        "(1) DCF913 Impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Automotive Maintenance / Repair",
+        "Pipe Flange",
+        "Grooved (Victaulic) Couplings",
+        "Fabrication / Installlation"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
+      ]
+    },
+    {
+      "sku": "DCF913P1",
+      "title": "20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil Kit",
+      "url": "https://www.dewalt.com/product/dcf913p1/20v-max-38-cordless-impact-wrench-hog-ring-anvil-kit",
+      "category": "Impact Wrench",
+      "series": [],
+      "power_source": "Corded",
+      "voltage_system": "20V",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": null,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": null,
+      "variable_speed": null,
+      "led_light": null,
+      "precision_wrench": false,
+      "kit": true,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": true,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Take on a variety of fastening projects using the 20V MAX* 3/8 in. Cordless impact wrench with hog ring anvil kit. The high-output impact wrench delivers the power needed for both large and small jobs with up to 250 ft-lbs of tightening torque and 400 ft-lbs of BREAKAWAY torque. Its compact, lightweight build was engineered for seamless maneuverability in tight spots. Dimly lit work conditions are no problem for this cordless impact wrench, which features an on-board LED for visibility in dark spaces.",
+      "features": [
+        "Access hard-to-reach workspaces with its compact size",
+        "Brighten dark work areas with on-board LED ring",
+        "Quickly change sockets: hog ring anvil for rapid, secure socket changes"
+      ],
+      "additional_features": [
+        "Strong performance: up to 250 ft-lbs of max tightening torque and 400 ft-lbs of max BREAKAWAY torque"
+      ],
+      "includes": [
+        "(1) DCF913 Impact Wrench",
+        "(1) DCB205 - 20V MAX XR* 5.0Ah Battery",
+        "(1) Belt Clip",
+        "(1) Charger"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF921B",
+      "title": "ATOMIC 20V MAX* 1/2 in. Cordless Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf921b/atomic-20v-max-12-cordless-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": "2800",
+      "rpm_max": 2800,
+      "impact_rate_bpm": 3200,
+      "max_fastening_torque_ft_lbs": 300.0,
+      "max_breakaway_torque_ft_lbs": 450.0,
+      "tool_length_in": null,
+      "weight_lbs": 2.375,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The ATOMIC 20V MAX* 1/2 in. Cordless Impact Wrench was designed easily to handle various fastening projects. Get up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque with this compact power tool that offers easy maneuverability without sacrificing power. Choose between 4 speed settings including Precision Wrench control feature and Timber Screw mode to allow for reliable high-level performance, operability, and versatility. Dark work areas are no problem with this Cordless Impact Wrench, which comes with an LED work light for visibility in dimly lit spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Strong Performance - Up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque",
+        "Enhanced User Control - In a variety of applications with 4 speed settings",
+        "Helps Prevent Overtightening - And fastener run-off with Precision Wrench control"
+      ],
+      "additional_features": [
+        "Brighten Dark Workspaces - With onboard LED and brightness control",
+        "Quickly Change Sockets - Hog ring anvil for rapid, secure socket changes",
+        "Optimized Speed In Wood - With Timber Screw Mode",
+        "Built For Long Life - Glass-Filled Nylon Housing provides resistance from damage caused by some oils and solvents"
+      ],
+      "includes": [
+        "(1) DCF921 impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Grooved (Victaulic) Couplings",
+        "Pipe Flange",
+        "Automotive Repair (General)",
+        "Screw Anchors (ie Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
+      ]
+    },
+    {
+      "sku": "DCF922B",
+      "title": "ATOMIC 20V MAX* 1/2 in. Cordless Impact Wrench With Detent Pin Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf922b/atomic-20v-max-12-cordless-impact-wrench-detent-pin-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Detent Pin",
+      "torque_class": null,
+      "no_load_speed": "2500",
+      "rpm_max": 2500,
+      "impact_rate_bpm": 3500,
+      "max_fastening_torque_ft_lbs": 300.0,
+      "max_breakaway_torque_ft_lbs": 450.0,
+      "tool_length_in": 9.06,
+      "weight_lbs": 3.04,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The ATOMIC 20V MAX* 1/2 in. Cordless Impact Wrench with Detent Pin Anvil was designed easily to handle various fastening projects. Get up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque with this compact power tool that offers easy maneuverability without sacrificing power. Choose between 4 speed settings including Precision Wrench control feature and Timber Screw mode to allow for reliable high-level performance, operability, and versatility. Dark work areas are no problem with this Cordless Impact Wrench, which comes with an LED work light for visibility in dimly lit spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Strong Performance - Up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque",
+        "Enhanced User Control - In a variety of applications with 4 speed settings",
+        "Helps Prevent Overtightening - And fastener run-off with Precision Wrench control"
+      ],
+      "additional_features": [
+        "Brighten Dark Workspaces - With onboard LED and brightness control",
+        "Quickly Change Sockets - Hog ring anvil for rapid, secure socket changes",
+        "Optimized Speed In Wood - With Timber Screw Mode",
+        "Built For Long Life - Glass-Filled Nylon Housing provides resistance from damage caused by some oils and solvents"
+      ],
+      "includes": [
+        "(1) DCF922 Impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Grooved (Victaulic) Couplings",
+        "Pipe Flange",
+        "Automotive Repair (General)",
+        "Screw Anchors (ie Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
+      ]
+    },
+    {
+      "sku": "DCF923B",
+      "title": "ATOMIC 20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf923b/atomic-20v-max-38-cordless-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 300.0,
+      "max_breakaway_torque_ft_lbs": 450.0,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": null,
+      "variable_speed": null,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The ATOMIC 20V MAX* 3/8 in. Cordless Impact Wrench with Hog Ring Anvil was designed easily to handle various fastening projects. Get up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque with this compact power tool that offers easy maneuverability without sacrificing power. Choose between 4 speed settings including Precision Wrench control feature and Timber Screw mode to allow for reliable high-level performance, operability, and versatility. Dark work areas are no problem with this Cordless Impact Wrench, which comes with an LED work light for visibility in dimly lit spaces. Battery & Charger Sold Separately",
+      "features": [
+        "Strong Performance - Up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque",
+        "Enhanced User Control - In a variety of applications with 4 speed settings",
+        "Helps Prevent Overtightening - And fastener run-off with Precision Wrench control"
+      ],
+      "additional_features": [
+        "Brighten Dark Workspaces - With onboard LED and brightness control",
+        "Quickly Change Sockets - Hog ring anvil for rapid, secure socket changes",
+        "Optimized Speed In Wood - With Timber Screw Mode",
+        "Built For Long Life - Glass-Filled Nylon Housing provides resistance from damage caused by some oils and solvents"
+      ],
+      "includes": [
+        "(1) DCF923 Impact Wrench",
+        "(1) Belt Clip"
+      ],
+      "applications": [
+        "Grooved (Victaulic) Couplings",
+        "Pipe Flange",
+        "Automotive Repair (General)",
+        "Screw Anchors (ie Screwbolt+)",
+        "Curtain Wall",
+        "Manufacturing Assembly"
+      ],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18 volts."
+      ]
+    },
+    {
+      "sku": "DCF923P1",
+      "title": "ATOMIC 20V MAX* 3/8 in. Cordless Impact Wrench With Hog Ring Anvil Kit",
+      "url": "https://www.dewalt.com/product/dcf923p1/atomic-20v-max-38-cordless-impact-wrench-hog-ring-anvil-kit",
+      "category": "Impact Wrench",
+      "series": [
+        "ATOMIC"
+      ],
+      "power_source": "Corded",
+      "voltage_system": "20V",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/8",
+      "drive_size_in": 0.375,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": null,
+      "rpm_max": null,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": null,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": null,
+      "weight_lbs": null,
+      "brushless": null,
+      "variable_speed": null,
+      "led_light": null,
+      "precision_wrench": true,
+      "kit": true,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": true,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The ATOMIC 20V MAX* 3/8 in. Cordless Impact Wrench was designed easily to handle various fastening projects. Get up to 300 ft-lbs of max fastening torque and 450 ft-lbs of max breakaway torque with this compact power tool that offers easy maneuverability without sacrificing power. Choose between 4 speed settings including Precision Wrench control feature and Timber Screw mode to allow for reliable high-level performance, operability, and versatility. Dark work areas are no problem with this Cordless Impact Wrench, which comes with an LED work light for visibility in dimly lit spaces.",
+      "features": [
+        "Brighten Dark Workspaces With Onboard Led And Brightness Control",
+        "Built For Long Life: Glass-Filled Nylon Housing Provides Resistance From Damage Caused By Some Oils And Solvents",
+        "Enhanced User Control In A Variety Of Applications With 4 Speed Settings"
+      ],
+      "additional_features": [
+        "Helps Prevent Overtightening And Fastener Run-Off With Precision WrenchControl",
+        "Optimized Speed In Wood With Timber Screw Mode",
+        "Quickly Change Sockets: Hog Ring Anvil For Rapid, Secure Socket Changes",
+        "Strong Performance: Up To 300 Ft-Lbs Of Max Fastening Torque And 450 Ft-Lbs Of Max BREAKAWAY Torque"
+      ],
+      "includes": [
+        "(1) DCF923 Impact Wrench",
+        "(1) DCB205 - 20V MAX XR* 5.0Ah Battery",
+        "(1) Belt Clip",
+        "(1) Charger"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
+      ]
+    },
+    {
+      "sku": "DCF937B",
+      "title": "20V MAX* XR 7/16 in. Brushless Cordless Impact Wrench (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf937b/20v-max-xr-716-brushless-cordless-impact-wrench-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_label": "7/16",
+      "drive_size_in": 0.4375,
+      "anvil_type": null,
+      "torque_class": null,
+      "no_load_speed": "0- 2200 / 0-2200 / 0- 850 / 0- 2200",
+      "rpm_max": 2200,
+      "impact_rate_bpm": 3250,
+      "max_fastening_torque_ft_lbs": 600.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 7.0,
+      "weight_lbs": 4.5,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Complete difficult wood drilling applications and work efficiently with the 20V MAX* XR Brushless Cordless 7/16 in. Impact Wrench (battery and charger sold separately). This next-generation XR tool delivers power, speed, and ergonomics in a 41% more compact\u2020\u2020 design. This impact wrench features 4 modes including Timber Screw mode that helps increase the speed of wood driving applications. As our fastest drilling 20V MAX* 7/16 in. Impact Wrench\u2020 and our fastest driving 20V MAX* 7/16 in. Impact Wrench\u2020, the 20V MAX* XR Brushless Cordless 7/16 in. Impact Wrench is a part of our best performing line of 20V MAX* power tools.",
+      "features": [
+        "Our Fastest Drilling 20V MAX* 7/16 in. Impact Wrench\u2020 - Finish the job with up to 23% faster drilling**",
+        "Ergonomic Design - Take advantage of a 41% more compact design\u2020\u2020 that is 16% narrower and 32% lighter\u2021 for efficiency when working in tight spaces.",
+        "Quick-Change Anvil - Change auger bits and other accessories for use in a variety of applications with the 7/16 in. quick-connect anvil."
+      ],
+      "additional_features": [
+        "Lift Ring - Access difficult spots such as utility poles with the lift ring that can help maneuver the tool into place.",
+        "4-Mode Speed Selection - Optimize tool performance with Timber Screw mode that helps increase the speed of wood driving applications .",
+        "Part Of Our Best Performing Line Of 20V MAX* Power Tools - Innovative power tools designed to deliver certainty for the world's toughest pros."
+      ],
+      "includes": [
+        "(1) DCF937B 20V MAX* XR Brushless Cordless 7/16 in. Impact Wrench",
+        "(1) Belt Hook"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "*Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "\u2020rated no-load speed using DCB2104 battery (sold separately).",
+        "**vs. DCF898 impact wrench using Timber Screw mode with 7/8\" x 17\" auger bit in PT 6x6 with DCB2104 battery (accessory and battery sold separately)",
+        "\u2021vs. DCF898 impact wrench - 41% more compact design; 16% narrower - tool head width (bumper-to-bumper); 32% lighter - bare tool.\u2021vs. DCF898 impact wrench - 41% more compact design; 16% narrower - tool head width (bumper-to-bumper); 32% lighter - bare tool.",
+        "\u2020\u2020vs. DCF898 impact wrench - tool head volume (cross-section below trigger)"
+      ]
+    },
+    {
+      "sku": "DCF961B",
+      "title": "20V MAX* XR 1/2 in. Brushless High Torque Impact Wrench With Hog Ring Anvil (Tool Only",
+      "url": "https://www.dewalt.com/product/dcf961b/20v-max-xr-12-brushless-high-torque-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": "Lithium Ion",
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": "High Torque",
+      "no_load_speed": "1200",
+      "rpm_max": 1200,
+      "impact_rate_bpm": 1890,
+      "max_fastening_torque_ft_lbs": 1320.0,
+      "max_breakaway_torque_ft_lbs": 1900.0,
+      "tool_length_in": 8.43,
+      "weight_lbs": 7.65,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": true,
+      "lanyard_ready": false,
+      "description": "Complete tough jobs utilizing the power of the 20V MAX* XR 1/2\" High Torque Impact Wrench. The industry's highest rated max torque cordless 1/2\" impact wrench** delivers up to 28% more torque*** when using XR POWERSTACK (sold separately), making it ideal heavy-duty applications. This tool features a glass-filled nylon housing to help protect against oils and harmful solvents. Other features such as PRECISION WRENCH mode, which helps prevent overtightening and fastener run-off, as well as a 4-mode push button switch, to easily change speeds and LED brightness, are included to help maximize efficiency and productivity on the jobsite. Battery sold separately.",
+      "features": [
+        "INDUSTRY'S HIGHEST RATED MAX TORQUE CORDLESS 1/2\" IMPACT WRENCH** - delivers 1320 ft-lbs of max fastening torque and 1900 ft-lbs of max breakaway torque\u2020",
+        "GET UP TO 28% MORE TORQUE*** - to complete tough fastening applications",
+        "3 SPEED SETTINGS AND PRECISION WRENCH MODE - to help prevent overtightening and fastening run-off"
+      ],
+      "additional_features": [
+        "COMBATS HARSH ENVIRONMENTS - Resist damage from oil, grease, and solvents with oil-resistant tool housing",
+        "OPERATE ON-TOOL LED WORK LIGHT - to illuminate dark workspaces"
+      ],
+      "includes": [
+        "(1) DCF961 20V MAX* XR 1/2 in. High-Torque Impact Wrench"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18",
+        "** Based on the rated fastening torque published by pro-grade power tool manufacturers for their cordless 1/2\" impact wrenches",
+        "***Rated Max Fastening Torque using DCBP520 (sold separately) vs. DCF900 with 1,030 ft-lbs using DCB205 (sold separately)",
+        "\u2020Based on using DCBP520 (sold separately)"
+      ]
+    },
+    {
+      "sku": "DCF964B",
+      "title": "20V MAX* XR Brushless Cordless 3/4 in. High Torque Impact Wrench With Hog Ring Anvil (Tool Only)",
+      "url": "https://www.dewalt.com/product/dcf964b/20v-max-xr-brushless-cordless-34-high-torque-impact-wrench-hog-ring-anvil-tool-only",
+      "category": "Impact Wrench",
+      "series": [
+        "XR"
+      ],
+      "power_source": "Cordless",
+      "voltage_system": "20V MAX",
+      "max_voltage_v": 20,
+      "nominal_voltage_v": 18.0,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_label": "3/4",
+      "drive_size_in": 0.75,
+      "anvil_type": "Hog Ring",
+      "torque_class": "High Torque",
+      "no_load_speed": "1200",
+      "rpm_max": 1200,
+      "impact_rate_bpm": 2015,
+      "max_fastening_torque_ft_lbs": 1420.0,
+      "max_breakaway_torque_ft_lbs": 1900.0,
+      "tool_length_in": 9.0,
+      "weight_lbs": 8.0,
+      "brushless": true,
+      "variable_speed": true,
+      "led_light": true,
+      "precision_wrench": true,
+      "kit": false,
+      "tool_only": true,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "Complete tough jobs utilizing the power of the 20V MAX* XR 3/4\" High Torque Impact Wrench. Our highest rated max torque 3/4\" impact wrench** delivers up to 102% more torque***, making it ideal for heavy-duty applications. This tool features a glass-filled nylon housing to help protect against oils & harmful solvents. Other features such as PRECISION WRENCH mode, which helps prevent overtightening and fastener run-off, as well as a 4-mode push button switch, to easily change speeds and LED brightness, are included to help maximize efficiency and productivity on the jobsite. Battery sold separately.",
+      "features": [
+        "OUR HIGHEST RATED MAX TORQUE CORDLESS 3/4\" IMPACT WRENCH** - delivers 1420 ft-lbs of max fastening torque and 1900 ft-lbs of max breakaway torque\u2020",
+        "GET UP TO 102% MORE TORQUE*** - to complete tough fastener applications",
+        "3 SPEED SETTINGS AND PRECISION WRENCH MODE - to help prevent overtightening and fastener run-off"
+      ],
+      "additional_features": [
+        "COMBATS HARSH ENVIRONMENTS - Resist damage from oil, grease, and solvents with oil-resistant tool housing",
+        "OPERATE ON-TOOL LED WORK LIGHT - to illuminate dark workspaces",
+        "PART OF OUR BEST PERFORMING LINE OF 20V MAX* POWER TOOLS\u2021 - Innovative tool technologies designed to deliver certainty for the world's toughest pros"
+      ],
+      "includes": [
+        "(1) DCF964 XR 3/4\" Impact Wrench"
+      ],
+      "applications": [],
+      "disclaimers": [
+        "* Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18.",
+        "**Based on the rated max torque published by DEWALT for its corded, cordless, and pneumatic impact wrenches.",
+        "***Rated Max Fastening Torque using DCBP520 (sold separately) vs. DCF897 with 700 ft-lbs using DCB205 (sold separately).",
+        "\u2020Based on using DCBP520 (sold separately).",
+        "\u2021 Regarding battery, based on longer life (charge cycles) and more power, not in application vs. DEWALT 20V MAX* battery with comparable amp hours."
+      ]
+    },
+    {
+      "sku": "DW293",
+      "title": "1/2\" (13mm) Impact Wrench with Hog Ring Anvil",
+      "url": "https://www.dewalt.com/product/dw293/12-13mm-impact-wrench-hog-ring-anvil",
+      "category": "Impact Wrench",
+      "series": [],
+      "power_source": "Corded",
+      "voltage_system": null,
+      "max_voltage_v": null,
+      "nominal_voltage_v": null,
+      "battery_type": null,
+      "battery_capacity_ah": null,
+      "drive_size_label": "1/2",
+      "drive_size_in": 0.5,
+      "anvil_type": "Hog Ring",
+      "torque_class": null,
+      "no_load_speed": "2100",
+      "rpm_max": 2100,
+      "impact_rate_bpm": null,
+      "max_fastening_torque_ft_lbs": 345.0,
+      "max_breakaway_torque_ft_lbs": null,
+      "tool_length_in": 11.0,
+      "weight_lbs": 7.0,
+      "brushless": null,
+      "variable_speed": null,
+      "led_light": null,
+      "precision_wrench": false,
+      "kit": false,
+      "tool_only": false,
+      "battery_included": false,
+      "charger_included": false,
+      "tool_connect_ready": false,
+      "lanyard_ready": false,
+      "description": "The DW293 1/2\" Impact Wrench with Hog Ring Anvil delivers a powerful forward and reverse torque, which is operated by the AC/DC rocking switch. Features a soft grip handle and ball bearing construction for comfort and durability.",
+      "features": [
+        "345 ft-lbs of max fastening torque",
+        "1/2\" Hog Ring Anvil",
+        "Forward/reverse rocker switch"
+      ],
+      "additional_features": [
+        "Soft grip handle for increased comfort"
+      ],
+      "includes": [
+        "(1) Retaining ring"
+      ],
+      "applications": [
+        "Attaching ledger boards for deck building",
+        "Garage door installation",
+        "Steel erection",
+        "Guard rail assembly and disassembly"
+      ],
+      "disclaimers": []
+    }
+  ]
+}
