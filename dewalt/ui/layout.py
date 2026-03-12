@@ -5,11 +5,15 @@ from typing import Any, Sequence
 
 import dash_bootstrap_components as dbc
 from dash import dcc, html
+from dash_iconify import DashIconify
 
 from dewalt.tool_families.base import StatCard
 
 from .config import APP_LOCATION_ID
 from .context import DashboardContext
+
+GITHUB_REPO_URL = "https://github.com/perfectly-preserved-pie/dewalt"
+CONTACT_EMAIL = "hello@example.com"
 
 
 @dataclass(frozen=True)
@@ -234,6 +238,49 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
                                     "your top picks side by side."
                                 ),
                                 className="hero-copy",
+                            ),
+                            html.Div(
+                                [
+                                    html.Span(
+                                        [
+                                            DashIconify(icon="octicon:mark-github-16"),
+                                            html.A(
+                                                "GitHub",
+                                                href=GITHUB_REPO_URL,
+                                                target="_blank",
+                                                rel="noopener noreferrer",
+                                            ),
+                                        ],
+                                        style={
+                                            "display": "inline-flex",
+                                            "alignItems": "center",
+                                            "gap": "5px",
+                                        },
+                                    ),
+                                    html.Span(
+                                        [
+                                            DashIconify(icon="streamline-color:send-email"),
+                                            html.A(
+                                                CONTACT_EMAIL,
+                                                href=f"mailto:{CONTACT_EMAIL}",
+                                                target="_blank",
+                                            ),
+                                        ],
+                                        style={
+                                            "display": "inline-flex",
+                                            "alignItems": "center",
+                                            "gap": "5px",
+                                        },
+                                    ),
+                                ],
+                                style={
+                                    "display": "flex",
+                                    "alignItems": "center",
+                                    "columnGap": "15px",
+                                    "rowGap": "8px",
+                                    "flexWrap": "wrap",
+                                    "marginTop": "1rem",
+                                },
                             ),
                         ],
                         className="hero-copy-block",
