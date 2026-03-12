@@ -11,7 +11,7 @@ The app is stylized using Dash Mantine Components and Dash Bootstrap Components,
 ## AI Disclosure
 
 This app was created entirely with GPT-5.4.
-![lulz](../assets/aislop.png)
+![lulz](assets/aislop.png)
 
 ## Run
 
