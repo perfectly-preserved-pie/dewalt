@@ -22,14 +22,14 @@ uv run python3 app.py
 
 ## Data
 
-The repo includes checked-in JSON snapshots under `data/`.
+Every tool family (drills, circular saws, impact drivers, etc.) has its own dataset stored as a JSON in `data/`.
 
 To refresh a dataset, run the scraper module for that tool family. Examples:
 
 ```bash
-uv run python3 -m dewalt.scrape
-uv run python3 -m dewalt.tool_families.drill_drivers.scrape
-uv run python3 -m dewalt.tool_families.circular_saws.scrape
+uv run python3 -m dewalt.scrape # Scrapes all tool families
+uv run python3 -m dewalt.tool_families.drill_drivers.scrape # Scrapes just drill drivers
+uv run python3 -m dewalt.tool_families.circular_saws.scrape # Scrapes just circular saws
 ```
 
 ## Contributing
