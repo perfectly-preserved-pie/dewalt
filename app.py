@@ -66,6 +66,7 @@ SECTIONS = [
 app = Dash(
     __name__,
     title="DEWALT Compare",
+    description="An interactive website for browsing and comparing DEWALT tools across multiple categories.",
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
 
