@@ -69,6 +69,7 @@ app = Dash(
     description="An interactive website for browsing and comparing DEWALT tools across multiple categories.",
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
+server = app.server
 
 app.layout = build_layout(SECTIONS)
 

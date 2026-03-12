@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dewalt-compare"
 version = "0.1.0"
-description = "Dash AG Grid comparison tool for Dewalt angle grinders."
+description = "Dash AG Grid comparison tool for Dewalt tools."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
