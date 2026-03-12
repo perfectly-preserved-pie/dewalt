@@ -297,6 +297,38 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
                 persistence_type="local",
                 children=[build_family_tab(section) for section in sorted_sections],
             ),
+            html.Footer(
+                [
+                    html.P(
+                        "Independent project for browsing and comparing tool data.",
+                        className="footer-kicker",
+                    ),
+                    html.P(
+                        (
+                            "This site is not affiliated with, endorsed by, or sponsored by "
+                            "DEWALT, Stanley Black & Decker, or any of their affiliates."
+                        ),
+                        className="footer-legal",
+                    ),
+                    html.P(
+                        (
+                            "DEWALT and any other product names, logos, and marks shown here "
+                            "are the property of their respective owners."
+                        ),
+                        className="footer-legal",
+                    ),
+                    html.P(
+                        (
+                            "Tool information is compiled from publicly available manufacturer "
+                            "pages and may be incomplete, outdated, or inaccurate. Verify "
+                            "specifications, safety information, and compatibility with the "
+                            "official manufacturer before purchase or use."
+                        ),
+                        className="footer-legal",
+                    ),
+                ],
+                className="app-footer",
+            ),
         ],
         fluid=True,
         className="app-shell",
