@@ -16,6 +16,7 @@ class DashboardContext:
     snapshot: dict[str, Any]
     raw_rows: list[RowData]
     display_rows: list[RowData]
+    row_lookup: dict[str, RowData]
     grid_row_fields: frozenset[str]
     stat_cards: tuple[StatCard, ...]
     max_compare: int = MAX_COMPARE
@@ -47,6 +48,7 @@ def load_dashboard_context(
         snapshot=snapshot_data,
         raw_rows=source_rows,
         display_rows=display_rows,
+        row_lookup={row["sku"]: row for row in display_rows if row.get("sku")},
         grid_row_fields=frozenset(display_rows[0].keys()) if display_rows else frozenset(),
         stat_cards=family.build_stat_cards(display_rows),
         max_compare=max_compare,

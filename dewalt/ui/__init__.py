@@ -1,6 +1,6 @@
 """UI helpers for the DEWALT comparison dashboard."""
 
-from .callbacks import register_callbacks
+from .callbacks import register_app_state_callbacks, register_callbacks
 from .config import MAX_COMPARE
 from .context import DashboardContext, load_dashboard_context
 from .grids import (
@@ -27,5 +27,6 @@ __all__ = [
     "build_modal_content",
     "build_modal_header",
     "load_dashboard_context",
+    "register_app_state_callbacks",
     "register_callbacks",
 ]

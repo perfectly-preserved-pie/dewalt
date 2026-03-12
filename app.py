@@ -27,6 +27,7 @@ from dewalt.ui import (
     build_master_grid,
     build_modal,
     load_dashboard_context,
+    register_app_state_callbacks,
     register_callbacks,
 )
 
@@ -75,6 +76,8 @@ app.layout = build_layout(SECTIONS)
 
 for dashboard in DASHBOARDS:
     register_callbacks(app, dashboard)
+
+register_app_state_callbacks(app, DASHBOARDS)
 
 
 if __name__ == "__main__":

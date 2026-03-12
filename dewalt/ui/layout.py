@@ -8,6 +8,7 @@ from dash import dcc, html
 
 from dewalt.tool_families.base import StatCard
 
+from .config import APP_LOCATION_ID
 from .context import DashboardContext
 
 
@@ -152,6 +153,32 @@ def build_family_tab(section: DashboardSection) -> dcc.Tab:
                                         ],
                                         className="compare-header",
                                     ),
+                                    html.Div(
+                                        [
+                                            dcc.Checklist(
+                                                id=context.family.ids.compare_options,
+                                                options=[
+                                                    {
+                                                        "label": "Differences only",
+                                                        "value": "differences",
+                                                    }
+                                                ],
+                                                value=[],
+                                                className="compare-options",
+                                                inputClassName="compare-options-input",
+                                                labelClassName="compare-options-label",
+                                                persistence=f"{context.family.slug}-compare-options",
+                                                persistence_type="local",
+                                            ),
+                                            html.A(
+                                                "Share this shortlist",
+                                                id=context.family.ids.compare_share_link,
+                                                href=f"?family={context.family.slug}",
+                                                className="compare-share-link",
+                                            ),
+                                        ],
+                                        className="compare-toolbar",
+                                    ),
                                     section.compare_grid,
                                     html.Div(
                                         id=context.family.ids.compare_cards,
@@ -193,6 +220,7 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
 
     return dbc.Container(
         [
+            dcc.Location(id=APP_LOCATION_ID, refresh="callback-nav"),
             html.Div(
                 [
                     html.Div(
@@ -218,6 +246,8 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
                 id="tool-tabs",
                 value=sorted_sections[0].context.family.slug,
                 className="tool-tabs",
+                persistence=True,
+                persistence_type="local",
                 children=[build_family_tab(section) for section in sorted_sections],
             ),
         ],

@@ -85,8 +85,12 @@ def build_modal_content(row: RowData, family: ToolFamilyDefinition) -> list[Any]
         An ordered list of Dash components for the modal body.
     """
     content = [
-        html.P(row.get("description", "-"), className="modal-overview"),
+        html.P(row.get("description") or "Not listed", className="modal-overview"),
         build_detail_table(row, family),
+        html.P(
+            "Fields not shown here were not listed by DEWALT.",
+            className="modal-note",
+        ),
     ]
 
     for title, field_name in (

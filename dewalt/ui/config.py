@@ -2,6 +2,7 @@ from __future__ import annotations
 
 
 MAX_COMPARE = 4
+APP_LOCATION_ID = "app-location"
 
 AG_GRID_THEME = {
     "function": (

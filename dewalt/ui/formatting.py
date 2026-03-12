@@ -1,6 +1,21 @@
 from __future__ import annotations
 
 
+MISSING_DATA_LABEL = "Not listed"
+
+
+def is_missing_display_value(value: object) -> bool:
+    """Return whether a rendered comparison value should be treated as missing."""
+    return value in (None, "", [], "-", MISSING_DATA_LABEL)
+
+
+def normalize_compare_value(value: object) -> object:
+    """Normalize placeholder values used in compare/detail views."""
+    if is_missing_display_value(value):
+        return MISSING_DATA_LABEL
+    return value
+
+
 def format_bool(value: bool | None) -> str:
     """Convert a boolean value to the dashboard's text representation.
 
