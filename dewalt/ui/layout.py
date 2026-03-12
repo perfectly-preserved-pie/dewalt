@@ -229,7 +229,7 @@ def build_layout(sections: Sequence[DashboardSection]) -> dbc.Container:
                 [
                     html.Div(
                         [
-                            html.P("DEWALT TOOL INDEX", className="eyebrow"),
+                            html.P("Unofficial DEWALT TOOL INDEX", className="eyebrow"),
                             html.H1("DEWALT Compare", className="hero-title"),
                             html.P(
                                 (
