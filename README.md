@@ -2,11 +2,15 @@
 
 DeWalt's website is trash and comically slow to browse and it PISSES me off. So I wanted to build a website that would allow me to quickly compare tools across categories without having to click through dozens of slow pages.
 
-This website allows you to browse and compare DEWALT tools across multiple categories using Dash AG Grid. 
+The data is sourced directly from DeWalt's website by scraping it using BeautifulSoup. Annoyingly, DeWalt doesn't even fill in all the details for their tools, so some of the data is missing. And if they do, they don't do it consistently across all their tool families.
 
-The app allows users to filter, sort, and compare tools based on various attributes such as price, features, and specifications.
+Such a half-assed website.
 
-The app is stylized using Dash Mantine Components and Dash Bootstrap Components, and it uses Dash AG Grid to display the tool data in an interactive table format.
+Anyways, this website allows users to filter, sort, and compare tools based on various attributes such as voltage, features, and specifications.
+
+I'm using Dash Mantine Components, Dash Bootstrap Components, and Dash AG Grid for the frontend.
+
+The backend is just JSON files.
 
 ## AI Disclosure
 
