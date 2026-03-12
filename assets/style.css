@@ -69,6 +69,15 @@ a {
     text-transform: uppercase;
 }
 
+.hero-note {
+    margin: 0.55rem 0 0;
+    color: var(--dw-yellow);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .hero-copy {
     margin: 0.9rem 0 0;
     max-width: 50rem;
@@ -140,6 +149,33 @@ a {
 .tool-tabs {
     margin-top: 1.4rem;
     min-width: 0;
+}
+
+.app-footer {
+    margin-top: 1.5rem;
+    padding: 1rem 1.15rem 0;
+    border-top: 1px solid color-mix(in srgb, var(--dw-yellow) 12%, var(--dw-border));
+    color: var(--dw-muted);
+}
+
+.footer-kicker {
+    margin: 0 0 0.5rem;
+    color: #fff3bf;
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer-legal {
+    margin: 0;
+    max-width: 72rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.footer-legal + .footer-legal {
+    margin-top: 0.45rem;
 }
 
 .tool-tabs .tab {

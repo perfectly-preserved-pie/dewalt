@@ -1,5 +1,7 @@
 # DEWALT Tool Table
 
+## This project is not affiliated with, endorsed by, or sponsored by DEWALT, Stanley Black & Decker, or any of their affiliates.
+
 DeWalt's website is trash and comically slow to browse and it PISSES me off. So I wanted to build a website that would allow me to quickly compare tools across categories without having to click through dozens of slow pages.
 
 The data is sourced directly from DeWalt's website by scraping it using BeautifulSoup. Annoyingly, DeWalt doesn't even fill in all the details for their tools, so some of the data is missing. And if they do, they don't do it consistently across all their tool families.
